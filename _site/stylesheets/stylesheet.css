@@ -77,7 +77,6 @@ header h1 {
 }
 
 header h2 {
-  letter-spacing: -1px;
   font-size: 24px;
   color: #aaa;
   font-weight: normal;
@@ -112,8 +111,16 @@ header h2 {
     padding-left: 25px;
 }
 
+
+/* Individual Posts related styles */
 .post header{
     padding: 0px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.post header h2{
+    letter-spacing: 0.5px;
+    margin-bottom: 0px;
 }
 
 .post table{
@@ -124,6 +131,11 @@ header h2 {
 
 .post table th{
     font-weight: bold;
+}
+
+#paginator a{
+  font-size: 100%;
+  font-family: 'Lobster', cursive;
 }
 
 

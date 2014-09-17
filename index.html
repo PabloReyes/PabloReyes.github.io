@@ -2,6 +2,28 @@
 layout: default
 title: Home
 ---
+<div id="paginator">
+    {% if paginator.next_page %}
+            <a href="{{paginator.posts[0].previous.url}}">
+            &laquo; {{ paginator.posts[0].previous.title }}</a>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+                <span class="more">
+                <a href="{{site.baseurl}}/">
+                Newer Posts &raquo; </a>
+                </span>
+        {% else %}
+                <span class="more">
+                <a href="{{paginator.posts[0].next.url}}">
+                {{ paginator.posts[0].next.title }} &raquo; </a>
+                </span>
+        {% endif %}
+    {% endif %}
+
+    <hr>
+</div>
 
 <!-- Show last 5 posts here -->
 {% for post in paginator.posts %}

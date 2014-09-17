@@ -2,7 +2,7 @@
 layout: post
 title: A curious guy getting hands dirty
 published: true
-date: 2012-10-05
+date: 2012-09-17
 ---
 
 If I’m curious now, I was even more with 14 or 15 years old. It was the time when I got bored of my shitty C book and started learning Python with online tutorials. I spent so much time on IRC also, mostly in programming channels (although I almost only talked in those dedicated to Age Of Empires, yeah!). I met some people doing much more funny things that what I was doing. A group of friends created a script to auto-click on adsense banners. The group was super private, but I was invited. All of us had a personal blog, so we used the script to click once on each adsense banner every day, so at least we got 8 or 9 clicks a day. Not much, but It helped me buying a better computer (Athlon 3400+, from a P3 866Mhz) by the end of that year (2004 I think).
