@@ -94,13 +94,16 @@ header h2 {
 #sidebar{
     width: 160px;
     float: left;
+    padding: 5px;
+}
+
+#sidebar section, #sidebar img{
+    max-width: 100%;
 }
 
 #main{
     padding-left: 25px;
 }
-
-
 
 .content {
   width: 620px;
@@ -113,10 +116,14 @@ header h2 {
     padding: 0px;
 }
 
-#sidebar-picture{
-    height: 160px;
-    border: 1px solid #d5020f;
-    background-color: rgba(213, 2, 15, 0.78);
+.post table{
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fefefe;
+}
+
+.post table th{
+    font-weight: bold;
 }
 
 
@@ -290,6 +297,7 @@ table {
 
 th {
   font-weight: 500;
+    border: 1px solid #ebebeb;
 }
 
 td {
