@@ -1,2 +1,4 @@
 highlighter: pygments
 paginate: 1
+markdown: textile
+permalink: /blog//:title

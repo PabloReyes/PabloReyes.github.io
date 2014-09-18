@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/stylesheets/print.css" media="print">
@@ -17,21 +16,13 @@
 
 <body>
     <div id="container">
-        <header>
-            <h1>Pablo Reyes</h1>
-            <h2>Personal Website</h2>
-        </header>
+        {% include header.html %}        
 
-        <aside id="sidebar">
-            <section id="sidebar-picture">
-                <img src="{{ site.url }}/images/me.jpg" />
-            </section>
-        </aside>
+        {% include sidebar.html %}
 
         <section class="content" id="main">
             {{ content }}
         </section>
-
     </div>
 </body>
 </html>

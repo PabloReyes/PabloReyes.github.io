@@ -90,14 +90,31 @@ header h2 {
     margin: 0 auto;
 }
 
+#main-header h1 a{
+    color: #303030;
+}
+
 #sidebar{
-    width: 160px;
+    width: 200px;
     float: left;
     padding: 5px;
 }
 
 #sidebar section, #sidebar img{
     max-width: 100%;
+}
+
+#sidebar section h3{
+    
+}
+
+#sidebar ul li{
+    font-size: 12px;
+    list-style-type: square;
+    padding-left: 0px;
+}
+#sidebar ul li a{
+    color: #6d6d6d;
 }
 
 #main{

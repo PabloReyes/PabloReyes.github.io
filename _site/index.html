@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print">
@@ -17,21 +16,36 @@
 
 <body>
     <div id="container">
-        <header>
-            <h1>Pablo Reyes</h1>
-            <h2>Personal Website</h2>
-        </header>
+        <header id="main-header">
+    <h1><a href="/">Pablo Reyes</a></h1>
+    <h2>Personal Website</h2>
+</header>        
 
         <aside id="sidebar">
-            <section id="sidebar-picture">
-                <img src="/images/me.jpg" />
-            </section>
-        </aside>
+    <section id="sidebar-picture">
+        <img src="/images/me.jpg" />
+    </section>
+
+    <section id="about">
+        <p></p>
+    </section>
+
+    <section id="last-posts">
+        <h3>Last posts</h3>
+        <ul>
+            
+                <li><a href="/blog/testing-loren-ipsum">Testing custom pagination</a></li>
+            
+                <li><a href="/blog/hands-dirty">A curious guy getting hands dirty</a></li>
+            
+        </ul>
+    </section>
+</aside>
 
         <section class="content" id="main">
             <div id="paginator">
     
-            <a href="/2012/09/17/just-trying-out-github-pages-and-jekyll.html">
+            <a href="/blog/hands-dirty">
             &laquo; A curious guy getting hands dirty</a>
     
 
@@ -44,7 +58,7 @@
 
 <article class="post">
     <header>
-        <h2><a href="/2012/09/25/jay-oma.html">Testing custom pagination</a></h2>
+        <h2><a href="/blog/testing-loren-ipsum">Testing custom pagination</a></h2>
         <span class="date"><i class="icon-clock"></i><time datetime="2012-09-25">Sep 25, 2012</time></span><br/>
         <span class="category"><i class="icon-tag"></i> </span><br/>
         <span class="author"><i class="icon-user"></i> </span>
@@ -57,7 +71,6 @@
 
 
         </section>
-
     </div>
 </body>
 </html>
