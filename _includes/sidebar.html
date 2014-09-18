@@ -1,0 +1,18 @@
+<aside id="sidebar">
+    <section id="sidebar-picture">
+        <img src="/images/me.jpg" />
+    </section>
+
+    <section id="about">
+        <p></p>
+    </section>
+
+    <section id="last-posts">
+        <h3>Last posts</h3>
+        <ul>
+            {% for post in site.posts limit:5 %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</aside>
