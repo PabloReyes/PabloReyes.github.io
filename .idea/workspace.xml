@@ -1,98 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dee9132d-b746-4ea5-9254-0ff7ca4798bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/foundation-icons/foundation-icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/foundation-icons/foundation-icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cover.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/android-chrome-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/android-chrome-192x192.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/android-chrome-36x36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/android-chrome-48x48.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/android-chrome-72x72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/android-chrome-96x96.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-114x114.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-120x120.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-152x152.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-180x180.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-57x57.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-60x60.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-72x72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-76x76.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon-precomposed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/apple-touch-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/favicon-16x16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/favicon-194x194.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/favicon-32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/favicon-96x96.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/mstile-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/mstile-150x150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/mstile-310x150.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/mstile-310x310.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/mstile-70x70.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/profile_orig.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/disqus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/head.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/pagination.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/categories.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/tags.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/categories.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/monokai.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/uno.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/feed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/foundation-icons/foundation-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/foundation-icons/foundation-icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/browserconfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicons/safari-pinned-tab.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_includes/sidebar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/blog/hands-dirty/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/images/body-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/images/highlight-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/images/hr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/images/me.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/images/octocat-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/images/tar-gz-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/images/zip-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/javascripts/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/page2/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/stylesheets/print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/stylesheets/pygment_trac.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/stylesheets/stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/body-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/highlight-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/hr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/me.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/octocat-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/tar-gz-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/zip-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javascripts/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/print.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/pygment_trac.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/stylesheet.css" afterPath="" />
+    <list default="true" id="dee9132d-b746-4ea5-9254-0ff7ca4798bb" name="Default" comment="Add github image. Move to old version branch">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown" afterPath="$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown" afterPath="$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" afterPath="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="$PROJECT_DIR$/_site/about/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about/index.markdown" afterPath="$PROJECT_DIR$/about/index.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="PabloReyes.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -127,6 +42,32 @@
         <entry file="file://$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
+              <first_editor relative-caret-position="240">
+                <caret line="10" column="172" lean-forward="false" selection-start-line="10" selection-start-column="172" selection-end-line="10" selection-end-column="172" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2012-10-05-stealing-info.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
               <first_editor relative-caret-position="0">
                 <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
@@ -139,65 +80,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
+      <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding />
+      <file leaf-file-name="2016-05-28-firefighter-developer.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="210">
+                <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
+          </provider>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="210">
+              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="60">
-                <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.markdown" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about/index.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="255">
-                <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
           </provider>
         </entry>
       </file>
@@ -211,11 +126,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uno.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/uno.css">
+      <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24015">
-              <caret line="1601" column="24" lean-forward="false" selection-start-line="1601" selection-start-column="24" selection-end-line="1601" selection-end-column="24" />
+            <state relative-caret-position="-40">
+              <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_includes/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -232,7 +157,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="old_version" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -243,15 +168,16 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2015-09-17-test1.markdown" />
         <option value="$PROJECT_DIR$/about/index.html" />
-        <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/about/index.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" />
+        <option value="$PROJECT_DIR$/_includes/header.html" />
       </list>
     </option>
   </component>
@@ -300,6 +226,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PabloReyes.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PabloReyes.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PabloReyes.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PabloReyes.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -313,6 +267,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -325,7 +282,16 @@
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
       <envs />
@@ -353,6 +319,26 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -368,7 +354,7 @@
       <option name="presentableId" value="Default" />
       <updated>1410949678297</updated>
       <workItem from="1474821819747" duration="49000" />
-      <workItem from="1480415662329" duration="69000" />
+      <workItem from="1480415662329" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="Add github image. Move to old version branch">
       <created>1464346037980</created>
@@ -381,7 +367,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118000" />
+    <option name="totallyTimeSpent" value="1406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="23" width="1376" height="825" extended-state="0" />
@@ -392,9 +378,11 @@
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17250325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -402,12 +390,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17250325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30286494" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="49" selection-end-line="0" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -704,20 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/pagination.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -732,70 +697,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="61" column="344" lean-forward="false" selection-start-line="61" selection-start-column="344" selection-end-line="61" selection-end-column="344" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about/index.markdown">
@@ -818,14 +725,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -843,7 +742,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="60">
-            <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -851,6 +750,120 @@
       </provider>
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="61" column="344" lean-forward="false" selection-start-line="61" selection-start-column="344" selection-end-line="61" selection-end-column="344" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="240">
+            <caret line="10" column="172" lean-forward="false" selection-start-line="10" selection-start-column="172" selection-end-line="10" selection-end-column="172" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="210">
+            <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="20" column="67" lean-forward="false" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
