@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dee9132d-b746-4ea5-9254-0ff7ca4798bb" name="Default" comment="Add github image. Move to old version branch">
+    <list default="true" id="dee9132d-b746-4ea5-9254-0ff7ca4798bb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" afterPath="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown" afterPath="$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown" afterPath="$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown" />
     </list>
     <ignored path="PabloReyes.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +39,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="240">
-                <caret line="10" column="172" lean-forward="false" selection-start-line="10" selection-start-column="172" selection-end-line="10" selection-end-column="172" />
+              <first_editor relative-caret-position="277">
+                <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -60,12 +61,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2012-10-05-stealing-info.markdown" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2012-10-05-stealing-info.markdown" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="277">
+                <caret line="61" column="352" lean-forward="true" selection-start-line="61" selection-start-column="352" selection-end-line="61" selection-end-column="352" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -132,7 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/header.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -143,6 +144,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>yeah</find>
+    </findStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -168,12 +174,12 @@
         <option value="$PROJECT_DIR$/about/index.markdown" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
+        <option value="$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown" />
       </list>
     </option>
   </component>
@@ -350,7 +356,7 @@
       <option name="presentableId" value="Default" />
       <updated>1410949678297</updated>
       <workItem from="1474821819747" duration="49000" />
-      <workItem from="1480415662329" duration="1385000" />
+      <workItem from="1480415662329" duration="1764000" />
     </task>
     <task id="LOCAL-00001" summary="Add github image. Move to old version branch">
       <created>1464346037980</created>
@@ -366,11 +372,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480417152644</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update post">
+      <created>1480417162610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1480417162610</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1434000" />
+    <option name="totallyTimeSpent" value="1813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="23" width="1376" height="825" extended-state="0" />
@@ -416,7 +429,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add github image. Move to old version branch" />
     <MESSAGE value="Make &quot;blog&quot; link go to home" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make &quot;blog&quot; link go to home" />
+    <MESSAGE value="Update post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update post" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -780,45 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="61" column="344" lean-forward="false" selection-start-line="61" selection-start-column="344" selection-end-line="61" selection-end-column="344" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="240">
-            <caret line="10" column="172" lean-forward="false" selection-start-line="10" selection-start-column="172" selection-end-line="10" selection-end-column="172" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -868,6 +843,45 @@
           <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="277">
+            <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-10-05-stealing-info.markdown">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="61" column="344" lean-forward="false" selection-start-line="61" selection-start-column="344" selection-end-line="61" selection-end-column="344" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="277">
+            <caret line="61" column="352" lean-forward="true" selection-start-line="61" selection-start-column="352" selection-end-line="61" selection-end-column="352" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
