@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dee9132d-b746-4ea5-9254-0ff7ca4798bb" name="Default" comment="Add github image. Move to old version branch">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/header.html" afterPath="$PROJECT_DIR$/_includes/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" afterPath="$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/about/index.html" afterPath="$PROJECT_DIR$/_site/about/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
     </list>
     <ignored path="PabloReyes.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -354,7 +350,7 @@
       <option name="presentableId" value="Default" />
       <updated>1410949678297</updated>
       <workItem from="1474821819747" duration="49000" />
-      <workItem from="1480415662329" duration="1357000" />
+      <workItem from="1480415662329" duration="1385000" />
     </task>
     <task id="LOCAL-00001" summary="Add github image. Move to old version branch">
       <created>1464346037980</created>
@@ -363,11 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464346037980</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Make &quot;blog&quot; link go to home">
+      <created>1480417152644</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1480417152644</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1406000" />
+    <option name="totallyTimeSpent" value="1434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="23" width="1376" height="825" extended-state="0" />
@@ -412,7 +415,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add github image. Move to old version branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add github image. Move to old version branch" />
+    <MESSAGE value="Make &quot;blog&quot; link go to home" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make &quot;blog&quot; link go to home" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
