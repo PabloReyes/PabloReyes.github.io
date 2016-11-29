@@ -1,11 +1,14 @@
 ---
-layout: post
-title: About
+layout: page
+title: About me
+published: true
+date: 2016-05-30
 markdown: markdown
 ---
+Hi, my name is Pablo Reyes and I am from the sunny Andalucia, Spain. I started my Computer Science studies there and continued them
+in Stuttgart, Germany. At the moment I'm living in Barcelona, which I can tell you it's an amazing city.  
 
-I am a web developer. 
+I have been programming since I was a child and I have tried and worked with countless languages and technologies, and although I love learning new technologies, I try to focus on solving problems and educating more than mastering individual technologies or languages.
 
-I've been a tech-guy since the Y2K bug, when I thought computers were safe enough. I discovered programming at the age of 14, with a really bad C book. Since then, I have been discovering and learning new things every single day, and I always have at least one or two projects on my hands, in which I work every time I have some free time.
+I share my interest in finance with my current job in the fintech industry. I'm interested in mobile payments, stock market, virtual currencies and basically the future of finance in a connected world.
 
-I love creating new things by myself, but I strongly agree with the Convention over Configuration design paradigm and the DRY principle. I think they not only make the development phase faster, but also make things more robust and easier to debug.
