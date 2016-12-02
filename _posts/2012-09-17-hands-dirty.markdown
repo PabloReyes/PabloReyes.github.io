@@ -1,11 +1,12 @@
 ---
 layout: post
 title: A curious guy getting hands dirty
+categories: [programming]
 published: true
 date: 2012-09-17
 markdown: markdown
 ---
-If I’m curious now, I was even more with 14 or 15 years old. It was the time when I got bored of my shitty C book and started learning Python with online tutorials. I spent so much time on IRC also, mostly in programming channels (although I almost only talked in those dedicated to Age Of Empires, yeah!). I met some people doing much more funny things that what I was doing. A group of friends created a script to auto-click on adsense banners. The group was super private, but I was invited. All of us had a personal blog, so we used the script to click once on each adsense banner every day, so at least we got 8 or 9 clicks a day. Not much, but It helped me buying a better computer (Athlon 3400+, from a P3 866Mhz) by the end of that year (2004 I think).
+If I’m curious now, I was even more with 14 or 15 years old. It was the time when I got bored of my cheap C book and started learning Python with online tutorials. I spent so much time on IRC also, mostly in programming channels (although I almost only talked in those dedicated to Age Of Empires). I met some people doing much more funny things that what I was doing. A group of friends created a script to auto-click on adsense banners. The group was private, but I was invited. All of us had a personal blog, so we used the script to click once on each adsense banner every day, so at least we got 8 or 9 clicks a day. Not much, but It helped me buying a better computer (Athlon 3400+, from a P3 866Mhz) by the end of that year (2004 I think).
 
 Ah, they also got access to a private site from Motorola where we could make free mobile calls, but it only lasted a couple of weeks until they noticed. I remember calling a irc-friend to Puerto Rico and talking with his confused mother…
 
@@ -38,7 +39,7 @@ The best thing about gdataonline is that it accepted data via GET and gave the o
 
 First, I made a simple script to split the huge file in 100 parts, so each file would have 200 entries. This had to purpouses:
 
-* The idea of reading and parsing a 20Mb file in python didn’t attract me
+* The idea of reading and parsing a 20Mb file in python on my slow pc didn’t attract me
 * I didn't want to send 20.000 request to gdataonline
 
 I could have got all the (username, mail, hash) tuples with a simple SELECT in SQL, and parse the received XML with pyXML. But I didn’t even consider it, I liked it the hard way, the only way I knew. So after some hours of coding, I got this:
@@ -98,13 +99,12 @@ I could have got all the (username, mail, hash) tuples with a simple SELECT in S
 
 Tachan! Probably not the most beautiful, organized, well documented, optimized or fast code you have seen, but you can imagine what I felt when I opened my just created file (obviously I changed data)…
 
-|_.Nickname|_.Password|_.Mail|
+|**Nickname**|**Password**|**Mail**|
 |john|mylove_1234|johny_the_cool@hotmail.com|
 |mike|kansas70000|the_big_boy@yahoo.com|
 |admin|lalalalaImDaAdmin|admin@thissite.com|
 |....|....|....|
 
-
 I got  ~30% of passwords revealed, 60 passwords per file, 6000 passwords in total.
 
-This was the time I realised how funny and useful programming could be. I didn’t have any other intention that doing something to get a real result, no more ordering lists or math problems. I felt important, I knew that what I had done wasn’t right, and probably was illegal, but it gave me the satisfaction I needed to keep learning, with more enthusiasm than ever.
+This was the time I realised how funny and useful programming could be. I didn’t have any other intention that doing something to get a real result, no more ordering lists or math problems. It felt good, I knew that what I had done wasn’t right, and probably was illegal, but it gave me the satisfaction I needed to keep learning, with more enthusiasm than ever.
