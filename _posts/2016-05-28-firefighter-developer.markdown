@@ -25,5 +25,5 @@ We do.
 
 We need experts in frontend technologies that can decide when it's worth to use websockets, if the use of CDNs make sense, what kind of caching mechanism to use in the browser, understand the implications of the fancy two-way data binding, what is an XMLHttpRequest, how do promises work, understand gzip compression, know how to automate tasks like minifying files, understanding the life cycle of its framework components etc.
  
-But... How are they different to knowing how to organize a maven project, configuring Apache, doing ant tasks, choosing between caching solutions, etc? When we forget about specific technologies and just focus on the real problems to solve, "frontend" and "backend" are not that different.
+But... How are they different to knowing how to organize a maven project, configuring Apache, doing ant tasks, choosing between caching solutions, etc? When we forget about specific technologies and just focus on the real problems to solve, "frontend" and "backend" are not that different, and no one should be afraid of getting their hands dirty out of their comfort zone.
 
