@@ -1,40 +1,25 @@
 ---
 layout: default
-title: Home
 ---
-<div id="paginator">
-    {% if paginator.next_page %}
-            <a href="{{paginator.posts[0].previous.url}}">
-            &laquo; {{ paginator.posts[0].previous.title }}</a>
+
+<div class="main-post-list">
+
+    <ol class="post-list">
+        {% for post in paginator.posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">
+                <h2 class="post-list__post-title post-title">{{ post.title }}</h2>
+                <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 30}}</p>
+                <div class="post-list__meta"><time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time></div>
+            </a>
+        </li>
+        {% endfor %}
+    </ol>
+
+    <hr class="post-list__divider ">
+
+    {% if paginator.previous_page or paginator.next_page %}
+    {% include pagination.html %}
     {% endif %}
 
-    {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-                <span class="more">
-                <a href="{{site.baseurl}}/">
-                Newer Posts &raquo; </a>
-                </span>
-        {% else %}
-                <span class="more">
-                <a href="{{paginator.posts[0].next.url}}">
-                {{ paginator.posts[0].next.title }} &raquo; </a>
-                </span>
-        {% endif %}
-    {% endif %}
-
-    <hr>
 </div>
-
-<!-- Show last 5 posts here -->
-{% for post in paginator.posts %}
-<article class="post">
-    <header>
-        <h2><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h2>
-        <span class="date"><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span><br/>
-        <span class="category"><i class="icon-tag"></i> {{ post.categories | category_links }}</span><br/>
-        <span class="author"><i class="icon-user"></i> {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</span>
-    </header>
-
-    <div class="entry">{{ post.content }}</div>
-</article>
-{% endfor %}
