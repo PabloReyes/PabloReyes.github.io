@@ -16,23 +16,14 @@ We are acquiring customs that were always related to business people, politician
 
 It may be because I started programming at a very early age when all this fancy javascript frameworks didn't exist, or because in my first job I was offered lot of responsibilities that led me to try everything, but I refuse to accept that this super specialization is making us developers any good. 
  
-A firefighter developer solves problems, put out fires. He has the confidence to jump in to solve a problem in whatever technology he needs to, because most of the times problems do not come from the technology itself, they come from the way an application has been architectured or developed. When a problem in a production environment happens, the firefighter will evaluate what component of the application check first. He will know how to debug a frontend application, a backend application, read a server log, or optimize an SQL query. This knowledge is essential when it comes to solve a problem instead of finishing an specific task. 
-
-Many times, an error in production is due to a bad connection string to the database, or a database table being locked, or an error in the application server configuration. Other times, an error in a web application is related to a bad use of an event-based system, or an asynchronous call to an API written by a jQuery ninja that doesn't know how promises work. 
+A firefighter developer solves problems, put out fires. He has the confidence to jump in to solve a problem in whatever technology he needs to, because most of the times problems do not come from the technology itself, they come from the way an application has been designed or developed. When a problem in a production environment happens, the firefighter will evaluate what component of the application check first. He will know how to debug a frontend application, a backend application, read a server log, or optimize an SQL query. This knowledge is essential when it comes to solve a problem instead of finishing an specific task. 
 
 
 
 ### But we need specialists...
 We do. 
 
-We need an expert in frontend technologies that can decide whether it's better to use a event-based architecture or a state-based
-architecture. He also needs to understand the implications of the fancy two-way data binding, what is an XMLHttpRequest, how do
-promises work, understand gzip compression, know how to automate tasks like minifying files, understanding the life cycle of its framework components
-etc.
+We need experts in frontend technologies that can decide when it's worth to use websockets, if the use of CDNs make sense, what kind of caching mechanism to use in the browser, understand the implications of the fancy two-way data binding, what is an XMLHttpRequest, how do promises work, understand gzip compression, know how to automate tasks like minifying files, understanding the life cycle of its framework components etc.
  
-But... How are they different of having a well configured Maven project, configuring Apache, ant tasks, etc
-
-We need people that XMLHttpRequest We need engineers specialized in frontend technologies that can decide the best technology to use
-and the best way to implement it. We need people that know how to get the best things from new improvements in Javascript or implement
-the best tasks in Grunt to automate the boring tasks. We need people who understand
+But... How are they different to knowing how to organize a maven project, configuring Apache, doing ant tasks, choosing between caching solutions, etc? When we forget about specific technologies and just focus on the real problems to solve, "frontend" and "backend" are not that different.
 
