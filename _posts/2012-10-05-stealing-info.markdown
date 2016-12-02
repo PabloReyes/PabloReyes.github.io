@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Being a good guy, but also stealing personal info
+title: Being a good guy, but borrowing personal info
 published: true
 date: 2012-10-05
 markdown: markdown
@@ -8,7 +8,7 @@ markdown: markdown
 
 As I told you the other day, some years ago [I did some bad things related to personal info]({% post_url 2012-09-17-hands-dirty %}), passwords and mails. Well, I didn’t do anything wrong with that info, just obtaining it. The feeling after getting all that private, secure, illegal data gave me so much adrenaline I couldn’t stop laughing. I never told anyone about what I did, since I was really scared of what I had done and all the sensible information I had.
 
-One or two years later, in 2006, I was restyling my personal blog when I found something curious. There was a public directory /wp-content/backups that had two backups of my blog database! How could that be possible? I was using the famous [wp-db-backup](http://wordpress.org/extend/plugins/wp-db-backup/), like many people back then. The plugin required you to give read-write permission to the wp-content/backup directory, only while making the backup. Then, you should restore its defaults permissions. I totally forgot the restore the permission after doing the backups, and I suppoused I wasn’t the only one.
+One or two years later, in 2006, I was restyling my personal blog when I found something curious. There was a public directory /wp-content/backups that had two backups of my blog database! How could that be possible? I was using the famous [wp-db-backup](http://wordpress.org/extend/plugins/wp-db-backup/), like many people back then. The plugin required you to give read-write permission to the wp-content/backup directory, only while making the backup. Then, you should restore its defaults permissions. I totally forgot the restore the permission after doing the backups, and I supposed I wasn’t the only one.
 
 I started a search for other famous blogs using wordpress, trying to get into their wp-content/backups directory. In 5 minutes I had found a couple of well known blogs with the same problem. I could have just mailed him telling them the problem, but I wanted to know if I was able to enter in their control panel. Yeah, I know…
 
