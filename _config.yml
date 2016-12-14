@@ -7,7 +7,7 @@
 
 # Site settings
 title: 'Pablo Reyes'
-description: 'A developer interested in compay culture, finance, food and more'
+description: 'A developer interested in technology, company culture, finance, food and more'
 url: 'http://pabloreyes.es'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
@@ -15,7 +15,7 @@ baseurl: '/'
 
 author:
   name: 'Pablo Reyes'
-  email: info@pabloreyes.es
+  email: 'info@pabloreyes.es'
   #twitter_username: tronfi
   #facebook_username: pabloreyesalmagro
   github_username:  pabloreyes

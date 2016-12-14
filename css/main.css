@@ -108,3 +108,8 @@ table tr td{
     width: 100%;
     height: 100%;
 }
+
+/* Temporary disable blog and about pages */
+.cover-navigation--primary{
+    display: none;
+}

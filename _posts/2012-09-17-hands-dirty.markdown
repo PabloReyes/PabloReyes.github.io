@@ -2,7 +2,7 @@
 layout: post
 title: A curious guy getting hands dirty
 categories: [programming]
-published: true
+published: false
 date: 2012-09-17
 markdown: markdown
 ---

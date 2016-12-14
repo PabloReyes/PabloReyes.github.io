@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Being a good guy, but borrowing personal info
-published: true
+published: false
 date: 2012-10-05
 markdown: markdown
 ---
