@@ -111,5 +111,8 @@ table tr td{
 
 /* Temporary disable blog and about pages */
 .cover-navigation--primary{
-    display: none;
+    /*display: none;*/
+}
+.navigation--social{
+    margin-left: 0;
 }
