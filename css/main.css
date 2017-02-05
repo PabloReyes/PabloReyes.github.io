@@ -116,3 +116,7 @@ table tr td{
 .navigation--social{
     margin-left: 0;
 }
+
+blockquote{
+    padding: 1em;
+}

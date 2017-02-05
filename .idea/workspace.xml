@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dee9132d-b746-4ea5-9254-0ff7ca4798bb" name="Default" comment="">
+    <list default="true" id="dee9132d-b746-4ea5-9254-0ff7ca4798bb" name="Default" comment="Fixes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-04-kosinski-and-cambridge-analytica.markdown" afterPath="$PROJECT_DIR$/_posts/2017-02-04-kosinski-and-cambridge-analytica.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
     </list>
     <ignored path="PabloReyes.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="116" column="19" lean-forward="false" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="19" />
+            <state relative-caret-position="350">
+              <caret line="117" column="1" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -68,7 +69,17 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="73" lean-forward="false" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -78,8 +89,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="11" />
+              <first_editor relative-caret-position="-296">
+                <caret line="10" column="206" lean-forward="true" selection-start-line="10" selection-start-column="206" selection-end-line="10" selection-end-column="206" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -94,8 +105,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-02-04-kosinski-and-cambridge-analytica.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="127">
-                <caret line="90" column="316" lean-forward="true" selection-start-line="90" selection-start-column="316" selection-end-line="90" selection-end-column="316" />
+              <first_editor relative-caret-position="292">
+                <caret line="107" column="431" lean-forward="true" selection-start-line="107" selection-start-column="431" selection-end-line="107" selection-end-column="431" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -148,6 +159,7 @@
       <find>depredad</find>
       <find>blog</find>
       <find>ambos</find>
+      <find>usando esta</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -177,9 +189,10 @@
         <option value="$PROJECT_DIR$/_posts/2012-09-17-hands-dirty.markdown" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/_posts/2017-02-04-kosinski-and-cambridge-analytica.markdown" />
       </list>
     </option>
@@ -225,6 +238,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PabloReyes.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PabloReyes.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PabloReyes.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,7 +375,7 @@
       <workItem from="1481729180642" duration="1334000" />
       <workItem from="1485426760916" duration="18000" />
       <workItem from="1486224934459" duration="3934000" />
-      <workItem from="1486333902069" duration="1105000" />
+      <workItem from="1486333902069" duration="1449000" />
     </task>
     <task id="LOCAL-00001" summary="Add github image. Move to old version branch">
       <created>1464346037980</created>
@@ -420,11 +447,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486334768877</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixes">
+      <created>1486335088801</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1486335088801</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9587000" />
+    <option name="totallyTimeSpent" value="9931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
@@ -479,7 +513,8 @@
     <MESSAGE value="Use rouge syntax" />
     <MESSAGE value="Add _site to gitignore" />
     <MESSAGE value="Add video link" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add video link" />
+    <MESSAGE value="Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -493,13 +528,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="38" column="149" lean-forward="false" selection-start-line="38" selection-start-column="149" selection-end-line="38" selection-end-column="149" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about/index.markdown">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -834,25 +862,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="11" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -877,14 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="116" column="19" lean-forward="false" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -904,16 +905,51 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="117" column="1" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="73" lean-forward="false" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-05-28-firefighter-developer.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-296">
+            <caret line="10" column="206" lean-forward="true" selection-start-line="10" selection-start-column="206" selection-end-line="10" selection-end-column="206" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-02-04-kosinski-and-cambridge-analytica.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="127">
-            <caret line="90" column="316" lean-forward="true" selection-start-line="90" selection-start-column="316" selection-end-line="90" selection-end-column="316" />
+          <first_editor relative-caret-position="292">
+            <caret line="107" column="431" lean-forward="true" selection-start-line="107" selection-start-column="431" selection-end-line="107" selection-end-column="431" />
             <folding />
           </first_editor>
           <second_editor />
