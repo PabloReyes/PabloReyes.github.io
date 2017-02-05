@@ -4,7 +4,6 @@
     <list default="true" id="dee9132d-b746-4ea5-9254-0ff7ca4798bb" name="Default" comment="Fixes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-04-kosinski-and-cambridge-analytica.markdown" afterPath="$PROJECT_DIR$/_posts/2017-02-04-kosinski-and-cambridge-analytica.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
     </list>
     <ignored path="PabloReyes.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,7 +89,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="-296">
-                <caret line="10" column="206" lean-forward="true" selection-start-line="10" selection-start-column="206" selection-end-line="10" selection-end-column="206" />
+                <caret line="10" column="206" lean-forward="false" selection-start-line="10" selection-start-column="206" selection-end-line="10" selection-end-column="206" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -106,7 +105,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="292">
-                <caret line="107" column="431" lean-forward="true" selection-start-line="107" selection-start-column="431" selection-end-line="107" selection-end-column="431" />
+                <caret line="107" column="431" lean-forward="false" selection-start-line="107" selection-start-column="431" selection-end-line="107" selection-end-column="431" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -375,7 +374,7 @@
       <workItem from="1481729180642" duration="1334000" />
       <workItem from="1485426760916" duration="18000" />
       <workItem from="1486224934459" duration="3934000" />
-      <workItem from="1486333902069" duration="1449000" />
+      <workItem from="1486333902069" duration="1472000" />
     </task>
     <task id="LOCAL-00001" summary="Add github image. Move to old version branch">
       <created>1464346037980</created>
@@ -454,11 +453,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486335088801</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Blockquote css fix">
+      <created>1486335454219</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1486335454219</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9931000" />
+    <option name="totallyTimeSpent" value="9954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
@@ -502,6 +508,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="Add github image. Move to old version branch" />
     <MESSAGE value="Make &quot;blog&quot; link go to home" />
     <MESSAGE value="Update post" />
@@ -514,7 +521,8 @@
     <MESSAGE value="Add _site to gitignore" />
     <MESSAGE value="Add video link" />
     <MESSAGE value="Fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
+    <MESSAGE value="Blockquote css fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Blockquote css fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -930,7 +938,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="-296">
-            <caret line="10" column="206" lean-forward="true" selection-start-line="10" selection-start-column="206" selection-end-line="10" selection-end-column="206" />
+            <caret line="10" column="206" lean-forward="false" selection-start-line="10" selection-start-column="206" selection-end-line="10" selection-end-column="206" />
             <folding />
           </first_editor>
           <second_editor />
@@ -949,7 +957,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="292">
-            <caret line="107" column="431" lean-forward="true" selection-start-line="107" selection-start-column="431" selection-end-line="107" selection-end-column="431" />
+            <caret line="107" column="431" lean-forward="false" selection-start-line="107" selection-start-column="431" selection-end-line="107" selection-end-column="431" />
             <folding />
           </first_editor>
           <second_editor />
