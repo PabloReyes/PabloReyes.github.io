@@ -1,5 +1,5 @@
 # old settings
-# highlighter: pygments
+# highlighter: rouge
 # paginate: 1
 # permalink: /blog//:title
 # end of old settings
