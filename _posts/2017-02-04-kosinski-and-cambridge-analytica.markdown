@@ -13,6 +13,8 @@ _**Nota**: Este artículo es una traducción al castellano del original "Ich hab
 
 ---
 
+![Infograph Camabridge Analytica](/images/uploads/cambridge-analytica-chart.png)
+
 El 9 de Noviembre sobre las 8:30am, Michal Kosinski se despertaba en el Hotel Sunnehus en Zurich. El investigador, de 34 años, había venido a dar una charla al Instituto Federal de Tecnología Suizo (ETH) sobre los peligros del Big Data y la revolución digital. Kosinski da estas charlas con frecuencia en todo el mundo. Kosinski es experto en psicometría, una rama de la psicología donde se miden y cuantifican variables psicológicas.  Cuando encendió la televisión esa mañana, descubrió que la bomba había explotado: En contra de lo previsto por los mejores estadistas, Donald J. Trump había sido elegido Presidente de los Estados Unidos.
 
 Durante un rato, Kosinski observó las celebraciones de la victoria de Trump y los resultados de cada estado. Tenía el presentimiento de que el resultado de las elecciones tenían algo que ver con sus investigaciones. Respiró profundamente y apagó la televisión.
