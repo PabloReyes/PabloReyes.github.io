@@ -6,7 +6,7 @@ layout: default
 
     <ol class="post-list">
         {% for post in paginator.posts %}
-        <li>
+        <li id="{{post.css_id}}">
             <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">
                 <h2 class="post-list__post-title post-title">{{ post.title }}</h2>
                 <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 30}}</p>

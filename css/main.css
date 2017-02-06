@@ -120,3 +120,11 @@ table tr td{
 blockquote{
     padding: 1em;
 }
+
+.main-post-list .post-list li#post-cambridge-analytica{
+    background-image: url(../images/uploads/cambridge-analytica-logo.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-color: #d0134b; /* Color for logo Cambridge Analytica */
+}
