@@ -6,7 +6,7 @@ date: 2017-02-04
 markdown: markdown
 css_id: post-cambridge-analytica
 ---
-### La extraña conexión entre el psicólogo Michal Kosinski y la victoria de Donald Trump.
+### La extraña conexión entre el psicólogo Michal Kosinski y la victoria de Trump.
 <!--more-->
 
 ---

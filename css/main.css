@@ -92,6 +92,21 @@ table tr td{
     margin-bottom: 1em;
     position: relative;
 }
+
+.main-post-list .post-list li .excerpt{
+    color: #c7c7c7;
+}
+
+/*
+Styling of post list for mobile devices.
+One article per row
+*/
+@media (max-width: 960px) {
+    .main-post-list .post-list li  {
+        width: 100%;
+        display: block;
+    }
+}
 .main-post-list .post-list li .post-list__meta{
     position: absolute;
     bottom: 0;
@@ -122,9 +137,5 @@ blockquote{
 }
 
 .main-post-list .post-list li#post-cambridge-analytica{
-    background-image: url(../images/uploads/cambridge-analytica-logo.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
     background-color: #d0134b; /* Color for logo Cambridge Analytica */
 }
