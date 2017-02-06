@@ -4,6 +4,7 @@ title: Yo no construí la bomba, sólo demostré que existía
 published: true
 date: 2017-02-04
 markdown: markdown
+css_id: post-cambridge-analytica
 ---
 ### La extraña conexión entre el psicólogo Michal Kosinski y la victoria de Donald Trump.
 <!--more-->
