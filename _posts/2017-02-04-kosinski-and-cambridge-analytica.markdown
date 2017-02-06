@@ -12,6 +12,8 @@ css_id: post-cambridge-analytica
 ---
 _**Nota**: Este artículo es una traducción al castellano del original "Ich habe nur gezeigt, dass es die Bombe gibt", publicado por [Das Magazin](https://www.dasmagazin.ch/2016/12/03/ich-habe-nur-gezeigt-dass-es-die-bombe-gibt/). La traducción no se hizo en base al original alemán, sino a una versión inglesa ahora desaparecida encontrada en [aNtiDiTe Zine](https://antidotezine.com/2017/01/22/trump-knows-you/), y que ahora está disponible en [VICE](https://motherboard.vice.com/en_us/article/big-data-cambridge-analytica-brexit-trump)._
 
+La infografía siguiente es elaboración propia.
+
 ---
 
 ![Infograph Camabridge Analytica](/images/uploads/cambridge-analytica-chart.png)
