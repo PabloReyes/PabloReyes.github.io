@@ -113,4 +113,4 @@ Kosinski ha observado todo desde su oficina en Stanford. Tras las elecciones, ex
 El mundo está del revés. Gran Bretaña deja Europa, Donald Trump es presidente de los Estados Unidos de América. Y en Stanford, el investigador polaco Michal Kosinski, que quería advertir sobre el riesgo de usar el análisis psicométrico en la publicidad política, sigue recibiendo emails acusatorios. “No”, dice Kosinski con calma mientras agita su cabeza, “esto no es culpa mía. Yo no construí la bomba. Sólo demostré que existía”.
 
 ---
-Gracias a Miriam Ballesteros ([@mirballgo](https://twitter.com/mirballgo)) por su ayuda en la revisión y corrección de este artículo.
+Gracias a Míriam Ballesteros ([@mirballgo](https://twitter.com/mirballgo)) por su ayuda en la revisión y corrección de este artículo.
