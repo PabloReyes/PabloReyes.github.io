@@ -57,22 +57,80 @@ pre.highlight code,
 
 
 /* CUSTOM Pablo Reyes */
+/*.panel-cover--collapsed {
+    width: 40%;
+    max-width: 400px;
+}
+@media all and (min-width: 1300px) {
+    .content-wrapper {
+        margin-left: 400px;
+    }
+}
+@media (max-width: 960px){
+    .panel-cover {
+        width: 100%;
+
+    }
+    .panel-cover--collapsed{
+        max-width: 100%;
+    }
+}*/
+.panel-cover--collapsed {
+    width: 25%;
+    max-width: 530px;
+}
+.content-wrapper{
+    width: 75%;
+    max-width: 100%;
+    margin-left: 25%;
+}
+
+@media (max-width: 960px) {
+    .panel-cover--collapsed {
+        width: 100%;
+        max-width: none;
+    }
+    .content-wrapper {
+        margin-left: auto;
+        width: 90%;
+    }
+}
+@media (min-width: 1300px){
+    .content-wrapper {
+        margin-left: 25%;
+    }
+}
+
+
+.content-wrapper__inner {
+    margin: 0 5%;
+}
+
 
 table{
     border-collapse: collapse;
     text-align: left;
     margin: 20px;
+    border: 1px solid #999
 }
 
 table th{
-    font-size: 14px;
-    font-weight: normal;
-    padding: 10px 8px;
+    font-size: 16px;
+    padding: 5px 8px;
+    font-weight: bold;
+    border: 1px solid #999;
+    background-color: #e5e5e5;
+
+}
+table tr{
+    border: 1px solid #999;
+}
+table tr td{
+    padding: 5px 8px;
+    border: 1px solid #999
 }
 
-table tr td{
-    padding: 9px 8px 0;
-}
+
 
 
 .main-post-list .post-list{
@@ -188,6 +246,9 @@ blockquote{
 
 
 /* Images inside posts */
+.post img{
+    display:block;
+}
 .post img.img-left{
     float: left;
     width: 50%;
