@@ -228,7 +228,7 @@ blockquote{
 
 /* POST: Cambridge Analytica */
 .main-post-list .post-list li#post-cambridge-analytica{
-    background-color: #407bd0; /* Color for logo Cambridge Analytica */
+    background-color: #407bd0;
 }
 .main-post-list .post-list li#post-cambridge-analytica:before{
     background-image: url(/images/uploads/background-server.jpg);
@@ -236,10 +236,27 @@ blockquote{
 
 /* POST: Turn on red */
 .main-post-list .post-list li#post-turn-red{
-    background-color: #d0134b; /* Color for logo Cambridge Analytica */
+    background-color: #d0134b;
 }
 .main-post-list .post-list li#post-turn-red:before{
     background-image: url(/images/uploads/semaforos.jpg);
+    background-position: 10% 0;
+}
+
+/* POST: Cambridge Analytica */
+.main-post-list .post-list li#post-cambridge-analytica{
+    background-color: #407bd0;
+}
+.main-post-list .post-list li#post-cambridge-analytica:before{
+    background-image: url(/images/uploads/background-server.jpg);
+    background-position: 10% 0;}
+
+/* POST: Seguridad financiera */
+.main-post-list .post-list li#post-seguridad-financiera{
+    background-color: #4ad07e;
+}
+.main-post-list .post-list li#post-seguridad-financiera:before{
+    background-image: url(/images/uploads/cerdo-monedas-ahorro.jpg);
     background-position: 10% 0;
 }
 
@@ -258,4 +275,9 @@ blockquote{
     float: right;
     width: 50%;
     margin-left: 15px;
+}
+
+.post img.img-center{
+    width: 60%;
+    margin: 0 auto;
 }
