@@ -5,10 +5,9 @@ published: true
 date: 2016-05-30
 markdown: markdown
 ---
-Hi, my name is Pablo Reyes and I am from the sunny Andalucia, Spain. I started my Computer Science studies there and continued them
-in Stuttgart, Germany. At the moment I'm living in Barcelona, which I can tell you it's an amazing city.  
+Hola!
 
-I have been programming since I was a child and I have tried and worked with countless languages and technologies, and although I love learning new technologies, I try to focus on solving problems and educating more than mastering individual technologies or languages.
+Mi nombre es Pablo Reyes y soy de Cádiz, España. 
 
-I share my interest in finance with my current job in the fintech industry. I'm interested in mobile payments, virtual currencies, stock market, trading algorithms, etc.
+Aunque me dedico al desarrollo de software, hace años que me apasionan las finanzas, especialmente las inversiones. En mi trabajo actual en una empresa de Fintech he conseguido moverme por bancos, conocer a gente del mundo de las finanzas personales y programadores con los mismos intereses que yo.
 
