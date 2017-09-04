@@ -5,6 +5,31 @@ layout: default
   <header class="post-header">
     <div class="post-meta">
       <time datetime="{{ page.date | date: "%-d %b %Y" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time>
+
+      {% assign rawtags = "" %}
+      {% assign ttags = page.tags | join:'|' | append:'|' %}
+      {% assign rawtags = rawtags | append:ttags %}
+      {% assign rawtags = rawtags | split:'|' | sort %}
+
+      {% assign tags = "" %}
+      {% for tag in rawtags %}
+        {% if tag != "" %}
+          {% if tags == "" %}
+            {% assign tags = tag | split:'|' %}
+          {% endif %}
+          {% unless tags contains tag %}
+            {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+
+      <ul class="tags">
+        {% for tag in tags %}
+          <li><a href="/tags/{{ tag | slugify }}" class="tag"> {{ tag }} </a></li>
+        {% endfor %}
+      </ul>
+
+
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
@@ -12,6 +37,51 @@ layout: default
   <section class="post">
     {{ content }}
   </section>
+
+  <hr>
+  <div class="relatedPosts">
+
+    <h4>Artículos relacionados</h4>
+
+    <ul class="post-list">
+
+      {% assign maxRelated = 3 %}
+      {% assign minCommonTags =  1 %}
+      {% assign maxRelatedCounter = 0 %}
+
+      {% for post in site.posts %}
+
+        {% assign sameTagCount = 0 %}
+        {% assign commonTags = '' %}
+
+        {% for category in post.categories %}
+          {% if post.url != page.url %}
+            {% if page.categories contains category %}
+              {% assign sameTagCount = sameTagCount | plus: 1 %}
+              {% assign commonTags = commonTags | append: tagmarkup %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if sameTagCount >= minCommonTags %}
+          <li id="{{post.css_id}}">
+            <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">
+              <div class="post-title-and-excerpt">
+                <h2 class="post-list__post-title post-title">{{ post.title }}</h2>
+              </div>
+            </a>
+          </li>
+
+          {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+          {% if maxRelatedCounter >= maxRelated %}
+            {% break %}
+          {% endif %}
+        {% endif %}
+
+      {% endfor %}
+    </ul>
+
+  </div>
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </article>
 {% if page.comments != false %}{% include disqus.html %}{% endif %}

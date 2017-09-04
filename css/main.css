@@ -57,24 +57,16 @@ pre.highlight code,
 
 
 /* CUSTOM Pablo Reyes */
-/*.panel-cover--collapsed {
-    width: 40%;
-    max-width: 400px;
+/* Basics */
+h2, h3, h4{
+    font-weight:bold;
 }
-@media all and (min-width: 1300px) {
-    .content-wrapper {
-        margin-left: 400px;
-    }
-}
-@media (max-width: 960px){
-    .panel-cover {
-        width: 100%;
 
-    }
-    .panel-cover--collapsed{
-        max-width: 100%;
-    }
-}*/
+/* Sidebar */
+.panel-cover, .panel-cover.panel-cover--collapsed{
+    background-image: none;
+    background: #2B6181;
+}
 .panel-cover--collapsed {
     width: 25%;
     max-width: 530px;
@@ -100,12 +92,35 @@ pre.highlight code,
         margin-left: 25%;
     }
 }
-
-
 .content-wrapper__inner {
     margin: 0 5%;
 }
+.panel-main{
+    padding-top: 60px;
+}
+.panel-main__inner{
+    padding: 0;
+    vertical-align: top;
+}
 
+.panel-subtitle{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+ul.panel-section{
+    list-style: none;
+    margin: 0;
+}
+
+ul.panel-section .panel-section-entry a{
+    display: block;
+    line-height: 2em;
+}
+ul.panel-section .panel-section-entry a:hover{
+    background-color: #b9301c;
+    -webkit-transition: none;
+}
 
 table{
     border-collapse: collapse;
@@ -133,29 +148,36 @@ table tr td{
 
 
 
-.main-post-list .post-list{
+.post-list{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-
+    clear: both;
 }
 
-.main-post-list .post-list li {
-    width: 48%;
+.post-list-featured{
+    background-color: rgba(226, 84, 64, 0.15);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.post-list li {
+    width: 32%;
     height: 270px;
     background-color: #444;
     overflow: hidden;
     margin-bottom: 1em;
     position: relative;
     color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.43)
 }
 
-.main-post-list .post-list li .post-title-and-excerpt{
+.post-list li .post-title-and-excerpt{
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
 }
 
-.main-post-list .post-list li .excerpt{
+.post-list li .excerpt{
     color: #ccc;
 }
 
@@ -164,27 +186,76 @@ Styling of post list for mobile devices.
 One article per row
 */
 @media (max-width: 960px) {
-    .main-post-list .post-list li  {
+    .post-list li  {
         width: 100%;
         display: block;
     }
 }
-.main-post-list .post-list li .post-list__meta{
+.post-list li .post-list__meta{
     position: absolute;
     bottom: 0;
 }
-.main-post-list .post-list li .post-title{
+.post-list li .post-title{
     color: #fff;
     font-weight: bold;
 }
-.main-post-list .post-list li:hover{
+.post-list li:hover{
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
-.main-post-list .post-list li a{
+.post-list li a{
     display: block;
     width: 100%;
     height: 100%;
+}
+
+
+
+.post-list-2{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.post-list-2 hr{
+    width: 70%;
+    height: 1px;
+    background-color: #666;
+}
+.post-list-2 .post-entry{
+    margin: 2em auto;
+}
+.post-list-2 .post-title{
+    font-size: 2em;
+    font-family: 'Lora', serif;
+    margin-bottom: 10px;
+}
+.post-list-2 .post-title a{
+    color: #333;
+    line-height: 1.3em;
+}
+.post-list-2 .post-meta{
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-family: 'Lora', serif;
+    margin-bottom: 2em;
+}
+.post-list-2 .post-excerpt{
+    text-align: left;
+}
+.post-list-2 .post-excerpt img{
+    width: 296px;
+    height: 222px;
+    float: left;
+    margin-right: 30px;
+    margin-top: 0.4em;
+}
+.post-list-2 .read-more a{
+    padding: 10px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    background-color: #e25440;
+    color: white;
 }
 
 /* Temporary disable blog and about pages */
@@ -197,15 +268,30 @@ One article per row
 
 blockquote{
     padding: 1em;
+    border: 0;
+    border-left: 5px solid #2B6181;
+    font-size: 1em;
+    margin: 1em auto;
+    width: 80%;
+    text-align: justify;
+    border-radius: 0;
+    background-color: rgba(43, 97, 129, 0.18);
+    font-style: normal;
+}
+blockquote p{
+    line-height: 1.3em;
+}
+blockquote p:last-child:not(:first-child){
+    text-align: right;
+    font-style: normal;
 }
 
-
 /**/
-.main-post-list .post-list li {
+.post-list li {
     position: relative;
     overflow: hidden;
 }
-.main-post-list .post-list li:before{
+.post-list li:before{
     content: ' ';
     display: block;
     position: absolute;
@@ -214,50 +300,84 @@ blockquote{
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.8;
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
 }
 
-.main-post-list .post-list li a {
+.post-list li a {
     z-index: 2;
     position: relative;
     color: #fff;
 }
 
 /* POST: Cambridge Analytica */
-.main-post-list .post-list li#post-cambridge-analytica{
+.post-list li#post-cambridge-analytica{
     background-color: #407bd0;
 }
-.main-post-list .post-list li#post-cambridge-analytica:before{
+.post-list li#post-cambridge-analytica:before{
     background-image: url(/images/uploads/background-server.jpg);
     background-position: 10% 0;}
 
 /* POST: Turn on red */
-.main-post-list .post-list li#post-turn-red{
+.post-list li#post-turn-red{
     background-color: #d0134b;
 }
-.main-post-list .post-list li#post-turn-red:before{
+.post-list li#post-turn-red:before{
     background-image: url(/images/uploads/semaforos.jpg);
     background-position: 10% 0;
 }
 
 /* POST: Cambridge Analytica */
-.main-post-list .post-list li#post-cambridge-analytica{
+.post-list li#post-cambridge-analytica{
     background-color: #407bd0;
 }
-.main-post-list .post-list li#post-cambridge-analytica:before{
+.post-list li#post-cambridge-analytica:before{
     background-image: url(/images/uploads/background-server.jpg);
     background-position: 10% 0;}
 
 /* POST: Seguridad financiera */
-.main-post-list .post-list li#post-seguridad-financiera{
+.post-list li#post-seguridad-financiera{
     background-color: #4ad07e;
 }
-.main-post-list .post-list li#post-seguridad-financiera:before{
+.post-list li#post-seguridad-financiera:before{
     background-image: url(/images/uploads/cerdo-monedas-ahorro.jpg);
     background-position: 10% 0;
+}
+
+/* POST: Etapas indepdendencia financiera */
+.post-list li#post-etapas-libertad-financiera{
+    background-color: #d0bc3e;
+}
+.post-list li#post-etapas-libertad-financiera:before{
+    background-image: url(/images/uploads/pasos-independencia-financiera.jpg);
+    background-position: 10% 0;
+}
+
+/* PAGE: Herramienta de control de gastos */
+.post-list li#herramienta-control-gastos{
+    background-color: #9e9e9e;
+}
+.post-list li#herramienta-control-gastos:before{
+    background-image: url(/images/uploads/control-gastos-2.jpg);
+    background-position: 10% 0;
+}
+
+.post-list li#herramienta-proyeccion-ahorros{
+    background-color: #2e32a7;
+}
+.post-list li#herramienta-proyeccion-ahorros:before{
+    background-image: url(/images/uploads/proyeccion-futuro.jpg);
+    background-position: 10% 0;
+}
+
+.post-list li#proyecto-seguro-40{
+    background-color: #2e32a7;
+}
+.post-list li#proyecto-seguro-40:before{
+    background-image: url(/images/uploads/background-seguro-40.png);
+    background-position: 10% 65%;
 }
 
 
@@ -267,17 +387,93 @@ blockquote{
     display:block;
 }
 .post img.img-left{
+    display: inline-block;
     float: left;
-    width: 50%;
+    width: 48%;
     margin-right: 15px;
 }
 .post img.img-right{
+    display: inline-block;
     float: right;
-    width: 50%;
+    width: 48%;
     margin-left: 15px;
+}
+.post img.img-right.no-margin{
+    margin-left: 0px;
+}
+.post img.img-left.no-margin{
+    margin-right: 0px;
+}
+.post img.img-right.size-20, .post img.img-left.size-20{
+    width: 20%;
+}
+.post img.img-right.size-30, .post img.img-left.size-30{
+    width: 30%;
 }
 
 .post img.img-center{
     width: 60%;
     margin: 0 auto;
+}
+
+.post img.img-mini.inline{
+    display: inline;
+    height: 3em;
+    vertical-align: middle;
+}
+/* Tags */
+ul.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    display: inline-flex;
+    float: right;
+}
+
+a.tag {
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+    border: 0;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+}
+
+a.tag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+a.tag::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+a.tag:hover {
+    background-color: #e25440;
+    color: white;
+}
+
+a.tag:hover::after {
+    border-left-color: #e25440;
 }

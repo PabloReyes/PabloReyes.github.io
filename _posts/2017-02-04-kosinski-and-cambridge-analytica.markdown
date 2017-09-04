@@ -4,9 +4,15 @@ title: Yo no construí la bomba, sólo demostré que existía
 published: true
 date: 2017-02-04
 markdown: markdown
+category: Personal
+image: /images/uploads/background-server.jpg
 css_id: post-cambridge-analytica
 ---
-### La extraña conexión entre el psicólogo Michal Kosinski y la victoria de Trump.
+*La extraña conexión entre el psicólogo Michal Kosinski y la victoria de Trump.*
+
+El 9 de Noviembre sobre las 8:30am, Michal Kosinski se despertaba en el Hotel Sunnehus en Zurich. El investigador, de 34 años, había venido a dar una charla al Instituto Federal de Tecnología Suizo (ETH) sobre los peligros del Big Data y la revolución digital. Kosinski da estas charlas con frecuencia en todo el mundo. Es experto en psicometría, una rama de la psicología donde se miden y cuantifican variables psicológicas.
+
+Cuando encendió la televisión esa mañana, descubrió que la bomba había explotado: En contra de lo previsto por los mejores estadistas, Donald J. Trump había sido elegido Presidente de los Estados Unidos.
 <!--more-->
 
 ---

@@ -1,0 +1,15 @@
+<ol class="post-list">
+
+    {% for page in site.pages %}
+        {% if include.filter_category == nil or include.filter_category == page.category %}
+        <li id="{{page.css_id}}">
+            <a href="{{ site.baseurl }}{{ page.url | remove_first: '/' }}" title="{{ page.title }}">
+                <div class="post-title-and-excerpt">
+                    <h2 class="post-list__post-title post-title">{{ page.title }}</h2>
+                    <p class="excerpt">{{ page.excerpt | strip_html | truncatewords: 30}}</p>
+                </div>
+            </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ol>
