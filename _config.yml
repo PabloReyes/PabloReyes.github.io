@@ -37,8 +37,6 @@ markdown: kramdown
 highlighter: rouge
 excerpt_separator: <!--more-->
 
-
-
 kramdown:
   # use Github Flavored Markdown
   input: GFM
