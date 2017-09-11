@@ -18,7 +18,7 @@ Tengo más amigos no técnicos que técnicos. Muchos llevan semanas pidiéndome 
 ***Nota**: Este artículo es una traducción personal al castellano del original “WTF is The Blockchain?”, publicado por [Mohit Mamoria](https://hackernoon.com/@mohitmamoria) en [Hackernoon](https://hackernoon.com/wtf-is-the-blockchain-1da89ba19348). El autor ha sido contactado previamente a la publicación de esta traduccion y ha accedido a ella.*
 ---
 
-### Blockhain: ¿hacía falta algo tan complicado?
+### Blockchain: ¿hacía falta algo tan complicado?
 >“Por cada problema complejo hay una respuesta clara, sencilla, y errónea”
 >
 > H. L. Mencken
