@@ -286,6 +286,12 @@ blockquote p:last-child:not(:first-child){
     font-style: normal;
 }
 
+.note{
+    border: 2px dashed #ff9800;
+    padding: 0.5em;
+    background: #fffacd;
+}
+
 /**/
 .post-list li {
     position: relative;
@@ -421,6 +427,14 @@ blockquote p:last-child:not(:first-child){
     height: 3em;
     vertical-align: middle;
 }
+
+/* Images in mobile */
+@media (max-width: 960px) {
+    .post img.img-center{
+        width: 100%;
+    }
+}
+
 /* Tags */
 ul.tags {
     list-style: none;
