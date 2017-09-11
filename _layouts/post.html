@@ -39,6 +39,7 @@ layout: default
   </section>
 
   <hr>
+
   <!--<div class="relatedPosts" >
 
     <h4>Artículos relacionados</h4>
@@ -82,6 +83,8 @@ layout: default
     </ul>
 
   </div>-->
-  {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+  {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section>
+  <!-- /#disqus_thread -->
+  {% endif %}
 </article>
 {% if page.comments != false %}{% include disqus.html %}{% endif %}
