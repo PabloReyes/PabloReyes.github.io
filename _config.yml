@@ -9,7 +9,7 @@
 title: 'Pablo Reyes'
 description: 'Un desarrollador de software interesado en tecnología, cultura empresarial y finanzas'
 url: 'http://pabloreyes.es'
-baseurl: '/'
+baseurl: ''
 google_analytics: 'UA-3511101-1'
 disqus_shortname: 'pabloreyes-es'
 
