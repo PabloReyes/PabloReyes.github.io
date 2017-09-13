@@ -71,12 +71,12 @@ Piénsalo un segundo, ¿qué significa transferir dinero? Es sólo una entrada e
 
 Esa sí es una buena pregunta. Y la respuesta es la que ya te estás imaginando: Blockchain.
 
-Blockchain es un método para menter un registro de transacciones entre todos en vez de depender de un tercero.
+Blockchain es un método para mantener un registro de transacciones entre todos en vez de depender de un tercero.
 
 ¿Me sigues? Bien. Porque ahora que te han surgido tantas preguntas, vamos a ver cómo funciona un librito de cuentas compartido.
 
 ### Sí sí, pero cuéntame, ¿cómo funciona?
-El requerimiento de este método es que debe haber suficiente gente que no quiera depender de un tercero para gestionar su libro de cuentas. Sólo entes, este grupo será capaz de gestionarlo por ellos mismos.
+El requerimiento de este método es que debe haber suficiente gente que no quiera depender de un tercero para gestionar su libro de cuentas. Sólo entonces, este grupo será capaz de gestionarlo por ellos mismos.
 
 >Puede tener sentido hacerse con unos Bitcoins ahora, por si coge fuerza. Si suficiente gente piensa lo mismo, se convierte en una profecía autocumplida.
  >
