@@ -258,7 +258,7 @@ Imagina que ya tenemos cinco hojas nuestra carpeta: todas selladas con su númer
 Para prevenir este problema, existe un truco en cómo se calcula el número de sello.
 
 ### Protegiendo los números de sello
-¿Recuerdas cómo hablábamos de tener dos cajas: una con el número 20893 y otra vacía para rellear con nuestro número de sello? En realidad, para calcular este número de sello en Blockchain no hacen falta dos cajas, sino tres: dos llenas y una vacía.
+¿Recuerdas cómo hablábamos de tener dos cajas: una con el número 20893 y otra vacía para rellenar con nuestro número de sello? En realidad, para calcular este número de sello en Blockchain no hacen falta dos cajas, sino tres: dos llenas y una vacía.
 
 Y es cuando el contenido de esas tres cajas se suma y se mete en la máquina, que el resultado debe satisfacer nuestra condición (antes decíamos empezar con 3 ceros).
 
