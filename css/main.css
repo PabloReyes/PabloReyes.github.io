@@ -77,16 +77,7 @@ h2, h3, h4{
     margin-left: 25%;
 }
 
-@media (max-width: 960px) {
-    .panel-cover--collapsed {
-        width: 100%;
-        max-width: none;
-    }
-    .content-wrapper {
-        margin-left: auto;
-        width: 90%;
-    }
-}
+
 @media (min-width: 1300px){
     .content-wrapper {
         margin-left: 25%;
@@ -181,16 +172,7 @@ table tr td{
     color: #ccc;
 }
 
-/*
-Styling of post list for mobile devices.
-One article per row
-*/
-@media (max-width: 960px) {
-    .post-list li  {
-        width: 100%;
-        display: block;
-    }
-}
+
 .post-list li .post-list__meta{
     position: absolute;
     bottom: 0;
@@ -427,12 +409,6 @@ blockquote p:last-child:not(:first-child){
     vertical-align: middle;
 }
 
-/* Images in mobile */
-@media (max-width: 960px) {
-    .post img.img-center{
-        width: 100%;
-    }
-}
 
 /* Tags */
 ul.tags {
