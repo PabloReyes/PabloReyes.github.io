@@ -2,7 +2,7 @@
 layout: post
 title: Las 6 etapas hasta la libertad financiera
 published: false
-date: 2017-06-15
+date: 2017-11-11
 css_id: post-etapas-libertad-financiera
 markdown: markdown
 category: Finanzas
@@ -42,7 +42,7 @@ Es posible que nunca hayamos tenido deuda, pero si ya hemos conseguido estabilid
 
 En esta deuda no tenemos en cuenta las hipotecas. Es probable que tengas que vivir con ella durante bastante tiempo aún.
 
-### [Etapa 4: Seguridad financiera]({% post_url 2017-06-20-seguridad-financiera%})
+### [Etapa 4: Seguridad financiera]({% post_url 2017-11-08-seguridad-financiera%})
 La seguridad financiera es ese estado que nos permite continuar con nuestro estilo de vida sin preocuparnos demasiado por nuestra economía personal. Nuestro objetivo con la seguridad financiera es dejar que nuestras inversiones cubran nuestros gastos básicos
 
 Este es el primer paso donde se introduce el término de inversión, y al que la mayor parte de este blog está dedicado. Es, por supuesto, uno de los más difíciles de superar y que más se extienden en el tiempo, pero es un paso indispensable para el siguiente escalón.
