@@ -2,7 +2,7 @@
 layout: post
 title: Seguridad financiera
 published: false
-date: 2017-06-08
+date: 2017-11-08
 css_id: post-seguridad-financiera
 markdown: markdown
 category: Finanzas
