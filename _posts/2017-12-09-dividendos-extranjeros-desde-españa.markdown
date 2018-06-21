@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Misma empresa, distintas bolsas. Dividendos y retenciones.
-published: true
+published: false
 date: 2017-11-08
 css_id: post-dividendos-extranjeros
 markdown: markdown
