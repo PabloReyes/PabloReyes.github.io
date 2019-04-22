@@ -2,8 +2,8 @@
 layout: post
 title: "Canción de Código y Furia: Programadores y Negatividad"
 published: true
-date: 2019-04-18
-css_id: programadores-haters
+date: 2019-04-22
+css_id: programadores-negatividad
 markdown: markdown
 category: Personal
 featured: true
@@ -50,7 +50,7 @@ Este aumento en la negatividad no es necesariamente algo malo. El discurso sobre
 
 El problema, por supuesto, es que los seres humanos son sacos de emociones, pequeños y ondulados, llenos de agua, y tanto el recibir como el expresar cualquier emoción nos cambia como persona: microscópicamente al principio, y a largo plazo, fundamentalmente.
 
-## La pendiente resbaladiza, acuosa y ondulante de la negatividad
+## La pendiente resbaladiza y ondulante de la negatividad
 Hace unos años yo era, de manera informal, el tech-lead de mi equipo, y me encontraba entrevistando a un candidato para un puesto de desarrollador. Nos gustaba mucho; era espabilado, hacía buenas preguntas, tenía las habilidades técnicas, y encajaba en nuestra cultura empresarial. Me gustó particularmente porque era positivo y parecía de esas personas que “le meten mano a todo”. Así que lo contratamos.
 
 En ese momento llevaba en mi compañía durante un par de años y había percibido una falta de compromiso con la cultura de la compañía. Antes de que yo llegara, habían intentado lanzar un producto dos, tres y un par de veces más sin éxito, lo que llevó a costosos refactorings sin nada que mostrar, pero con noches muy largas, plazos cambiantes y productos que “casi funcionaban”. Aunque yo seguía trabajando duro cada día, opinaba abiertamente con escepticismo sobre la última fecha límite transmitida por el equipo de management. En ocasiones, se me iba la boca hablando de las cosas que encontraba en el código.

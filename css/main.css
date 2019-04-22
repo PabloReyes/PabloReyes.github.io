@@ -403,6 +403,10 @@ blockquote p:last-child:not(:first-child){
     margin: 0 auto;
 }
 
+.post img.img-center.auto-width{
+    width: auto;
+}
+
 .post img.img-mini.inline{
     display: inline;
     height: 3em;
