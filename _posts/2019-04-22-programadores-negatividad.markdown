@@ -7,7 +7,7 @@ css_id: programadores-negatividad
 markdown: markdown
 category: Personal
 featured: true
-image: /images/uploads/junior-trying-to-fit.jpeg
+image: /images/uploads/angry-face.jpg
 cta: Yo no hago esas cosas
 ---
 Estoy mirando un trozo de código. Es, sin duda, uno de los peores códigos que he visto en mi vida. Para actualizar un único registro en una base de datos, recupera todos los registros de la tabla y envía un UPDATE para cada uno de ellos, no sólo para el registro que necesita ser actualizado. 
@@ -30,7 +30,7 @@ _**Nota**: Este artículo es una traducción personal al castellano del original
 ## Negatividad: la herramienta emocional de la cultura de programación
 La negatividad es tan importante para los programadores porque es una forma muy efectiva de comunicar valor. Cuando daba clases en un bootcamp de programación, era una práctica estándar inculcar a los estudiantes en la cultura de la industria con una saludable dosis de memes, historias y videos, de los cuales muchos giran en torno a la [frustración de los programadores con personas que simplemente no entienden](https://www.youtube.com/watch?v=BKorP55Aqvg). Es bueno poder usar herramientas emotivas para señalar las prácticas y hábitos que son Buenos, los que son Malos y los que son Oh Dios, Ni Se Te Ocurra. También es bueno preparar a los nuevos programadores para el hecho de que probablemente serán malinterpretados de una manera u otra por colegas no técnicos, que deberían prepararse para que todos sus amigos les cuenten sus ideas de aplicaciones del que serán super exitosas, que deberían prepararse para los interminables laberintos de código legacy llenos de sorpresas.
 
-Cuando estamos aprendiendo a programar, nuestro visión de lo que es “entender la programación” se basa en la observación de las reacciones emocionales de otras personas cuando ocurre algo. Esto se ve muy claro en [ProgrammerHumor](https://www.reddit.com/r/programmerhumor), un subreddit poblado por programadores junior. Muchos expresan humor con varios matices de negatividad: frustración, pesimismo, indignación, desilusión, condescendencia, y más.
+Cuando estamos aprendiendo a programar, nuestro visión de lo que es “entender la programación” se basa en la observación de las reacciones emocionales de otras personas cuando ocurre algo. Esto se ve muy claro en [ProgrammerHumor](https://www.reddit.com/r/programmerhumor), un subreddit lleno de programadores junior donde muchos expresan humor con varios matices de negatividad: frustración, pesimismo, indignación, desilusión, condescendencia, y más.
 
 ![via ProgrammerHumor](/images/uploads/ide-colour-makeup.jpg){:class="img-center"}
 
@@ -69,7 +69,7 @@ El otro lado es el camino de la oscuridad. En vez de aceptar que el código Malo
 
 Probablemente en una posición en la que no pueden hacer los cambios que desean porque el negocio desafortunadamente debe continuar y no tiene tiempo para preocuparse por la calidad del código, se les conoce como quejicas. Debido a que son altamente competentes siguen entre nosotros, pero relegados a un rincón de la empresa donde no molestan a demasiada gente, sino que mantienen los sistemas críticos en funcionamiento. Aislados del acceso a nuevas oportunidades de desarrollo, sus habilidades se atrofian y pierden relevancia en la industria. Su negatividad sigue creciendo y se convierte en una amargura hasta que eventualmente se encuentran a sí mismos discutiendo con estudiantes de programación de 20 años sobre la forma en que se hacían las cosas antes de que ellos nacieran era mejor que la de ahora. Al final, se jubilan y pasan su vejez gritándole a los pájaros.
 
-La verdadera realidad probablemente se encuentra en algún lugar entre estos dos extremos.
+La realidad probablemente se encuentra en algún lugar entre estos dos extremos.
 
 Hay compañías que consiguen ser exitosas incluso con culturas extremadamente negativas, territoriales y contundentes, como Microsoft antes de su [década perdida](https://www.vanityfair.com/news/business/2012/08/microsoft-lost-mojo-steve-ballmer) —  normalmente son aquellas que ya cuentan con un producto existente y con gran penetración en el mercado y que necesitan escalar lo más rápido posible, o aquellas con estructuras de mando y control (Apple durante el apogeo de Steve Jobs) en las que todo el mundo hace lo que una persona dice, por lo que no importa mucho cómo lo diga. Sin embargo, los últimos  estudios sobre negocio (y el sentido común también) muestran una y otra vez que la creatividad máxima que lleva a la innovación a gran escala y el alto rendimiento a pequeña escala requieren niveles bajos de estrés que permitan el pensamiento creativo y el pensamiento metódico. Es extremadamente difícil realizar un trabajo creativo cuando te preocupa lo que tu colega pueda decir sobre cada línea de código que escribas.
 
@@ -109,7 +109,7 @@ Al final, me encontré con una nueva oportunidad, en la que me trabajaba con Rec
 
 De hecho, cuanto más evitaba mi reacción emocional al código, más clara era mi visión de lo que podía llegar a ser, y menos confusión interior experimentaba. Cuando practicaba la subestimación ("quizás hay algo que podemos mejorar aquí"), me divertía a mí mismo y a los demás y tomaba la situación de manera menos personal. También me di cuenta de que podía eliminar la negatividad de los demás siendo perfectamente sensible en las opiniones ("tienes razón, ese código es bastante malo, pero lo mejoraremos"). Es chulísimo ver lo lejos que puedo llegar en el camino del zen.
 
-En definitiva, estoy continuamente aprendiendo y volviendo a aprender una lección más profunda: **la vida es demasiado corta para pasarla cabreado y miserable**.
+En definitiva, estoy continuamente aprendiendo y volviendo a aprender una lección más profunda: **la vida es demasiado corta para pasarla cabreado**.
 
 --- 
 \* Francisco Gutiérrez no es una persona real. Si resulta que eres tú, estoy seguro de que eres un magnífico programador, o al menos lo intentas. Y sino, no pasa nada. Vive tu vida. 
