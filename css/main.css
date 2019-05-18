@@ -470,3 +470,97 @@ a.tag:hover {
 a.tag:hover::after {
     border-left-color: #e25440;
 }
+
+
+/* MUEBLES */
+#muebles header{
+    border-bottom: 2px solid #d0273b;
+    background: rgba(0, 0, 0, 0.67);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#muebles nav{
+    position: static;
+}
+
+#muebles nav img{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    height: 90px;
+    margin-left: -45px;
+}
+
+#muebles .site-nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+}
+#muebles .site-nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #CDD0D0;
+    padding: 20px;
+    display: inline-block;
+}
+
+#muebles .content .algo-top{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    padding-top: 32px;
+
+}
+#muebles .content .foto-left{
+    width: 48%;
+    float:left;
+}
+
+#muebles .content .foto-left img{
+    width: 100%;
+}
+
+#muebles .content .descr-right{
+    width: 48%;
+    float:right;
+    padding-right: 10px;
+    /*border: 2px solid #ccc;*/
+}
+
+#muebles .content .descr-right h2 {
+    text-align: center;
+}
+#muebles .content .descr-right .options {
+    height: 225px;
+
+}
+#muebles .content .descr-right .options .opt-now{
+    float:left;
+    width: 48%;
+}
+#muebles .content .descr-right .options .opt-subscr{
+    float:right;
+    width: 48%;
+}
+
+#muebles .content  .buttons-options button{
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    background-color: #d0273b;
+    color: aliceblue;
+    font-size: 16px;
+    border: 0px;
+    margin: 0 10px;
+}
+#muebles .content  .buttons-options button.buy{
+    float: left;
+}
+#muebles .content  .buttons-options button.rent{
+    float: right;
+}
