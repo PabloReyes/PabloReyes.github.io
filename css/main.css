@@ -534,10 +534,23 @@ a.tag:hover::after {
 
 #muebles .content .descr-right h2 {
     text-align: center;
+    margin-top: 5px;
 }
-#muebles .content .descr-right .options {
-    height: 225px;
 
+#muebles .content .descr-right ul.elements {
+    columns: 2;
+}
+
+#muebles .content .descr-right ul.elements li{
+    font-size: 0.8em;
+
+}
+
+
+#muebles .content .descr-right .options {
+    height: 130px;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px
 }
 #muebles .content .descr-right .options .opt-now{
     float:left;
