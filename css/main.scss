@@ -48,7 +48,8 @@ body{
             width: calc(100% + 20px); // 100% + 10px + 10px
             margin: -10px;
             margin-bottom: 5px;
-            height: 200px;
+            height: 170px;
+            object-fit: cover;
         }
         .post-excerpt{
             color: $color_black;
@@ -62,9 +63,19 @@ body{
   text-align: center;
 }
 
-/* Images inside posts */
-.post img {
+/* Everything inside a post page */
+.post-container{
+
+  .post-image-featured{
+    width: 100%;
+    object-fit: cover;
+    max-height: 400px;
+  }
+
+  /* Images inside posts */
+  .post-content img {
     display: block;
+    max-width: 100%;
   
     &.img-left {
       float: left;
@@ -108,3 +119,4 @@ body{
       vertical-align: middle;
     }
   }
+}
