@@ -121,5 +121,5 @@ Hasta aquí llego hoy. Con los datos del catastro pueden sacarse muchos más det
 
 Como de costumbre, la información aquí descrita está sujeta a errores y no debería usarse para otra cosa que no sea disfrutar de un rato de lectura y aprender algunas cosas de Barcelona.
 
-Para este post usé `python`+`pandas`+[pandaral·lel](https://github.com/nalepae/pandarallel) para el análisis y manejo de los datos, matplotlib para la generación de gráficos, pyproj para las transformaciones entre sistema de coordenadas y ipyleaflet para los mapas. El código puede encontrarse en [mi github](https://github.com/PabloReyes/catastro-barcelona-stats/blob/master/analisis_catastro.ipynb).
+Para este post usé python+pandas+[pandaral·lel](https://github.com/nalepae/pandarallel) para el análisis y manejo de los datos, matplotlib para la generación de gráficos, pyproj para las transformaciones entre sistema de coordenadas y ipyleaflet para los mapas. El código puede encontrarse en [mi github](https://github.com/PabloReyes/catastro-barcelona-stats/blob/master/analisis_catastro.ipynb).
 
