@@ -8,14 +8,15 @@ markdown: markdown
 category: Personal
 featured: true
 image: /images/uploads/angry-face.jpg
+excerpt: Crítica al programador negativo, con aires de superioridad y que no conoce el verdadero propósito de su trabajo.
 cta: Yo no hago esas cosas
 ---
+
 Estoy mirando un trozo de código. Es, sin duda, uno de los peores códigos que he visto en mi vida. Para actualizar un único registro en una base de datos, recupera todos los registros de la tabla y envía un UPDATE para cada uno de ellos, no sólo para el registro que necesita ser actualizado. 
 
 Hay una función map que no hace nada más que devolver el mismo valor que recibe. Hay comprobaciones sobre valores aparentemente iguales pero con distinta convención de nombres (firstName y first_name). 
 
 Por cada actualización (en cada registro, incluso en los que no han cambiado) se envía un mensaje a una cola que llama a otra función que hace todo el trabajo de nuevo para otra tabla en la misma base de datos.
-<!--more-->
 
 ---
 _**Nota**: Este artículo es una traducción personal al castellano del original "Rage Against the Codebase: Programmers and Negativity", publicado por [Way Spurr-Chen](https://medium.com/@way/rage-against-the-codebase-programmers-and-negativity-d7d6b968e5f3) y bajo su aprobación._

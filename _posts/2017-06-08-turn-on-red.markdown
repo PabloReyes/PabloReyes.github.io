@@ -7,13 +7,12 @@ markdown: markdown
 category: Personal
 image: /images/uploads/semaforos.jpg
 css_id: post-turn-red
+excerpt: Fui buscando un test-drive de un TESLA Model S, y acabé recibiendo una clase de historia americana.
 ---
-*Fui buscando un test-drive de un TESLA Model S, y acabé recibiendo una clase de historia americana.*
 
 Hace sólo un par de semanas que un empleado de TESLA me enseñó el término *“Turn on red”*. Fue durante una prueba de un Model S donde no pude evitar preguntarle porqué tantos coches se saltaban los semáforos en rojo.
 
 Ya había confianza entre Brett y yo: había descubierto que no tenía la mínima intención de comprar el coche a pesar de ser mi segunda prueba, y había retirado su oferta de dejarme el coche 1 semana para probarlo.
-<!--more-->
 
 ![Semáforos](/images/uploads/semaforos.jpg)
 Hace sólo un par de semanas que un empleado de TESLA me enseñó el término *“Turn on red”*. Fue durante una prueba de un Model S donde no pude evitar preguntarle porqué tantos coches se saltaban los semáforos en rojo. Ya había confianza entre Brett y yo: había descubierto que no tenía la mínima intención de comprar el coche a pesar de ser mi segunda prueba, y había retirado su oferta de dejarme el coche 1 semana para probarlo.

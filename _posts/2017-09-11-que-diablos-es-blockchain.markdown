@@ -7,12 +7,11 @@ markdown: markdown
 category: Personal
 cta: Venga, cuéntame
 image: /images/uploads/blockchain_background.png
+excerpt: "Explicación para todos los públicos de tecnologías Blockchain y Bitcoin. Requisitos previos: saber respirar."
 ---
 A no ser que estés escondiéndote en una cueva, estoy seguro de que has escuchado hablar de Bitcoins y Blockchains. Al fin y al cabo, son los temas de moda para los medios últimamente - las palabrejas estrellas del año -. Incluso la gente que nunca ha minado una criptomoneda ni sabe cómo funcionan habla de ellas.
 
 Tengo más amigos no técnicos que técnicos. Muchos llevan semanas pidiéndome que les explique estas nuevas palabrejas. Imagino que hay miles de personas pensando lo mismo. Y cuando eso ocurre, es el momento de escribir algo que cualquiera pueda enseñar a esas almas perdidas, explicado de forma sencilla que cualquiera pueda entender -este es el motivo de este artículo-.
-
-<!--more-->
 
 ---
 ***Nota**: Este artículo es una traducción personal al castellano del original “WTF is The Blockchain?”, publicado por [Mohit Mamoria](https://hackernoon.com/@mohitmamoria) en [Hackernoon](https://hackernoon.com/wtf-is-the-blockchain-1da89ba19348). El autor ha sido contactado previamente a la publicación de esta traduccion y ha accedido a ella.*

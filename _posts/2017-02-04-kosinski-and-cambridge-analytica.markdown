@@ -7,13 +7,12 @@ markdown: markdown
 category: Personal
 image: /images/uploads/background-server.jpg
 css_id: post-cambridge-analytica
+excerpt: La extraña conexión entre el psicólogo Michal Kosinski, Cambridge Analytica y la victoria de Trump.
 ---
-*La extraña conexión entre el psicólogo Michal Kosinski y la victoria de Trump.*
 
 El 9 de Noviembre sobre las 8:30am, Michal Kosinski se despertaba en el Hotel Sunnehus en Zurich. El investigador, de 34 años, había venido a dar una charla al Instituto Federal de Tecnología Suizo (ETH) sobre los peligros del Big Data y la revolución digital. Kosinski da estas charlas con frecuencia en todo el mundo. Es experto en psicometría, una rama de la psicología donde se miden y cuantifican variables psicológicas.
 
 Cuando encendió la televisión esa mañana, descubrió que la bomba había explotado: En contra de lo previsto por los mejores estadistas, Donald J. Trump había sido elegido Presidente de los Estados Unidos.
-<!--more-->
 
 ---
 _**Nota**: Este artículo es una traducción personal al castellano del original "Ich habe nur gezeigt, dass es die Bombe gibt", publicado por [Das Magazin](https://www.dasmagazin.ch/2016/12/03/ich-habe-nur-gezeigt-dass-es-die-bombe-gibt/). La traducción no se hizo en base al original alemán, sino a una versión inglesa ahora desaparecida encontrada en [aNtiDiTe Zine](https://antidotezine.com/2017/01/22/trump-knows-you/), y que ahora está disponible en [VICE](https://motherboard.vice.com/en_us/article/big-data-cambridge-analytica-brexit-trump)._

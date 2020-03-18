@@ -46,3 +46,5 @@ kramdown:
 gems: ['jekyll-paginate']
 exclude: ['node_modules/jekyll/', 'README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 
+sass:
+  style: compact # possible values: nested expanded compact compressed
