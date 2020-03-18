@@ -409,7 +409,6 @@ blockquote p:last-child:not(:first-child){
 
 .post img.img-mini.inline{
     display: inline;
-    height: 3em;
     vertical-align: middle;
 }
 

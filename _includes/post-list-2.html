@@ -2,26 +2,28 @@
     {% for post in site.posts %}
         {% if include.filter_category == nil or include.filter_category == post.category %}
             {% if include.filter_featured == nil or include.filter_featured == post.featured %}
-                <article class="post-entry" id="{{post.css_id}}">
-                    <div class="post-title">
-                        <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a>
-                    </div>
 
-                    <div class="post-meta">
-                        <time datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string}}</time>
-                    </div>
+                
+                    <article class="post-entry" id="{{post.css_id}}">
+                        <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
+                            {% if post.image %}<img src="{{post.image}}" alt="">{% endif %}
+                            <div class="post-title">
+                                <span>{{ post.title }}</span>
+                            </div>
 
-                    <div class="post-excerpt">
-                        {% if post.image %}<img src="{{post.image}}" alt="">{% endif %}
-                        <p class="excerpt">{{ post.excerpt | truncatewords: 200}}</p>
-                    </div>
-                    
-                    <div class="read-more">
-                        <a href="{{post.url}}">{% if post.cta %}{{post.cta}} {% else %} Seguir leyendo {% endif %} → </a>
-                    </div>
-                    </a>
-                </article>
-                <hr>
+                            <div class="post-meta">
+                                <time datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string}}</time>
+                            </div>
+
+                            <div class="post-excerpt">
+                                {{ post.excerpt | truncatewords: 200}}
+                            </div>
+                            
+                            <!--<div class="read-more">
+                                <a href="{{post.url}}">{% if post.cta %}{{post.cta}} {% else %} Seguir leyendo {% endif %} → </a>
+                            </div>-->
+                        </a>
+                    </article>
             {% endif %}
         {% endif %}
     {% endfor %}
