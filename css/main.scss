@@ -15,6 +15,12 @@ body{
     //background-color: #f9f3f3;
     background-color: white;
 }
+
+.panel-cover{
+  background: url(../images/background-cover.jpg) top left no-repeat #00456b;
+  background-size: cover;
+}
+
 .content-wrapper{
     margin-left: 350px;
     width: auto;
