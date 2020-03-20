@@ -1,12 +1,16 @@
 ---
 layout: post
-title: A curious guy getting hands dirty
+title: Ensuciándome las manos en 2004
 categories: [programming]
-published: false
+published: False
+featured: False
 date: 2012-09-17
+category: Personal
 markdown: markdown
+image: /images/uploads/posts/hands-dirty/security_cameras.jpg
+excerpt: En 2004, entre clases de instituto y noches de Age of Empires, me topé con una base de datos de 20.000 usuarios con contraseñas MD5.
 ---
-If I’m curious now, I was even more with 14 or 15 years old. It was the time when I got bored of my cheap C book and started learning Python with online tutorials. I spent so much time on IRC also, mostly in programming channels (although I almost only talked in those dedicated to Age Of Empires). I met some people doing much more funny things that what I was doing. A group of friends created a script to auto-click on adsense banners. The group was private, but I was invited. All of us had a personal blog, so we used the script to click once on each adsense banner every day, so at least we got 8 or 9 clicks a day. Not much, but It helped me buying a better computer (Athlon 3400+, from a P3 866Mhz) by the end of that year (2004 I think).
+If I’m curious now, I was even more with 14 or 15 years old. It was the time when I got bored of my cheap C book and started learning Python with online tutorials. I spent so much time on IRC also, mostly in programming channels (although I almost only talked in those dedicated to Age Of Empires). I met some people doing much more funny things that what I was doing. A group of friends created a script to auto-click on adsense banners. The group was private, but I was invited. All of us had a personal blog, so we used the script to click once on each adsense banner every day, so at least we got 8 or 9 clicks a day. Not much, but It helped me buying a better computer (Athlon 3400+, from a P3 866Mhz) by the end of 2004 I think.
 
 Ah, they also got access to a private site from Motorola where we could make free mobile calls, but it only lasted a couple of weeks until they noticed. I remember calling a irc-friend to Puerto Rico and talking with his confused mother…
 
@@ -37,7 +41,7 @@ Obviously I have replaced the username and mail address. There were more than 20
 
 The best thing about gdataonline is that it accepted data via GET and gave the output via XML… That was just perfect for what I had in mind. What if I made a Python script to send the password hashes to gdataonline, and store the successful passwords with their usernames and mail addresses? Since many users use the same password for everything, I would have a really dangerous material. And that was exciting.
 
-First, I made a simple script to split the huge file in 100 parts, so each file would have 200 entries. This had to purpouses:
+First, I made a simple script to split the huge file in 100 parts, so each file would have 200 entries. This had two purpouses:
 
 * The idea of reading and parsing a 20Mb file in python on my slow pc didn’t attract me
 * I didn't want to send 20.000 request to gdataonline

@@ -16,9 +16,19 @@ body{
     background-color: white;
 }
 
+hr{
+  width: 80%;
+  margin: 20px auto;
+  border-top: 1px solid rgba(215, 202, 202, 0.69);
+}
+
 .panel-cover{
   background: url(../images/background-cover.jpg) top left no-repeat #00456b;
   background-size: cover;
+
+  .navigation--social{
+    margin-left: 0;
+  }
 }
 
 .content-wrapper{
@@ -27,7 +37,7 @@ body{
     max-width: 1000px;
 }
 
-.main-post-list .post-list-2{
+.main-post-list{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -82,11 +92,12 @@ body{
   .post-content img {
     display: block;
     max-width: 100%;
+    margin: 0 auto;
   
     &.img-left {
       float: left;
       width: 48%;
-      margin-right: 15px;
+      margin-right: 25px;
     }
   
     &.img-right {
@@ -126,3 +137,6 @@ body{
     }
   }
 }
+
+
+@import "custom_article";

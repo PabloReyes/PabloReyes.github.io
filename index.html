@@ -2,9 +2,9 @@
 layout: default
 ---
 
-
+<h1>Artículos</h1>
 <div class="main-post-list">
-    {% include post-list-2.html %}
+    {% include post-list-cards.html %}
     {% if paginator.previous_page or paginator.next_page %}
         {% include pagination.html %}
     {% endif %}
