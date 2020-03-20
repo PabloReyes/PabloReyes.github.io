@@ -43,12 +43,10 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate']
-exclude: ['node_modules/jekyll/', 'README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 
 sass:
   style: compact # possible values: nested expanded compact compressed
 
 
-plugins:
-  - jekyll-target-blank
+plugins: ['jekyll-target-blank', 'jekyll-paginate']
+exclude: ['node_modules/jekyll/', 'README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
