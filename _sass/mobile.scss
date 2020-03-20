@@ -1,0 +1,30 @@
+@media (max-width: 960px) {
+  header.panel-cover, header.panel-cover.panel-cover--collapsed {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    
+    .panel-main__inner{
+        padding-top: 30px;
+    }
+  }
+
+  .content-wrapper {
+    margin-left: auto;
+    width: 90%;
+  }
+
+  .content-wrapper .content-wrapper__inner {
+    padding: 0;
+  }
+
+  .main-post-list{
+    display: block;
+  }
+
+  /* Images on mobile */
+  .post img.img-center {
+    width: 100%;
+  }
+}
