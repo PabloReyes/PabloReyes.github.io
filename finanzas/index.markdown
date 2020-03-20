@@ -19,7 +19,7 @@ Esta es la parte que más me costó: analizar mi situación actual, proyectar un
 
 Con los siguientes artículos pretendo ayudar a toda persona interesada en tomar el control de sus finanzas y, especialmente, a invertir a largo plazo.
 
-{% include post-list.html filter_category="Finanzas"%}
+{% include post-list-cards.html filter_category="Finanzas"%}
 
 
 

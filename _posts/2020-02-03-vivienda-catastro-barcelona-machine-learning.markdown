@@ -21,14 +21,14 @@ La información del Catastro que he usado se ofrece un [formato propio .CAT](htt
 
 El primer paso es identificar qué hay en cada fichero del catastro. Tras lidiar un rato con las distintas columnas y la especificación del propio fichero entiendo que de los distintos tipos de ficheros que hay me interesan 4:
 
-> registro de finca (11) –> registro de unidad constructiva (13) –> registro de construcción (14) –> registro de inmueble (15)
+> registro de finca (11) → registro de unidad constructiva (13) → registro de construcción (14) → registro de inmueble (15)
 
 
 Juntando información de distintas secciones y ficheros, limpiando datos y haciendo algunas transformaciones tenemos un set digno para trabajar.
 
 ## Tipos de inmuebles
 
-El registro de inmuebles nos da información sobre el destino de cada uno en la columna "clave_uso". Observando este dato podemos obtener algunas conclusiones:
+El registro de inmuebles nos da información sobre el destino de cada uno en la columna `clave_uso`. Observando este dato podemos obtener algunas conclusiones:
 
 ![Tipos de inmuebles](/images/uploads/posts/catastro_barcelona/tipos_inmuebles.png){:class="img-left"}
 
@@ -121,5 +121,5 @@ Hasta aquí llego hoy. Con los datos del catastro pueden sacarse muchos más det
 
 Como de costumbre, la información aquí descrita está sujeta a errores y no debería usarse para otra cosa que no sea disfrutar de un rato de lectura y aprender algunas cosas de Barcelona.
 
-Para este post usé python+pandas+[pandaral·lel](https://github.com/nalepae/pandarallel) para el análisis y manejo de los datos, matplotlib para la generación de gráficos, pyproj para las transformaciones entre sistema de coordenadas y ipyleaflet para los mapas. El código puede encontrarse en [mi github](https://github.com/PabloReyes/catastro-barcelona-stats/blob/master/analisis_catastro.ipynb).
+Para este post usé `python`+`pandas`+[pandaral·lel](https://github.com/nalepae/pandarallel) para el análisis y manejo de los datos, `matplotlib` para la generación de gráficos, `pyproj` para las transformaciones entre sistema de coordenadas y `ipyleaflet` para los mapas. El código puede encontrarse en [mi github](https://github.com/PabloReyes/catastro-barcelona-stats/blob/master/analisis_catastro.ipynb).
 

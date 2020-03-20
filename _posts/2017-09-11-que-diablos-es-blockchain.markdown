@@ -6,7 +6,7 @@ date: 2017-09-11
 markdown: markdown
 category: Personal
 cta: Venga, cuéntame
-image: /images/uploads/blockchain_background.png
+image: /images/uploads/posts/blockchain/blockchain_background.png
 excerpt: "Explicación para todos los públicos de tecnologías Blockchain y Bitcoin. Requisitos previos: saber respirar."
 ---
 A no ser que estés escondiéndote en una cueva, estoy seguro de que has escuchado hablar de Bitcoins y Blockchains. Al fin y al cabo, son los temas de moda para los medios últimamente - las palabrejas estrellas del año -. Incluso la gente que nunca ha minado una criptomoneda ni sabe cómo funcionan habla de ellas.
@@ -28,7 +28,7 @@ Imagina que Juan es tu mejor amigo. Juan está de viaje por el extranjero, y al 
 
 Tú le respondes: *“Claro tío, ahí te mando algo”*. Y cuelgas.
 
-![Joe and me](/images/uploads/blockchain_1.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_1.png){:class="img-center"}
 
 Entonces vas al banco y le dices al señor que te atiende: *“Por favor, transfiera 1000€ de mi cuenta a la cuenta de Juan"*.
 
@@ -36,7 +36,7 @@ El señor responde: *“Por supuesto caballero”*.
 
 Abre su librito, mira el saldo de tu cuenta para asegurarse de que tienes suficiente dinero para mandarle 1000€ a Juan. Como eres rico, tienes un montón; por lo tanto, el hombre hace una anotación en su librito: 
 
-![Joe and me](/images/uploads/blockchain_2.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_2.png){:class="img-center"}
 
 <p class="note" markdown="1">
 ***Nota:** Evito hablar de ordenadores para mantener el artículo lo más sencillo posible.*
@@ -44,7 +44,7 @@ Abre su librito, mira el saldo de tu cuenta para asegurarse de que tienes sufici
 
 Llamas a Juan y le dices: *“Hey Juan, ahí te he mandado el dinero. La próxima vez que vayas al banco podrás sacar los 1000€ que te he pasado”*.
 
-![Joe and me](/images/uploads/blockchain_3.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_3.png){:class="img-center"}
 
 
 ¿Qué acaba de ocurrir? Que Juan y tú habéis confiado en el banco para que gestione vuestro dinero. No ha habido ningun movimiendo de dinero real. Todo lo que hizo falta fue una anotación en un librito. Es más, una anotación en un libro que no es ni de Juan ni tuyo.
@@ -83,7 +83,7 @@ El requerimiento de este método es que debe haber suficiente gente que no quier
 
 ¿Pero cuantos? Al menos tres. En nuestro ejemplo, imaginemos que diez personas quieren dejar de usar bancos u otros intermediarios para transferirse dinero. Por mutuo acuerdo, todos tienen información de las cuentas de los demás, pero sin saber a quién pertenecen.
 
-![Joe and me](/images/uploads/blockchain_4.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_4.png){:class="img-center"}
 
 #### 1. Una carpeta vacía
 Cada uno empieza con una carpeta vacía. A medida que progresemos, todos irán llenando de papeles sus carpetas. Y esta colección de papeles crearán el libro de cuentas.  
@@ -93,11 +93,11 @@ Cada uno de los diez coge con un papel en blanco, y lo van rellenando a medida q
 
 Si **#2** quiere hacer una transferencia a **#9**, **#2** grita a todos los demas: *"Hey, quiero mandarle 10€ a **#9**!, así que hacedme el favor de apuntadlo en vuestros papeles."*
 
-![Joe and me](/images/uploads/blockchain_5.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_5.png){:class="img-center"}
 
 Todos los demás comprueban que **#2** tiene fondos suficientes para mandar 10€ a **#9**. Si hay suficiente, todos escribirán una nueva anotación en su hoja de transacciones.
 
-![Joe and me](/images/uploads/blockchain_6.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_6.png){:class="img-center"}
 
 La transferencia ha terminado. 
 
@@ -106,7 +106,7 @@ A medida que pasa el tiempo, más gente necesita transferir dinero a otros. Cada
  
 Este proceso continúa hasta que cada uno ha llenado su hoja. Suponiendo que en cada hoja caben diez transacciones, cuando se hace la décima transferencia nadie más tendrá espacio en su hoja.
 
-![Joe and me](/images/uploads/blockchain_7.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_7.png){:class="img-center"}
 
 Es hora de guardar la hoja en la carpeta y sacar una nueva hoja en blanco y empezar el segundo paso de nuevo.
 
@@ -132,25 +132,25 @@ Imagina una máquina cubierta por bloques de hormigón. Tú metes una cajita con
 ***Jerga:** Esta máquina se llama “función hash”, pero no vamos a ser demasiado técnicos. Así que hoy se llamará “La Máquina Mágica”.*
 </p>
 
-![Joe and me](/images/uploads/blockchain_8.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_8.png){:class="img-center"}
 
 
 Imagina que metes un número 4 por la izquierda. Por la derecha saldría algo así como “dcbea”.
 
 ¿Cómo convirtió un 4 en esta “palabra”? Nadie lo sabe. Es más, es un proceso irreversible. Con la palabra “dcbea”, es imposible saber qué se le introdujo a la máquina. Pero cada vez que metas un 4 en ella, siempre te devolverá un “dcbea”.
 
-![Joe and me](/images/uploads/blockchain_9.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_9.png){:class="img-center"}
 
 Vamos a probar pasando otro número. Por ejemplo 26.
 
-![Joe and me](/images/uploads/blockchain_10.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_10.png){:class="img-center"}
 
 Ahora nos ha dado un “94c8e”. ¡Interesante! Se ve que el resultado también puede contener números. 
 ¿Y si te hago la siguiente pregunta?
 
 **¿Puedes decirme que debo meter en la máquina por la izquierda para que la salida sea una palabra que empiece por 3 ceros? Por ejemplo: 000ab, 00098 o 000fa o algo así?**
 
-![Joe and me](/images/uploads/blockchain_11.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_11.png){:class="img-center"}
 
 Piensa la pregunta un momento.
 
@@ -158,11 +158,11 @@ Te he dicho que la máquina tiene una propiedad por la cual no podemos calcular 
 
 Se me ocurre un método. ¿Por qué no vamos probando todos lo números del universo hasta que encontremos uno que empiece por 3 ceros?
 
-![Joe and me](/images/uploads/blockchain_12.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_12.png){:class="img-center"}
 
 Siendo optimistas, tras algunos miles de intentos, encontraremos alguno cuyo resultado de la máquina empiece por 3 ceros.
 
-![Joe and me](/images/uploads/blockchain_13.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_13.png){:class="img-center"}
 
 
 Ha sido extremádamente dificil encontrar la entrada sabiendo la salida. Pero al mismo tiempo, es muy sencillo comprobar que esa entrada produce esa salida. Recuerda que la máquina siempre devuelve lo mismo si le metemos la misma entrada.
@@ -183,17 +183,17 @@ Usaremos la máquina para crear un sello para nuestra hoja. Como siempre, empeza
 
 Imagina que te doy dos cajas. Una caja contiene el número 20893. Y te pregunto: ¿Puedes adivinar qué numero tengo que sumar a éste de la primera caja para que, tras sumarlos, de como resultado algo que empiece por 3 ceros?
 
-![Joe and me](/images/uploads/blockchain_14.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_14.png){:class="img-center"}
 
 Es una situación similar a la de antes, y ya hemos visto que la única forma de calcular dicho número es probando cada número en el universo.
 
 Tras varios miles de intentos, nos encontramos con un número, digamos el 21191, que cuando lo sumamos a 20893 (21191 + 20893 = 42084) y lo metemos en la máquina, nos da como resultado algo que entra en nuestro requerimiento: empezar con 3 ceros.
 
-![Joe and me](/images/uploads/blockchain_15.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_15.png){:class="img-center"}
 
 En este caso, el número 21191 se convierte en el sello para el número 20893. Imagina que hay una hoja de transacciones con el título “20893” escrito en la cabecera. Para sellar esta hoja (para que nadie pueda cambiar su contenido sin que nos demos cuenta), pondremos un sello en la hoja con el número “21191”. 
 
-![Joe and me](/images/uploads/blockchain_16.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_16.png){:class="img-center"}
 
 <p class="note" markdown="1">
 ***Jerga** Este número en el sello se llama “Proof of work”, que hace ver que ha habido un trabajo y esfuerzo detrás para calcularlo. Lo seguiremos llamando “sello” por simplicidad.*
@@ -206,7 +206,7 @@ Usaremos un método de sellado similar para sellar todas nuestras hojas y en cie
 ### Finalmente, sellando nuestra hoja
 Para sellar una hoja de transacciones en la red, debemos calcular un número que al sumarlo al contendo de la hoja nos de como resultado algo que empiece por tres ceros. 
 
-![Joe and me](/images/uploads/blockchain_17.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_17.png){:class="img-center"}
 
 <p class="note" markdown="1">
 ***Nota:** Estamos diciendo “algo que empiece con 3 ceros” como ejemplo para mostrar cómo funcina la función hash. En la realidad, la comprobación es bastante más compleja.*
@@ -216,7 +216,7 @@ Una vez hemos calculado el número gastando nuestro tiempo y electricidad en la 
 
 Ahora que sabemos cómo se sella la hoja, volvamos al momento cuando hablabábamos de escribir la décima transacción y quedarnos sin más espacio en la hoja. En cuanto esto ocurre, todos los componentes del grupo se ponen a calcular el número del sello para dicha hoja, de forma que pueda archivarse en la carpeta. Todos hacen cálculos para encontrar el número de sello. En cuanto alguien lo encuentra, se lo comunica a todos los demás.
 
-![Joe and me](/images/uploads/blockchain_18.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_18.png){:class="img-center"}
 
 En cuanto el resto escucha este número, todos lo meten en la máquina mágica para comprobar que da el resultado esperado. En caso afirmativo, todos ponen el sello en su hoja y lo guardan en sus carpetas.
 
@@ -263,7 +263,7 @@ Y es cuando el contenido de esas tres cajas se suma y se mete en la máquina, qu
 
 Ya sabemos que una caja contiene todas las transacciones y que otra caja deberá contener el número de sello. La tercera caja, lo que contiene, es el resultado de la máquina mágica para la hoja anterior de la cadena.
 
-![Joe and me](/images/uploads/blockchain_19.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_19.png){:class="img-center"}
 
 Con este pequeño truco nos aseguramos de que cada hoja depende de la hoja anterior. Por tanto, si alguien modifica una página histórica, también tendría que modificar el contenido y sello de todas las hojas que van despues de ella para mantener la cadena consistente.
 
@@ -273,7 +273,7 @@ Lo que ocurriría es que, desde la hoja que este corrupto modificó, se crearía
 
 > La cadena más larga de la red es la cadena real.
 
-![Joe and me](/images/uploads/blockchain_20.png){:class="img-center"}
+![Joe and me](/images/uploads/posts/blockchain/blockchain_20.png){:class="img-center"}
 
 
 ¿Eso de que una sóla persona no pueda batir a los otros nueve... no canta por algún lado?

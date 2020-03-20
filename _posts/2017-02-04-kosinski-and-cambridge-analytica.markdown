@@ -5,7 +5,7 @@ published: true
 date: 2017-02-04
 markdown: markdown
 category: Personal
-image: /images/uploads/background-server.jpg
+image: /images/uploads/posts/cambridge-analytica/i_voted_2.jpg
 css_id: post-cambridge-analytica
 excerpt: La extraña conexión entre el psicólogo Michal Kosinski, Cambridge Analytica y la victoria de Trump.
 ---
