@@ -46,5 +46,8 @@ sass:
   style: compact # possible values: nested expanded compact compressed
 
 
-plugins: ['jekyll-target-blank', 'jekyll-paginate']
+plugins: ['jekyll-target-blank', 'jekyll-paginate', 'jekyll-compress-images']
 exclude: ['node_modules/jekyll/', 'README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
+compress_images:
+  images_path: "images/uploads/**/*.{gif,png,jpg,jpeg,svg}"
