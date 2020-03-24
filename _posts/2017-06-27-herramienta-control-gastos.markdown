@@ -123,6 +123,6 @@ El último bloque nos ofrece ciertas estadísticas sobre nuestro dinero.
  ![Estadisticas anuales](/images/uploads/posts/control-gastos/control-gastos-resumen-anual-estadisticas.png){:class="img-center"}
 
 ## Descarga
-La herramienta es 100% online, funciona sobre tu navegador, no requiere registro y los datos nunca salen de tu espacio de Google Drive. Para acceder a ella, [haz click aquí](https://docs.google.com/spreadsheets/d/18stxdsiwsfLLSBniAH0rfkpQPGi0sMsuw6uxE1B9HvE/edit?usp=sharing). He añadido un set de datos de un par de años con unas transacciones aleatorias para que resulte más fácil entender cómo funciona.
+La herramienta es 100% online, funciona sobre tu navegador, no requiere registro y los datos nunca salen de tu espacio de Google Drive. Para acceder a ella, [haz click aquí](https://docs.google.com/spreadsheets/d/1zB9HuMT8xOntAQGMZcQsWfYAC1YgRNG-ZAMGQF1f_As/edit?usp=sharing). He añadido un set de datos de un par de años con unas transacciones aleatorias para que resulte más fácil entender cómo funciona.
 
 Una vez dentro, no modifiques nada ni pidas que comparta la hoja contigo. Haz click en "Archivo" y luego en "Crear una copia". ¡Trabaja siempre sobre tu propia copia!
