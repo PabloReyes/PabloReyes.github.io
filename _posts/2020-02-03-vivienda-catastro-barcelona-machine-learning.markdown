@@ -5,7 +5,7 @@ published: true
 date: 2020-02-03
 css_id: catastro-barcelona
 markdown: markdown
-category: Personal
+category: Data
 featured: true
 image: /images/uploads/post_catastro_barcelona.png
 excerpt: Un paseo por Barcelona desde 1900 hasta hoy de la mano del Catastro, donde podemos observar la evolución de la vivienda, su composición, sus distritos y sus calles.
@@ -56,7 +56,9 @@ De estas gráfica podemos sacar algunas conclusiones interesantes. En los años 
 
 En los años 60 vemos el resultado del desarrollismo impulsado por el alcalde [José María de Porcioles](https://es.wikipedia.org/wiki/Jos%C3%A9_Mar%C3%ADa_de_Porcioles). Se construyen grandes avenidas, bloques de pisos, se renuevan alumbrados, alcantarillados, se hace nuevas líneas de metro, etc. La ciudad se consolida como un referente en ferias y congresos.
 
-> A partir de la década de 1960, el crecimiento económico y el boom turístico incrementará el número de urbanizaciones más o menos próximas a la ciudad jardín en áreas litorales o de montaña ocupando el territorio, a menudo de forma indiscri-minada, cuando no ilegal. – [La vivienda en cataluña desde una perspectiva histórica, Mercè Tatjer](http://www.ceut.udl.cat/wp-content/uploads/02c-tatjer.pdf)
+> A partir de la década de 1960, el crecimiento económico y el boom turístico incrementará el número de urbanizaciones más o menos próximas a la ciudad jardín en áreas litorales o de montaña ocupando el territorio, a menudo de forma indiscri-minada, cuando no ilegal. 
+> 
+> <cite>[La vivienda en cataluña desde una perspectiva histórica, Mercè Tatjer](http://www.ceut.udl.cat/wp-content/uploads/02c-tatjer.pdf)</cite>
 
 Si alguno esperaba encontrar una barra que llegara hasta el espacio entre el año 2000 y 2008, siento decepcionar. El boom inmobiliario tuvo un efecto limitado en Barcelona en lo que a número de nuevas viviendas se refiere.
 

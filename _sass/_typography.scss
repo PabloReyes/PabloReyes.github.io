@@ -4,7 +4,9 @@
 
 
 $color_black: rgba(0, 0, 0, 0.84);
+$color_blue: #254c73;
 $color_gray_light: #c7c7c7;
+$color_gray: #595858;
 
 
 $font_size_smallest: 0.6em;
@@ -45,14 +47,41 @@ h3{
 }
 
 a {
-    color: #0366d6;
+    color: $color_blue;
+    text-decoration: underline;
 }
 
 blockquote{
     padding: 0.5em;
     font-family: inherit;
-    font-size: $font-size-normal;
+    font-size: $font_size_normal;
 }
+
+
+blockquote {
+    // margin: 0 auto;
+    padding: 1em;
+    border-left: 5px solid $color_blue;
+    text-align: left;
+
+    &:before {
+        display: none;
+    }
+    p{
+        font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+    }
+    cite{
+        font-size: $font_size_small;
+        font-style: normal;
+        color: $color_gray;
+        &:before{
+            content: '– '
+        }
+    }
+}
+
+
+
 
 code, pre{
     font-family: monospace;

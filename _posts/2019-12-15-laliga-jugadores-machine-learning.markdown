@@ -8,6 +8,7 @@ markdown: markdown
 category: Personal
 featured: true
 image: /images/uploads/posts/laliga-ml/campo_futbol.png
+image_credit: Photo by <a href="https://unsplash.com/@viennachanges?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vienna Reyes</a>
 excerpt: Análisis de los jugadores de La Liga de fútbol española usando Machine Learning. Y sin tener ni idea de fútbol. 
 ---
 Hace unos días me topé con una base de datos con información estadística de todos los equipos, ligas y jugadores de fútbol europeos. No soy amante del futbol, pero sí de los datos y de su análisis, y como este fin de semana he tenido tiempo y tenía ganas de meterle mano a algunas herramientas que tenía medio oxidadas, he decidido hacer algo con ellos.
@@ -86,7 +87,9 @@ Trabajar con 27 atributos por jugador nos limita mucho la capacidad de generar r
 
 Sin entrar en detalles técnicos y con la intención de hipersimplificar, imaginemos que todas estos atributos pudieran agruparse en “Capacidad de marcar goles” y “Capacidad de que no me marquen goles”, dos grupos de capacidades totalmente distintas no correlacionadas. Seguramente los tiros a puerta, los fuera de juego o los regates tengan mucho que ver con la primera; las faltas, las tarjetas o los despejes tienen que ver con la segunda. Pero lo más importante es que la capacidad de tirar a puerta guarda muy poca relación con la capacidad de hacer despejes. El objetivo del ACP es darnos estos dos grupos para poder trabajar en dos dimensiones en vez de 27. Los llamaremos Componente Principal 1 y 2 (CP1 y CP2)
 
- > Técnicamente, el ACP busca la proyección según la cual los datos queden mejor representados en términos de mínimos cuadrados. Esta convierte un conjunto de observaciones de variables posiblemente correlacionadas en un conjunto de valores de variables sin correlación lineal llamadas **componentes principales**. — Wikipedia
+ > Técnicamente, el ACP busca la proyección según la cual los datos queden mejor representados en términos de mínimos cuadrados. Esta convierte un conjunto de observaciones de variables posiblemente correlacionadas en un conjunto de valores de variables sin correlación lineal llamadas **componentes principales**. 
+ >
+ > <cite>Wikipedia</cite>
 
 ![](/images/uploads/posts/laliga-ml/cp1_cp2.png){:class="img-left"}
 

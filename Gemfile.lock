@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/valerijaspasojevic/jekyll-compress-images.git
+  revision: af7c2e0527371a7b88d11d594cef9538b83230f1
+  specs:
+    jekyll-compress-images (1.2)
+      image_optim
+      image_optim_pack
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -124,9 +132,6 @@ GEM
       commonmarker (~> 0.17.6)
       jekyll-commonmark (~> 1.2)
       rouge (>= 2.0, < 4.0)
-    jekyll-compress-images (1.2)
-      image_optim
-      image_optim_pack
     jekyll-default-layout (0.1.4)
       jekyll (~> 3.0)
     jekyll-feed (0.13.0)
@@ -263,7 +268,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-compress-images
+  jekyll-compress-images!
   jekyll-target-blank
 
 BUNDLED WITH

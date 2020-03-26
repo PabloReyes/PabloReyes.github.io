@@ -8,6 +8,7 @@ markdown: markdown
 category: Personal
 featured: true
 image: /images/uploads/posts/trading-sentimental/featured_laptop.jpg
+image_credit: Photo by <a href="https://unsplash.com/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Austin Distel</a>
 excerpt: Desarrollo de una estrategia de trading basada en el análisis sentimental de los mercados del petróleo.
 ---
 

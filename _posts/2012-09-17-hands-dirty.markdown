@@ -8,6 +8,7 @@ date: 2012-09-17
 category: Personal
 markdown: markdown
 image: /images/uploads/posts/hands-dirty/security_cameras.jpg
+image_credit: Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a>
 excerpt: En 2004, entre clases de instituto y partidas de Age of Empires, me topé con una base de datos de 20.000 usuarios con contraseñas MD5.
 ---
 Si soy curioso ahora, lo era mucho más con 14 o 15 años. En aquella época me defendía bien con PHP, hacía mis pinitos con C, y empezaba a trastear con Python. La mitad del día lo pasaba en canales de IRC-Hispano, mayormente en canales de programación (#php_para_torpes, #python, etc) y Age of Empires (#aoc, #the_conquerors). Pasaba muchas horas y era muy activo, por lo que con los años acabé haciendo mi pequeña comunidad de ciber-amigos. Algunos de ellos programaban y montaban o gestionaban páginas o proyectos conocidos ([PHP_Hispano](http://www.php-hispano.net/) entre otros). 
