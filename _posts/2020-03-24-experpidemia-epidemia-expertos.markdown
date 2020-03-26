@@ -9,7 +9,7 @@ category: Datos
 featured: true
 image: /images/uploads/posts/expertos/laptop-feature-coronavirus.png
 image_credit: Foto de <a href="https://unsplash.com/@thenewmalcolm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Obi Onyeador</a>
-excerpt: "Por cada experto que dice A, hay otro que dice B. Y es normal: ahora todos somos expertos"
+excerpt: "Por cada experto que dice A, hay otro que dice B. Y es normal: para muchas cosas no tenemos ni idea"
 ---
 
 Con esto del COVID-19 no paro de ver expertos sanitarios (y peor, no sanitarios) que hacen todo tipo de predicciones sobre la evolución del virus. En Kaggle ya hay más de [1.000](https://www.kaggle.com/search?q=covid+in%3Anotebooks) notebooks analizando datos de todo tipo de fuentes, que no son pocas: hay más de 44.000 artículos y papers científicos los cuales [obviamente han sido analizados en Kaggle](https://www.kaggle.com/maksimeren/covid-19-literature-clustering). 
