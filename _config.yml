@@ -47,7 +47,11 @@ sass:
 
 
 plugins: ['jekyll-target-blank', 'jekyll-paginate', 'jekyll-compress-images']
-exclude: ['node_modules/jekyll/', 'README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+exclude: ['node_modules/jekyll/', 'README.md', 'Gemfile', 'Gemfile.lock', '_compress_images_cache.yml']
 
 compress_images:
   images_path: "images/uploads/**/*.{gif,png,jpg,jpeg,svg}"
+
+imageoptim:
+  # Disabling svgo because it throws some error
+  svgo: false

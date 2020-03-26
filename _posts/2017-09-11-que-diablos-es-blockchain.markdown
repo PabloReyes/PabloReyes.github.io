@@ -20,7 +20,7 @@ Tengo más amigos no técnicos que técnicos. Muchos llevan semanas pidiéndome 
 ### Blockchain: ¿hacía falta algo tan complicado?
 >“Por cada problema complejo hay una respuesta clara, sencilla, y errónea”
 >
-> H. L. Mencken
+> <cite>H. L. Mencken</cite>
 
 **A diferencia de cualquier otro artículo en internet**, en vez de empezar explicando qué es Blockchain, vamos a ver qué problema resuelve.
 
@@ -78,8 +78,8 @@ Blockchain es un método para mantener un registro de transacciones entre todos 
 El requerimiento de este método es que debe haber suficiente gente que no quiera depender de un tercero para gestionar su libro de cuentas. Sólo entonces, este grupo será capaz de gestionarlo por ellos mismos.
 
 >Puede tener sentido hacerse con unos Bitcoins ahora, por si coge fuerza. Si suficiente gente piensa lo mismo, se convierte en una profecía autocumplida.
- >
- > Satoshi Nakamoto, 2009
+>
+> <cite>Satoshi Nakamoto, 2009</cite>
 
 ¿Pero cuantos? Al menos tres. En nuestro ejemplo, imaginemos que diez personas quieren dejar de usar bancos u otros intermediarios para transferirse dinero. Por mutuo acuerdo, todos tienen información de las cuentas de los demás, pero sin saber a quién pertenecen.
 

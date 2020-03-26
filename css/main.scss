@@ -26,6 +26,9 @@ hr{
   background: url(../images/background-cover.jpg) top left no-repeat #00456b;
   background-size: cover;
 
+  a{
+    text-decoration: none;
+  }
   .navigation--social{
     margin-left: 0;
   }
@@ -55,10 +58,15 @@ hr{
         .post-meta{
             font-size: $font_size_smaller;
             color: $color_gray_light;
+
+            .post-category{
+              float: right;
+            }
         }
 
         a{
             color: $color_black;
+            text-decoration: none;
         }
         img{
             width: calc(100% + 20px); // 100% + 10px + 10px
@@ -82,10 +90,20 @@ hr{
 /* Everything inside a post page */
 .post-container{
 
-  .post-image-featured{
-    width: 100%;
-    object-fit: cover;
-    max-height: 400px;
+  .featured-image-container{
+    text-align: center;
+    margin-bottom: 1em;
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      max-height: 400px;
+    }
+    .image-credit{
+      display: block;
+      font-size: $font_size_smaller;
+      color: $color_gray;
+    }
   }
 
   /* Images inside posts */

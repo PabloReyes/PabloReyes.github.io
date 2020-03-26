@@ -24,7 +24,9 @@ Resulta que esta práctica de girar a la derecha cuando el semáforo está en ro
 *Verás, mi mejor amigo Pablo. En los años 70, nuestro país sufrió la primera crisis del petróleo, que afectó a toda la economía del país y de gran parte del mundo. Nuestro gobierno decidió tomar medidas para fomentar la producción energética así como optimizar su consumo. Entre otras cosas, decidieron decirle a los estados lo siguiente:*
 
 
->Hey, estado. Si quieres recibir ayuda federal para la ristra de cosas que te voy a obligar a cumplir, más te vale permitir que los coches puedan girar a la derecha en los cruces cuando el semáforo está en rojo. Así pasan menos tiempo parados y gastan menos gasofa. Te dejaré poner algunas excepciones. [Energy Policy and Conservation Act of 1975](https://www.gpo.gov/fdsys/pkg/STATUTE-89/pdf/STATUTE-89-Pg871.pdf) , Página 63.
+>Hey, estado. Si quieres recibir ayuda federal para la ristra de cosas que te voy a obligar a cumplir, más te vale permitir que los coches puedan girar a la derecha en los cruces cuando el semáforo está en rojo. Así pasan menos tiempo parados y gastan menos gasofa. Te dejaré poner algunas excepciones. 
+>
+> <cite>[Energy Policy and Conservation Act of 1975](https://www.gpo.gov/fdsys/pkg/STATUTE-89/pdf/STATUTE-89-Pg871.pdf) , Página 63.</cite>
 
 *La mayoría de los estados, deseosos de recibir esas ayudas, aceptaron la oferta. Y así, hasta día de hoy.*
 
