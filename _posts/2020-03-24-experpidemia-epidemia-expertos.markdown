@@ -93,7 +93,7 @@ No hay forma de estar 100% preparados para eventos así. Desde que empezó a sal
 
 Cuando salgamos de esta será gracias a la capacidad de adaptarnos a sucesos imprevisibles como este, no gracias a las predicciones exactas de algún experto ni a un algoritmo extremadamente complejo. Las teorías son frágiles, y siempre se van adaptando para cubrir mejor el último caso en el que fallaron: así hay un nuevo paper mejor que el anterior, a la espera del próximo fracaso para perder el trono. 
 
-> La fe inquebrantable en la predicción científica con independencia del ámbito, la meta a reducir el futuro a expresiones numúericas sean fiables o no. Y es que nos las hemos arreglado para transformar la creencia religiosa en credulidad para todo lo que se disfrace de ciencia. 
+> La fe inquebrantable en la predicción científica con independencia del ámbito, la meta a reducir el futuro a expresiones numéricas sean fiables o no. Y es que nos las hemos arreglado para transformar la creencia religiosa en credulidad para todo lo que se disfrace de ciencia. 
 > 
 > <cite> Nassim Taleb</cite>
 
