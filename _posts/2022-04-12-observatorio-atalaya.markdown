@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Observatorio Atalaya"
-published: true
+published: false
 date: 2020-03-26
 css_id: observatory
 markdown: markdown
 category: Personal
-featured: true
+featured: false
 image: /images/uploads/posts/observatorio/observatorio-3d.png
 excerpt: "Construcción en casa de un observatorio astronómico en casa durante varios meses, con sus continuas modificaciones y mejoras."
 ---
