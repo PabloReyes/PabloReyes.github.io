@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Observatorio Atalaya"
-published: false
-date: 2020-03-26
+published: true
+date: 2022-03-01
 css_id: observatory
 markdown: markdown
 category: Personal
-featured: false
-image: /images/uploads/posts/observatorio/observatorio-3d.png
+featured: true
+image: /images/uploads/posts/observatorio/caseta-4.png
 excerpt: "Construcción en casa de un observatorio astronómico en casa durante varios meses, con sus continuas modificaciones y mejoras."
 ---
 
@@ -23,13 +23,13 @@ Existen distintos tipos de observatorio que uno puede hacer en casa: los de tipo
 En mi caso me decidí por un observatorio rectangular de techo deslizable, el diseño conocido como "roll-off observatory". Este diseño es muy común en observatorios caseros, pues permite un tamaño bastante razonable y una construcción no demasiado compleja. 
 ![](/images/uploads/posts/observatorio/huntington.png){:class="img-right"}
 
-Cuando uno busca en internet guías de gente que haya hecho este tipo de observatorios, se encuentra sobretodo con webs de los 90 donde americanos manitas hacen sus construcciones de madera sobre profundos cimientos de hormigón en medio de sus extensor ranchos. Un ejemplo es el caso de [Muskegon Atronomical Sociecy Observatory](http://www.stargazing.net/mas/observatory.htm), [Buena Vista Observatory](https://www.astrosteve.com/observatory/), [Bush Observatory](http://www.missouriskies.org/observatory/observatory.html) o la mayoría de los que podemos encontrar en [este índice de observatorios amateurs](https://nineplanets.org/amateur-astronomical-observatories/). Por suerte, buscando bien uno también encuentra observatorios como el [NGC-1701](https://sites.google.com/site/astronomiaenlacornisa/) en la Cornisa de Aljarafe, donde Juan Carlos Romera tiene prácticamente la misma situación que yo. 
+Cuando uno busca en internet guías de gente que haya hecho este tipo de observatorios, se encuentra sobretodo con webs de los 90 donde americanos manitas hacen sus construcciones de madera sobre profundos cimientos de hormigón en medio de sus extensos ranchos. Un ejemplo es el caso de [Muskegon Atronomical Sociecy Observatory](http://www.stargazing.net/mas/observatory.htm), [Buena Vista Observatory](https://www.astrosteve.com/observatory/), [Bush Observatory](http://www.missouriskies.org/observatory/observatory.html) o la mayoría de los que podemos encontrar en [este índice de observatorios amateurs](https://nineplanets.org/amateur-astronomical-observatories/). Por suerte, buscando bien uno también encuentra observatorios como el [NGC-1701](https://sites.google.com/site/astronomiaenlacornisa/) en la Cornisa de Aljarafe, donde Juan Carlos Romera tiene prácticamente la misma situación que yo. 
 
 Tras darle muchas vueltas a las distintas opciones, opté por una caseta de acero galvanizado de 0.4mm de grosor y 4.5m^2, en concreto la [Huntington M de Leroy Merlin](https://www.leroymerlin.es/fp/82578526/caseta-de-metal-huntington-m-de-237x201x186-cm-y-4-5-m2). La caseta es robusta y tiene tamaño suficiente para un telescopio grande y un pequeño escritorio donde colocar un ordenador y algunos cacharros.
 
 ## El  suelo (Febrero 2022)
 Un factor importante a la hora de montar un observatorio es el suelo donde se asienta, básicamente por dos motivos: 
-* **aislamiento**: Los tubos, lentes, cámaras, equipo electrónico, etc. necesitan unas condiciones de humedad y temperatura concretas. Es importante que la caseta no asiente directamente sobre el suelo de la terraza, donde está mas expuesto a humedades, insectos, polvo o basura.  
+* **aislamiento**: Los tubos, lentes, cámaras, equipo electrónico, etc. necesitan unas condiciones de humedad y temperatura. Es importante que la caseta no asiente directamente sobre el suelo de la terraza, donde está mas expuesto a humedades, insectos, polvo o basura.  
 * **estabilidad**: Especialmente para astrofotografía es imprescindible que el terreno sobre el que se soporta la montura y el tubo sean estables. Cualquier vibración del terreno tiene un impacto importante en la estabilidad de la imagen y puede arruinar una fotografía que lleva horas de preparación.
 
 ![](/images/uploads/posts/observatorio/plots-suelo.png){:class="img-left"}
@@ -41,7 +41,7 @@ La instalacíon es sencilla pero no cómoda. Las baldosas pesan más de lo que e
 Antes de levantar la caseta en el suelo, decidí poner unos listones de madera en la escuadra de la pared para atornillar la caseta y hacerla un poco más resistente al viento. También va anclada al suelo, pero la pared de ladrillo da más seguridad que el suelo de composite.
 ![](/images/uploads/posts/observatorio/fijaciones.png){:class="img-right"}
 
-También aproveché para tirar unos cables desde una caja de enchufes que había en la azotea hasta la caseta. En un principio solo colocaré una caja de dos enchufes, pero algo me dice que acabaré necesitando algo más en el futuro. De entrada, debería haber aprovechado para meter un cable ethernet también que me permitiera tener el ordenador conectado por cable en vez de por red, lo que facilitaría el control remoto con algún sistema VNC. 
+También aproveché para tirar unos cables desde una caja de enchufes que había en la azotea hasta la caseta. En un principio solo colocaré una caja de dos enchufes, pero algo me dice que acabaré necesitando algo más en el futuro. De entrada, debería haber aprovechado para meter un cable ethernet también que me permitiera tener el ordenador conectado por cable en vez de por red, lo que facilitaría el control remoto con algún sistema VNC. Mientras tanto, espero que el WiFi sea suficiente.
 ![](/images/uploads/posts/observatorio/cables.png){:class="img-center"}
 
 El montaje de esta caseta no es dificil, pero sí laborioso. El libro de instrucciones dice que se tiene montado en 5h con dos personas, pero yo eché al menos 10h. Los paneles son grandes y se necesitan un par de personas para levantarlos y alinearnos, aunque la mayor parte del trabajo puede hacer con una sola persona y mucha paciencia. 
@@ -83,7 +83,9 @@ Ya con la caseta prácticamente lista, tocaba hacer algunos detalles estéticos 
 ![](/images/uploads/posts/observatorio/esteticos-comb.png)
 
 ## Aislamiento térmico (Agosto 2022)
-Desde el principio sabía que un observatorio metálico, negro, en la costa del sol y apuntando al sur iba a estar bien calentito. El aislamiento térmico era un tema pendiente y esperé hasta Agosto a hacerlo, por lo que he sufrido todo un verano de +40º ahí dentro. 
+Desde el principio sabía que un observatorio metálico, negro, en la costa del sol y apuntando al sur iba a estar bien calentito. El aislamiento térmico era un tema pendiente y esperé hasta Agosto a hacerlo... En retrospectiva, debería haberlo hecho un poco antes. 
+![](/images/uploads/posts/observatorio/temp_obs_aug.jpeg){:class="img-center"}
+
 
 Para el aislamiento de los laterales, opté por crear una cámara de aire con [planchas OSB](https://www.leroymerlin.es/fp/19095790/tablero-de-osb-machiembrado-de-62-5x205x1-5-cm-anchoxaltoxgrosor) y [paneles de poliestireno](https://www.leroymerlin.es/fp/81909076/panel-de-poliestireno-aislante-danopren-tejado-40-mm-1-25x0-6-m) de 40mm. 
 
@@ -98,8 +100,15 @@ Aprovechando que saqué el techo, me decidí por aplicar un cambio que llevaba t
 La diferencia en el movimiento es enorme. Se abre/cierra entero con un simple toque, tanto que me me planteo ponerle algun freno para que el aire no lo mueva.
 ![](/images/uploads/posts/observatorio/techo_abriendo.gif)
 
+## Retoques finales
+Desde los últimos cambios "grandes", solo ha habido pequeñas mejoras que me hacen el uso más cómodo. Una pequeña repisa donde tener centralizado todo el cableado y hub, así como un pc y una cámara que ya han quedado ahí fijos. 
+![](/images/uploads/posts/observatorio/obs_final_1.png)
 
-## Usando el observatorio
-El observatorio está en uso desde hace meses, antes de haber hecho tantas mejoras. 
+Y he aquí algunas de las tomas más recientes:
+![Andrómeda](/images/uploads/posts/observatorio/andromeda.png){:class="img-center"}
 
-![](/images/uploads/posts/observatorio/andromeda.png)
+![Pleiades](/images/uploads/posts/observatorio/pleiades.png){:class="img-center"}
+
+![M33](/images/uploads/posts/observatorio/m33.png){:class="img-center"}
+
+![Luna](/images/uploads/posts/observatorio/luna.png){:class="img-center"}
