@@ -3,6 +3,7 @@ _site/
 .idea/
 .DS_Store
 node_modules/
+.history/
 Gemfile.lock
 
 _compress_images_cache.yml
