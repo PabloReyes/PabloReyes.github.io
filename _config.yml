@@ -11,7 +11,7 @@ description: 'Un desarrollador de software interesado en tecnología, cultura em
 url: 'http://pabloreyes.es'
 baseurl: ''
 google_analytics: 'UA-3511101-1'
-disqus_shortname: 'pabloreyes-es'
+#disqus_shortname: 'pabloreyes-es'
 
 author:
   name: 'Pablo Reyes'
