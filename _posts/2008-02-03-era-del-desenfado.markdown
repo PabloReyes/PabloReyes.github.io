@@ -5,7 +5,7 @@ published: true
 date: 2008-02-03
 category: Personal
 cta: Venga, cuéntame
-image: /images/uploads/no-image.jpg
+image: /images/uploads/cover-desenfado.jpg
 excerpt: "Empresas y políticos adoptan un estilo más relajado y cercano para parecer más modernos y accesibles."
 ---
 

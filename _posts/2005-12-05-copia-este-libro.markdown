@@ -6,7 +6,7 @@ date: 2005-12-05
 markdown: markdown
 category: Personal
 cta: Venga, cuéntame
-image: /images/uploads/no-image.jpg
+image: /images/uploads/cover-copia-libro2.png
 excerpt: "Impresiones sobre el libro de David Bravo, 'Copia este libro'."
 ---
 
