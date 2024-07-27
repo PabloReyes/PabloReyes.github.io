@@ -5,7 +5,7 @@ published: true
 date: 2008-01-23
 category: Personal
 cta: Venga, cuéntame
-image: /images/uploads/no-image.jpg
+image: /images/uploads/cover-catequesis.jpg
 excerpt: "Reflexión sobre la enseñanza de la religión en las escuelas y la catequesis."
 ---
 

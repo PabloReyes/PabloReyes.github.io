@@ -5,7 +5,7 @@ published: true
 date: 2008-02-03
 category: Personal
 cta: Venga, cuéntame
-image: /images/uploads/no-image.jpg
+image: /images/uploads/cover-carta-vivo.jpg
 excerpt: "Una reflexión personal sobre la vida y las personas que la hacen especial."
 ---
 Cómo pasa el tiempo. Y cuantas cosas pasan. La gente viene y va, a veces de repente y a veces de forma más o menos

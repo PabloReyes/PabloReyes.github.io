@@ -6,7 +6,7 @@ date: 2006-01-05
 markdown: markdown
 category: Personal
 cta: Venga, cuéntame
-image: /images/uploads/no-image.jpg
+image: /images/uploads/cover-shopping.jpg
 excerpt: "Reflexión sobre la transformación de la historia de los Reyes Magos y su impacto en la sociedad moderna."
 ---
 

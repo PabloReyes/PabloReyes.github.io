@@ -6,7 +6,7 @@ date: 2006-05-12
 markdown: markdown
 category: Personal
 cta: Venga, cuéntame
-image: /images/uploads/no-image.jpg
+image: /images/uploads/cover-john-ripper.png
 excerpt: "Una exploración sobre la seguridad en blogs y cómo conseguí acceso a varios paneles de administración."
 ---
 
