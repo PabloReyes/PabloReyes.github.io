@@ -63,7 +63,7 @@ Si alguna vez nos aburrimos y decidimos tirarnos una semana tirando dardos con l
 sean aleatorios), veremos como existe una relación entre el número de dardos que lanzamos y los que dan en la diana que
 tiende a $$\pi$$. Sabido esto, es sencillo implementarlo en el lenguaje de programación que más nos guste, aunque si se
 prefiere, se puede optar por la opción de estar una semana tirando dardos con los ojos vendados.
-Yo he preferido hacer uso de python+pythong (para la creación de gráficos):
+Yo he preferido hacer uso de python+[pythong](https://www3.uji.es/~dllorens/PythonG/) (para la creación de gráficos):
 
 ```python
 def pi_diana(disparos):
