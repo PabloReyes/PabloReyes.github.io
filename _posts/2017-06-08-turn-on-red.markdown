@@ -45,7 +45,7 @@ Hace un par de semanas estuve en Hamilton, Ontario (Canadá), donde el padre de 
 ![Road rigns change](/images/uploads/canada-change-road-sign.jpg)
 *La fotografía de arriba, propiedad del [Ministerio de Transporte de Ontario](http://www.mto.gov.on.ca/english/index.shtml), muestra a trabajadores en 1976 cambiando las señales de velocidad en la autopista 401.*
 
-![Limite 110 en España](/images/uploads/velocidad-espana-abc.jpg){:class="img-left"}
+![Limite 110 en España](/images/uploads/velocidad-espana-abc.png){:class="img-left"}
 Cuando en España limitamos el límite a 110km/h durante un verano para ahorrar energía, la gente protestó, se echó a la calle, y los periódicos decían que el gobierno nos "frenaba".
 
 Montamos un follón por una norma que duró un un verano, y todavía íbamos más rápidos que los canadienses. Estos norteños llevan pisando huevos 40 años.

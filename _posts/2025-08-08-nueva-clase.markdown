@@ -10,7 +10,7 @@ featured: false
 excerpt: "Construcción en casa de un observatorio astronómico en casa durante varios meses, con sus continuas modificaciones y mejoras."
 ---
 
-Cual es el coste de la "democratización"? Este concepto está muy de moda desde hace varios años, y se referie al 
+Cual es el coste de la "democratización"? Este concepto está muy de moda desde hace varios años, y se refiere al 
 hecho de acercar a la mayoría de la población, a los _comunes_, servicios, productos o experiencias que hasta 
 entonces estaban solo al alcance de unos pocos. 
 
@@ -31,7 +31,7 @@ sorprendió tanto como esperaba. A un común como yo, probablemente no sería di
 Budapest o Praga. Sea como fuere, estábamos allí con un objetivo: íbamos a vestirnos de gala e ir a la ópera. Iba a 
 encantarme, puesto que no se nada de ópera ni música en general y estoy seguro de que incluso la orquesta del 
 instituto me habría sonado genial. Pero Mozart tenía otro plan para mí, puesto que la ópera estaba cerrada en verano 
-por reformas. Plof. Nuestro gozo en pozo. ¿Qué ibamos a hacer entonces, después de comerme una rica tarta Sacher
+por reformas. Plof. Nuestro gozo en un pozo. ¿Qué ibamos a hacer entonces, después de comerme una rica tarta Sacher
 (ésta no muy democratizada). Eso nos preguntábamos mientras un señor vestido muy rococó salió de una oficinita en la 
 calle principal y nos dijo: _Mozart concert? Tonight? Where are you from?_  No nos dió mucha confianza, pues nos 
 pareció el típico show de bajo nivel para timar a turistas y dijimos educadamente que no. Sin embargo, 500 metros 
