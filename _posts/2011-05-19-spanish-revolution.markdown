@@ -6,7 +6,7 @@ date: 2011-05-19
 markdown: markdown
 category: Personal
 cta: Venga, cuéntame
-image: /images/uploads/cover-spanish-revolution.jpg
+image: /images/uploads/cover-spanish-revolution.png
 excerpt: "Una reflexión sobre el movimiento 15M y la situación política en España."
 ---
 
