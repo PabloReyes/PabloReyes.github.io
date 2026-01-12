@@ -23,7 +23,8 @@ fi
 
 # 4. Install Ruby 3.2.3
 asdf install ruby 3.2.3 || true
-asdf set ruby 3.2.3
+asdf local ruby 3.2.3
+asdf reshim ruby
 
 # 5. Install native dependencies (macOS only)
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -32,12 +33,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 # 6. Install bundler
-if ! gem list bundler -i >/dev/null 2>&1; then
-  gem install bundler
-fi
+asdf exec gem install bundler -v 2.7.1
 
 # 7. Install project dependencies
-bundle install
+asdf exec bundle install
 
-echo "\nAll dependencies installed. You can now run: bundle exec jekyll serve --watch"
-
+echo "\nAll dependencies installed. You can now run: asdf exec bundle exec jekyll serve --livereload"
