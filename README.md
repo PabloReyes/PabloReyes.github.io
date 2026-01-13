@@ -1,56 +1,46 @@
-PabloReyes.github.io
-====================
+# Pablo Reyes — Personal Blog
 
-Personal Website on GithubPages
+This repository contains the source code for my personal blog/website (Jekyll), published at [pabloreyes.es](http://pabloreyes.es).
 
-# ⚠️ Ruby Compatibility Note
-Jekyll and GitHub Pages require Ruby 3.2.x or lower. Ruby 3.3.x is not supported due to eventmachine native extension build errors. Use Ruby 3.2.3 for local development.
+I mainly write about technology, business culture, and personal finance, plus notes and resources I want to keep around.
 
-# Jekyll 4.4.1 note (GitHub Pages)
-This repo uses `jekyll 4.4.1` (see `Gemfile`). GitHub Pages’ built-in Jekyll build does not track the latest Jekyll versions, so deploy via GitHub Actions if you want GitHub-hosted output to match local builds.
+## Local development (personal use)
 
-Deployment is configured in `.github/workflows/pages.yml`. In GitHub repo settings, set **Pages → Source** to **GitHub Actions**.
+### Requirements
 
-# Running it locally
-1. Install asdf:
-   ```bash
-   brew install asdf
-   ```
+- Ruby `3.2.3` (see `.ruby-version` / `.tool-versions`)
+- Bundler
 
-2. Add asdf to your shell:
-   ```bash
-   echo -e '\n. $(brew --prefix asdf)/libexec/asdf.sh' >> ~/.zshrc
-   source ~/.zshrc
-   ```
+Note: GitHub Pages/Jekyll and some native gems tend to break on Ruby `3.3.x` (for example `eventmachine`), which is why this repo sticks to `3.2.x`.
 
-3. Install Ruby plugin for asdf:
-   ```bash
-   asdf plugin add ruby
-   ```
+### Install dependencies
 
-4. Install the required Ruby version (use 3.2.3):
-   ```bash
-   asdf install ruby 3.2.3
-   asdf local ruby 3.2.3
-   ```
+If you use `asdf`:
 
-5. Install dependencies for native gems (macOS):
-   ```bash
-   brew install openssl libffi pkg-config
-   export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig:$(brew --prefix libffi)/lib/pkgconfig"
-   ```
+```bash
+asdf install
+asdf exec bundle install
+```
 
-6. Install bundler via gem:
-   ```bash
-   asdf exec gem install bundler -v 2.7.1
-   ```
+### Run
 
-7. Install dependencies:
-   ```bash
-   asdf exec bundle install
-   ```
+```bash
+asdf exec bundle exec jekyll serve --livereload
+```
 
-8. Run the server:
-   ```bash
-   asdf exec bundle exec jekyll serve --livereload
-   ```
+### Production build (compile check)
+
+```bash
+asdf exec bundle exec jekyll build
+```
+
+### GitHub Pages deployment
+
+This repo uses `jekyll 4.4.1` (see `Gemfile`). Since GitHub Pages doesn’t always track the latest Jekyll versions, deployment is done via GitHub Actions.
+
+- Workflow: `.github/workflows/pages.yml`
+- Recommended setting: **Settings → Pages → Source → GitHub Actions**
+
+## License
+
+See `LICENSE` (Apache-2.0).
