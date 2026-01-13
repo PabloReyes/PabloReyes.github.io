@@ -19,6 +19,16 @@ header.panel-cover {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #f6f7f9;
 }
@@ -290,6 +300,11 @@ header.panel-cover .navigation__item a.active:hover {
 }
 
 @media (max-width: 960px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .main-post-list article.post-entry a,
   .main-post-list article.post-entry .post-entry__inner {
     flex-direction: column;
