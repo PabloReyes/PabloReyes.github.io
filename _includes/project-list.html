@@ -1,0 +1,60 @@
+{% for project in site.data.projects %}
+  <article class="post-entry" id="{{ project.id }}">
+    <div class="post-entry__inner">
+
+      {% if project.image %}
+        {% if project.url %}
+          <a class="project-card-link" href="{{ project.url }}" target="_blank" rel="noopener noreferrer" aria-label="View project: {{ project.title }}">
+            <img src="{{ site.baseurl }}/about/assets/{{ project.image }}" alt="{{ project.title }}">
+          </a>
+        {% else %}
+          <img src="{{ site.baseurl }}/about/assets/{{ project.image }}" alt="{{ project.title }}">
+        {% endif %}
+      {% endif %}
+
+      <div class="post-content-text">
+        <div class="post-title">
+          {% if project.url %}
+            <a class="project-title-link" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+          {% else %}
+            <span>{{ project.title }}</span>
+          {% endif %}
+        </div>
+
+        <div class="post-meta">
+          <time datetime="{{ project.year }}-01-01">{{ project.year }}</time>
+        </div>
+
+        <div class="post-excerpt">
+          <span class="lang-text lang-es">{{ project.summary }}</span>
+          <span class="lang-text lang-en">{{ project.summary_en | default: project.summary }}</span>
+        </div>
+
+        {% if project.purpose %}
+          <div class="project-purpose">
+            <span class="lang-text lang-es">{{ project.purpose }}</span>
+            <span class="lang-text lang-en">{{ project.purpose_en | default: project.purpose }}</span>
+          </div>
+        {% endif %}
+
+        {% if project.technologies %}
+          <div class="project-tags" aria-label="Main technologies">
+            {% for tech in project.technologies %}
+              <span class="project-tag">{{ tech }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if project.url %}
+          <div class="project-cta">
+            <a class="project-view-link" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+              <span class="lang-text lang-es">Ver proyecto</span>
+              <span class="lang-text lang-en">View project</span>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </article>
+{% endfor %}

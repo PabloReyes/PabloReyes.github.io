@@ -2,6 +2,11 @@
   <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</span>
 </footer> 
 
+<div id="imageModal" class="image-modal" aria-hidden="true">
+  <button type="button" class="image-modal__close" aria-label="Close image">&times;</button>
+  <img class="image-modal__img" alt="">
+</div>
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
 {% if site.google_analytics %}

@@ -1,0 +1,179 @@
+- id: xrai-vision
+  title: X-RAI Vision
+  year: 2026
+  image: screenshot_portfolio.png
+  summary: "Herramienta de auditoría de carteras: subes un PDF de Morningstar y la IA extrae los datos, detecta riesgos/solapamientos y genera un informe y dashboard visual."
+  summary_en: "Portfolio auditing tool: upload a Morningstar PDF and the AI extracts the data, flags hidden risks/overlaps, and produces a written report plus a visual dashboard."
+  purpose: "Proyecto personal para experimentar con IA generativa multimodal aplicada a documentos financieros y diseño de producto."
+  purpose_en: "Personal learning project to explore multimodal generative AI on financial documents, and to iterate on product UX end-to-end."
+  technologies:
+    - React
+    - Vite
+    - Tailwind CSS
+    - Node.js
+    - Express
+    - Google Gemini API
+    - Recharts
+  url: https://xrai.pabloreyes.es
+
+- id: openinsider
+  title: OpenInsider
+  year: 2022
+  image: openinsider.png
+  summary: "Proceso automatizado que descarga y parsea notificaciones de insider trading de la CNMV, almacenándolas en una base de datos lista para análisis y visualización."
+  summary_en: "Automated pipeline that retrieves and parses insider trading disclosures from the Spanish CNMV, storing them in a database ready for analysis and visualization."
+  purpose: "Laboratorio para profundizar en scraping robusto, automatización diaria y persistencia SQL."
+  purpose_en: "Learning sandbox focused on resilient scraping, daily automation, and SQL-first persistence."
+  technologies:
+    - Python
+    - Scrapy
+    - PostgreSQL
+    - Docker
+  url: https://openinsider.eu/
+
+- id: barcelona-housing
+  title: Barcelona Housing Analysis
+  year: 2020
+  image: catastro_heatmap.png
+  summary: "Análisis geoespacial de la evolución del parque de vivienda en Barcelona desde 1900 con datos del Catastro, incluyendo mapas y heatmaps para identificar patrones urbanos."
+  summary_en: "Geospatial analysis of Barcelona’s housing stock since 1900 using Cadastre data, with maps and heatmaps to surface urban patterns over time."
+  purpose: "Proyecto de aprendizaje para combinar limpieza de datos, GIS y visualización exploratoria."
+  purpose_en: "Learning project to combine data cleaning, GIS workflows, and exploratory visualization."
+  technologies:
+    - Python
+    - Pandas
+    - Matplotlib
+    - Pyproj
+    - Ipyleaflet
+  url: https://blog.pabloreyes.es/vivienda-catastro-barcelona-machine-learning/
+
+- id: carbitrage
+  title: Carbitrage
+  year: 2020
+  image: carbitrage.png
+  summary: "Sistema end-to-end que monitoriza marketplaces, procesa anuncios en la nube, estima precios “justos” con modelos y destaca outliers (posible arbitraje) en un dashboard interactivo."
+  summary_en: "End-to-end system that monitors marketplaces, processes listings in the cloud, estimates “fair” prices with models, and highlights outliers (potential arbitrage) in an interactive dashboard."
+  purpose: "Construido para practicar data engineering en GCP, infraestructura como código y ML aplicado a precios."
+  purpose_en: "Built as a learning project to practice data engineering on GCP, infrastructure-as-code, and ML for pricing."
+  technologies:
+    - Python
+    - Scrapy
+    - Pandas
+    - GCP (Pub/Sub, Cloud Functions, Firestore)
+    - Terraform
+    - CatBoost
+    - Scikit-learn
+    - Dash
+    - Flask
+
+- id: backio
+  title: Backio
+  year: 2020
+  image: backio_1.png
+  summary: "Dashboard interactivo de backtesting: carga estrategias, ajusta parámetros y visualiza curvas de equity, drawdowns y métricas como Sharpe, CAGR y más."
+  summary_en: "Interactive backtesting dashboard: load strategies, tweak parameters, and visualize equity curves, drawdowns, and metrics like Sharpe, CAGR, and more."
+  purpose: "Proyecto personal para explorar Backtrader y construir una UI de análisis con Dash/Plotly."
+  purpose_en: "Personal learning project to explore Backtrader and build an analysis UI with Dash/Plotly."
+  technologies:
+    - Python
+    - Dash
+    - Flask
+    - Backtrader
+    - Pandas
+    - Plotly
+    - Pyfolio
+
+- id: sentiment-trading
+  title: Sentiment Trading Strategy
+  year: 2020
+  image: trading_backtest.png
+  summary: "Estrategia de trading algorítmico que incorpora análisis de sentimiento (noticias y redes) para mejorar señales de compra/venta, validada mediante backtesting."
+  summary_en: "Algorithmic trading strategy that blends sentiment analysis (news + social) to improve buy/sell signals, validated through backtesting."
+  purpose: "Nació para aprender a combinar NLP con evaluación cuantitativa y despliegue en cloud."
+  purpose_en: "Created to learn how to combine NLP with quantitative evaluation and cloud deployment."
+  technologies:
+    - Python
+    - Backtrader
+    - NLTK (VADER)
+    - Google Cloud
+    - Firebase
+  url: https://blog.pabloreyes.es/trading-sentimental/
+
+- id: afterfacts
+  title: AfterFacts
+  year: 2020
+  image: afterfacts_preview.png
+  summary: "Plataforma estática para registrar predicciones públicas y contrastarlas con resultados reales, creando un archivo verificable de “quién dijo qué y cuándo”."
+  summary_en: "Static platform to track public predictions and compare them with real outcomes, creating a verifiable archive of “who said what, and when”."
+  purpose: "Experimento para aprender Jekyll/GitHub Pages y diseñar un flujo de contenido simple y mantenible."
+  purpose_en: "Experiment to learn Jekyll/GitHub Pages and design a simple, maintainable content workflow."
+  technologies:
+    - Jekyll
+    - Markdown
+    - GitHub Pages
+  url: https://github.com/PabloReyes/afterfacts.github.io
+
+- id: laliga-analysis
+  title: La Liga Player Analysis
+  year: 2019
+  image: laliga_clusters.png
+  summary: "Segmentación de jugadores de La Liga con técnicas de ML (PCA + clustering) para descubrir perfiles y similitudes basadas en estadísticas, sin depender de la posición en el campo."
+  summary_en: "Segmentation of La Liga players using ML (PCA + clustering) to uncover statistical profiles and similarities beyond on-field positions."
+  purpose: "Proyecto de aprendizaje de scraping, modelado no supervisado y visualización."
+  purpose_en: "Learning project around scraping, unsupervised modeling, and visualization."
+  technologies:
+    - Python
+    - Pandas
+    - Scikit-learn
+    - Matplotlib
+    - Selenium
+  url: https://blog.pabloreyes.es/laliga-jugadores-machine-learning/
+
+- id: entretodos
+  title: EntreTodos
+  year: 2012
+  image: entretodos.png
+  summary: "Plataforma de democracia participativa para que comunidades propongan, debatan y voten iniciativas con un ciclo de vida claro, reputación (karma) y búsqueda."
+  summary_en: "Participatory democracy platform where communities can propose, discuss, and vote on initiatives with a clear lifecycle, reputation (karma), and search."
+  purpose: "Proyecto legacy para aprender desarrollo full‑stack en Grails y patrones de producto social/comunitario."
+  purpose_en: "Legacy project built as a learning exercise in Grails full-stack development and community/product patterns."
+  technologies:
+    - Grails
+    - Groovy
+    - Java
+    - Spring Security
+    - Bootstrap
+    - Lucene
+    - Hibernate
+    - LESS
+
+- id: lyric-cloud
+  title: Lyric Cloud
+  year: 2011
+  image: ywdy_1.png
+  summary: "Aplicación web que genera nubes de palabras interactivas a partir de letras (o textos) con búsqueda de autores y visualización dinámica."
+  summary_en: "Web app that generates interactive word clouds from lyrics (or any text), with author search and dynamic visualization."
+  purpose: "Proyecto legacy creado para aprender un stack web completo y D3 para visualización de datos."
+  purpose_en: "Legacy project built to learn a full web stack and experiment with data visualization using D3."
+  technologies:
+    - Node.js
+    - Express
+    - MongoDB
+    - AngularJS
+    - D3.js
+    - Jade
+    - Less
+
+- id: ocpjp6
+  title: OCPJP6 Resumen Español
+  year: 2009
+  image: ocpjp.png
+  summary: "Resumen en español para preparar la certificación Oracle Certified Professional Java SE 6 Programmer, con traducción/adaptación de los conceptos clave y enfoque “repaso final”."
+  summary_en: "Spanish study notes for the Oracle Certified Professional Java SE 6 Programmer exam, distilled as a focused last-mile review resource."
+  purpose: "Material de estudio personal convertido en recurso público para la comunidad."
+  purpose_en: "Personal study material published as a community resource."
+  technologies:
+    - Java
+    - OCPJP
+    - Documentación
+  url: https://github.com/PabloReyes/ocpjp-resumen-espanol

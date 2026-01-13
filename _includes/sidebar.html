@@ -17,15 +17,18 @@
           Desarrollador de software interesado en las finanzas personales, los negocios y el análisis de datos.
         </p>
 
-        <div class="navigation-wrapper">
-          <nav class="cover-navigation">
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a href="{{ site.baseurl }}/about" title="Quien soy" class="blog-button">Quién soy</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+	        <div class="navigation-wrapper">
+	          <nav class="cover-navigation">
+	            <ul class="navigation">
+	              <li class="navigation__item">
+	                <a href="{{ site.baseurl }}/" title="Artículos"{% unless page.url contains '/about/' %} class="active"{% endunless %}>Artículos</a>
+	              </li>
+	              <li class="navigation__item">
+	                <a href="{{ site.baseurl }}/about/" title="Proyectos"{% if page.url contains '/about/' %} class="active"{% endif %}>Proyectos</a>
+	              </li>
+	            </ul>
+	          </nav>
+	        </div>
 
       </div>
 
