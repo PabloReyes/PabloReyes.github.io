@@ -105,6 +105,8 @@ Desde los últimos cambios "grandes", solo ha habido pequeñas mejoras que me ha
 ![](/images/uploads/posts/observatorio/obs_final_1.png)
 
 Y he aquí algunas de las tomas más recientes:
+![Rosetta](/images/uploads/posts/observatorio/rosetta.png){:class="img-center"}
+
 ![Andrómeda](/images/uploads/posts/observatorio/andromeda.png){:class="img-center"}
 
 ![Pleiades](/images/uploads/posts/observatorio/pleiades.png){:class="img-center"}
