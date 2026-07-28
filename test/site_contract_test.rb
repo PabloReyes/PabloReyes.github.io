@@ -75,6 +75,39 @@ class SiteContractTest < Minitest::Test
     assert_includes config.fetch("plugins"), "jekyll-sitemap"
   end
 
+  def test_seo_scope_preserves_existing_titles_and_description
+    config = YAML.safe_load(ROOT.join("_config.yml").read)
+    projects_page = ROOT.join("projects/index.md")
+
+    assert_equal "Pablo Reyes", config.fetch("title")
+    assert_equal "Desarrollo de software, tecnología, producto y análisis de datos",
+                 config.fetch("description")
+    assert projects_page.file?, "Missing canonical Spanish projects page"
+    assert_equal "Proyectos", front_matter(projects_page).fetch("title")
+  end
+
+  def test_categories_are_retired
+    refute ROOT.join("categories.md").exist?, "Legacy categories page still exists"
+    refute ROOT.join("_layouts/categories.html").exist?, "Legacy categories layout still exists"
+  end
+
+  def test_projects_have_static_language_routes
+    spanish_path = ROOT.join("projects/index.md")
+    english_path = ROOT.join("en/projects/index.md")
+
+    assert spanish_path.file?, "Missing Spanish projects page"
+    assert english_path.file?, "Missing English projects page"
+
+    spanish = front_matter(spanish_path)
+    english = front_matter(english_path)
+
+    assert_equal "/projects/", spanish.fetch("permalink")
+    assert_equal "es", spanish.fetch("lang")
+    assert_equal "/en/projects/", english.fetch("permalink")
+    assert_equal "en", english.fetch("lang")
+    refute ROOT.join("js/projects-lang.js").exist?, "Legacy language-toggle JavaScript still exists"
+  end
+
   def test_opencode_automation_remains_absent
     workflow_paths = ROOT.glob(".github/workflows/**/*").select(&:file?)
     matches = workflow_paths.select { |path| path.read.match?(/opencode|gemini_api_key/i) }
@@ -233,6 +266,13 @@ class SiteContractTest < Minitest::Test
   end
 
   private
+
+  def front_matter(path)
+    source = path.read
+    yaml = source[/\A---\s*\n(.*?)\n---\s*\n/m, 1]
+    refute_nil yaml, "Missing YAML front matter in #{path.relative_path_from(ROOT)}"
+    YAML.safe_load(yaml)
+  end
 
   def thumbnail_variants(root, source)
     webp = source.sub_ext(".webp")
