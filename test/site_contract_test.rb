@@ -172,7 +172,75 @@ class SiteContractTest < Minitest::Test
     assert_empty missing_strategy, "Images without loading strategy:\n#{missing_strategy.join("\n")}"
   end
 
+  def test_editorial_visual_system_contract
+    styles = ROOT.join("css/main.scss").read
+    sidebar = ROOT.join("_includes/sidebar.html").read
+    post_list = ROOT.join("_includes/post-list-cards.html").read
+    project_list = ROOT.join("_includes/project-list.html").read
+    projects_page = ROOT.join("about/index.md").read
+
+    {
+      "--color-bg" => "#fafaf8",
+      "--color-surface" => "#ffffff",
+      "--color-ink" => "#202124",
+      "--color-muted" => "#667085",
+      "--color-border" => "#e5e7eb",
+      "--color-accent" => "#b44937",
+      "--measure-reading" => "44rem",
+      "--measure-media" => "64rem"
+    }.each do |token, value|
+      assert_match(/#{Regexp.escape(token)}:\s*#{Regexp.escape(value)}/, styles)
+    end
+
+    assert_match(/font-family:\s*var\(--font-ui\)/, styles)
+    assert_match(/\.post-content\s*\{[^}]*font-family:\s*var\(--font-reading\)/m, styles)
+    assert_match(/\.post-container--single\s*\{[^}]*max-width:\s*var\(--measure-reading\)/m, styles)
+    assert_includes styles, "text-wrap: balance"
+    assert_includes styles, "text-wrap: pretty"
+    refute_match(/linear-gradient|backdrop-filter/, styles)
+    refute_match(/\.lang-selector\s*\{[^}]*position:\s*sticky/m, styles)
+
+    assert_includes sidebar, "Software, tecnología, producto y las cosas que construyo."
+    assert_includes post_list, '<picture class="post-entry__media">'
+    assert_includes post_list, 'type="image/webp"'
+    assert_includes post_list, "srcset="
+    assert_includes project_list, '<picture class="project-card__media">'
+    assert_includes project_list, 'type="image/webp"'
+    assert_match(/\{%\s*for tech in project\.technologies limit:\s*5\s*%\}/, project_list)
+    refute_includes project_list, "project-view-link"
+    refute_includes project_list, "project-purpose"
+    assert_includes projects_page, 'class="projects-heading"'
+  end
+
+  def test_responsive_thumbnail_assets_exist
+    post_images = ROOT.glob("_posts/*").filter_map do |post|
+      image = post.read[/^image:\s*(\S+)\s*$/, 1]
+      next unless image&.start_with?("/images/uploads/")
+
+      Pathname(image.delete_prefix("/images/uploads/"))
+    end
+
+    missing_post_thumbnails = post_images.flat_map do |image|
+      thumbnail_variants(ROOT.join("images/thumbnails"), image).reject(&:file?)
+    end
+    assert_empty missing_post_thumbnails.map { |path| path.relative_path_from(ROOT).to_s }
+
+    projects = YAML.safe_load(ROOT.join("_data/projects.yml").read, permitted_classes: [Date])
+    missing_project_thumbnails = projects.flat_map do |project|
+      thumbnail_variants(ROOT.join("about/thumbnails"), Pathname(project.fetch("image"))).reject(&:file?)
+    end
+    assert_empty missing_project_thumbnails.map { |path| path.relative_path_from(ROOT).to_s }
+  end
+
   private
+
+  def thumbnail_variants(root, source)
+    webp = source.sub_ext(".webp")
+    [
+      root.join(webp),
+      root.join(webp.dirname, "#{webp.basename(".webp")}@2x.webp")
+    ]
+  end
 
   def assert_internal_references_exist(html_files)
     missing = []
