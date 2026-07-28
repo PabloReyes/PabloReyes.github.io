@@ -24,6 +24,8 @@ jobs:
         with:
           ruby-version: "4.0.6"
           bundler-cache: true
+      - name: Install image encoders
+        run: sudo apt-get update && sudo apt-get install --yes webp
       - name: Test source contracts
         run: bundle exec ruby test/site_contract_test.rb
       - name: Build

@@ -234,6 +234,41 @@ class SiteContractTest < Minitest::Test
     assert_equal EXPECTED_PROJECT_IDS.size, projects.dig("mainEntity", "itemListElement").size
   end
 
+  def test_generated_article_images_are_responsive
+    article_path = SITE.join("observatorio-atalaya/index.html")
+    skip "Run a production build before generated-site checks" unless article_path.file?
+
+    article = article_path.read
+    pictures = article.scan(%r{<picture class="responsive-article-image">.*?</picture>}mi)
+
+    assert_equal 23, pictures.size
+
+    pictures.each do |picture|
+      assert_match(/<source[^>]+type=["']image\/webp["']/i, picture)
+      assert_match(/\bsrcset=["'][^"']+\.webp \d+w/i, picture)
+      assert_match(/<img[^>]+\bwidth=["']\d+["']/i, picture)
+      assert_match(/<img[^>]+\bheight=["']\d+["']/i, picture)
+      assert_match(/<img[^>]+\bsrc=["']\/images\/uploads\//i, picture)
+    end
+
+    featured = pictures.find { |picture| picture.include?("post-image-featured") }
+    refute_nil featured
+    assert_match(/\bfetchpriority=["']high["']/i, featured)
+
+    inline = pictures.reject { |picture| picture.equal?(featured) }
+    assert inline.all? { |picture| picture.match?(/\bloading=["']lazy["']/i) }
+
+    generated_sources = pictures.flat_map do |picture|
+      picture.scan(%r{(/images/generated/articles/[^"'\s,]+\.webp)}).flatten
+    end
+    refute_empty generated_sources
+
+    missing = generated_sources.uniq.reject do |source|
+      SITE.join(source.delete_prefix("/")).file?
+    end
+    assert_empty missing, "Missing generated article images:\n#{missing.join("\n")}"
+  end
+
   def test_editorial_visual_system_contract
     styles = ROOT.join("css/main.scss").read
     sidebar = ROOT.join("_includes/sidebar.html").read

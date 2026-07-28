@@ -6,3 +6,4 @@ node_modules/
 .history/
 
 .sass-cache/
+.jekyll-cache/responsive-article-images/
