@@ -292,6 +292,8 @@ class SiteContractTest < Minitest::Test
 
     assert_match(/<html[^>]+lang="es"/, spanish)
     assert_match(/<html[^>]+lang="en"/, english)
+    assert_match(%r{<a href="/en/projects/" class="active" aria-current="page">\s*Projects\s*</a>},
+                 english)
     assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/projects/">}, spanish)
     assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/en/projects/">}, english)
 

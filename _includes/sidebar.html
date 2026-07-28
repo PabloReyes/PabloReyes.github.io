@@ -18,6 +18,11 @@
         </p>
 
         {% assign navigation_lang = page.lang | default: site.lang %}
+        {% if navigation_lang == "en" %}
+          {% assign projects_path = "/en/projects/" %}
+        {% else %}
+          {% assign projects_path = "/projects/" %}
+        {% endif %}
         <div class="navigation-wrapper">
           <nav class="cover-navigation">
             <ul class="navigation">
@@ -27,7 +32,7 @@
                 </a>
               </li>
               <li class="navigation__item">
-                <a href="{{ '/projects/' | relative_url }}"{% if page.translation_key == 'projects' %} class="active" aria-current="page"{% endif %}>
+                <a href="{{ projects_path | relative_url }}"{% if page.translation_key == 'projects' %} class="active" aria-current="page"{% endif %}>
                   {% if navigation_lang == "en" %}Projects{% else %}Proyectos{% endif %}
                 </a>
               </li>
