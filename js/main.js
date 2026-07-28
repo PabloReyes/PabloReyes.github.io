@@ -2,40 +2,48 @@
 layout: null
 ---
 
-$(document).ready(function () {
-  if (!$("body").hasClass("projects-page")) return;
+(() => {
+  const modal = document.querySelector("#imageModal");
+  if (!(modal instanceof HTMLDialogElement)) return;
 
-  const $modal = $("#imageModal");
-  const $modalImg = $("#imageModal .image-modal__img");
-
-  const openModal = (src, alt) => {
-    $modalImg.attr("src", src);
-    $modalImg.attr("alt", alt || "");
-    $modal.addClass("is-open").attr("aria-hidden", "false");
-    $("body").css("overflow", "hidden");
-  };
+  const modalImage = modal.querySelector(".image-modal__img");
+  const closeButton = modal.querySelector(".image-modal__close");
+  let activeTrigger = null;
 
   const closeModal = () => {
-    $modal.removeClass("is-open").attr("aria-hidden", "true");
-    $modalImg.attr("src", "");
-    $("body").css("overflow", "");
+    if (modal.open) modal.close();
   };
 
-  $(".main-post-list").on("click", "article.post-entry img", function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-    openModal($(this).attr("src"), $(this).attr("alt"));
+  document.addEventListener("click", (event) => {
+    const trigger = event.target.closest(".project-image-button");
+    if (!trigger) return;
+
+    activeTrigger = trigger;
+    modalImage.src = trigger.dataset.modalSrc;
+    modalImage.alt = trigger.dataset.modalAlt || "";
+    modal.showModal();
+    document.body.classList.add("modal-open");
+    closeButton.focus();
   });
 
-  $modal.on("click", function (e) {
-    if ($(e.target).is("#imageModal")) closeModal();
+  closeButton.addEventListener("click", closeModal);
+
+  modal.addEventListener("click", (event) => {
+    const bounds = modal.getBoundingClientRect();
+    const insideDialog =
+      event.clientX >= bounds.left &&
+      event.clientX <= bounds.right &&
+      event.clientY >= bounds.top &&
+      event.clientY <= bounds.bottom;
+
+    if (!insideDialog) closeModal();
   });
 
-  $modal.on("click", ".image-modal__close", function () {
-    closeModal();
+  modal.addEventListener("close", () => {
+    document.body.classList.remove("modal-open");
+    modalImage.removeAttribute("src");
+    modalImage.alt = "";
+    activeTrigger?.focus();
+    activeTrigger = null;
   });
-
-  $(document).on("keydown", function (e) {
-    if (e.key === "Escape" && $modal.hasClass("is-open")) closeModal();
-  });
-})
+})();

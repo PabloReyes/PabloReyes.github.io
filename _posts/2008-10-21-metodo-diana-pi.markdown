@@ -48,7 +48,7 @@ Problema de Basilea](https://es.wikipedia.org/wiki/Problema_de_Basilea) o el [Pr
 
 ## El método de la diana
 Imaginemos un círculo inscrito en un cuadrado de lado $$2u$$ como el siguiente:
-![cuadrado_2u.png](..%2Fimages%2Fuploads%2Fposts%2Fpi-diana%2Fcuadrado_2u.png)
+![Círculo inscrito en un cuadrado](/images/uploads/posts/pi-diana/cuadrado_2u.png){:loading="lazy" decoding="async"}
 Con lo listo que somos, seguro que nos damos cuenta que el radio del círculo inscrito es de $$1u$$. También sabemos que el área de cuadrado es $$A_{cuad} = 4u^2$$ y que
 $$A_{circ} = r^2 = \pi$$.
 
@@ -86,7 +86,7 @@ def pi_diana(disparos):
 ```
 
 El resultado es el siguiente:
-![pi-diana-resultados.png](../images/uploads/posts/pi-diana/pi-diana-resultados.png)
+![pi-diana-resultados.png](../images/uploads/posts/pi-diana/pi-diana-resultados.png){:loading="lazy" decoding="async"}
 
 Como se puede observar, el resultado no es muy bueno, pues se necesitan muchas iteraciones para conseguir unas mínimas
 cifras significativas, pero sí que es curioso el comprobar cómo puede calcularse un número tan mágico como $$\pi$$ de una

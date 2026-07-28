@@ -105,7 +105,7 @@ ejercicio con un montón de gente alrededor mirándoles. Me acerqué a uno y le 
 flexiones”, sabiendo perfectamente que iba a darle los $2 (tenían un bote para donaciones para una revista). Allí me
 puse a hacer flexiones con uno de ellos mientras todo el mundo alrededor aplaudía y me animaba.
 
-![pablo-pushups.png](../images/uploads/posts/new-york/pablo-pushups.png)
+![pablo-pushups.png](../images/uploads/posts/new-york/pablo-pushups.png){:loading="lazy" decoding="async"}
 
 Luego nos hemos ido y he comprado preservativos de Obama a un tío que los vendía por la calle, muy gracioso. Por el
 camino a casa hemos visto a unos tios disfrazados de Cazafantasmas y me he acercado y les he preguntado asombrado “Ey!

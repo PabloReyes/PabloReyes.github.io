@@ -1,41 +1,35 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
-# 1. Install asdf (if not installed)
 if ! command -v asdf >/dev/null 2>&1; then
-  echo "Please install asdf manually (brew install asdf) and add it to your shell config."
+  echo "asdf is required. Install it with Homebrew and restart your shell:"
+  echo "  brew install asdf"
   exit 1
 fi
 
-# 2. Ensure asdf is loaded
-if ! command -v asdf >/dev/null 2>&1; then
-  if [ -f "$HOME/.asdf/asdf.sh" ]; then
-    . "$HOME/.asdf/asdf.sh"
-  elif command -v brew >/dev/null 2>&1 && [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ]; then
-    . "$(brew --prefix asdf)/libexec/asdf.sh"
-  fi
-fi
-
-# 3. Install Ruby plugin
 if ! asdf plugin list | grep -q '^ruby$'; then
   asdf plugin add ruby
 fi
+asdf plugin update ruby
 
-# 4. Install Ruby 3.2.3
-asdf install ruby 3.2.3 || true
-asdf local ruby 3.2.3
-asdf reshim ruby
-
-# 5. Install native dependencies (macOS only)
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  brew install openssl libffi pkg-config
-  export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig:$(brew --prefix libffi)/lib/pkgconfig"
+  if ! command -v brew >/dev/null 2>&1; then
+    echo "Homebrew is required to install Ruby native dependencies on macOS."
+    exit 1
+  fi
+
+  for formula in openssl@3 libffi pkg-config; do
+    brew list --versions "$formula" >/dev/null 2>&1 || brew install "$formula"
+  done
+
+  export PKG_CONFIG_PATH="$(brew --prefix openssl@3)/lib/pkgconfig:$(brew --prefix libffi)/lib/pkgconfig"
 fi
 
-# 6. Install bundler
-asdf exec gem install bundler -v 2.7.1
+asdf install
+asdf reshim ruby
 
-# 7. Install project dependencies
+asdf exec gem install bundler -v 4.0.16
+asdf reshim ruby
 asdf exec bundle install
 
-echo "\nAll dependencies installed. You can now run: asdf exec bundle exec jekyll serve --livereload"
+printf '\nDependencies installed. Run: asdf exec bundle exec jekyll serve --livereload\n'

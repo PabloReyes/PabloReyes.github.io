@@ -9,22 +9,22 @@
 
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
-        <a href="{{ site.url }}" title="link to home of {{ site.title }}">
-          <h1 class="panel-cover__title panel-title">Pablo Reyes</h1>
+        <a href="{{ '/' | relative_url }}" aria-label="Inicio de {{ site.title }}">
+          <p class="panel-cover__title panel-title">Pablo Reyes</p>
         </a>
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">
-          Desarrollador de software interesado en las finanzas personales, los negocios y el análisis de datos.
+          Desarrollo de software, tecnología, producto y análisis de datos.
         </p>
 
 	        <div class="navigation-wrapper">
 	          <nav class="cover-navigation">
 	            <ul class="navigation">
 	              <li class="navigation__item">
-	                <a href="{{ site.baseurl }}/" title="Artículos"{% unless page.url contains '/about/' %} class="active"{% endunless %}>Artículos</a>
+	                <a href="{{ '/' | relative_url }}"{% unless page.url contains '/about/' %} class="active" aria-current="page"{% endunless %}>Artículos</a>
 	              </li>
 	              <li class="navigation__item">
-	                <a href="{{ site.baseurl }}/about/" title="Proyectos"{% if page.url contains '/about/' %} class="active"{% endif %}>Proyectos</a>
+	                <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about/' %} class="active" aria-current="page"{% endif %}>Proyectos</a>
 	              </li>
 	            </ul>
 	          </nav>

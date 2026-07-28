@@ -3,13 +3,21 @@
     <div class="post-entry__inner">
 
       {% if project.image %}
-        {% if project.url %}
-          <a class="project-card-link" href="{{ project.url }}" target="_blank" rel="noopener noreferrer" aria-label="View project: {{ project.title }}">
-            <img src="{{ site.baseurl }}/about/assets/{{ project.image }}" alt="{{ project.title }}">
-          </a>
-        {% else %}
-          <img src="{{ site.baseurl }}/about/assets/{{ project.image }}" alt="{{ project.title }}">
-        {% endif %}
+        {% assign project_image = '/about/assets/' | append: project.image %}
+        <button
+          type="button"
+          class="project-image-button"
+          data-modal-src="{{ project_image | relative_url }}"
+          data-modal-alt="{{ project.title | escape }}"
+          aria-label="Ampliar imagen de {{ project.title | escape }}">
+          <img
+            src="{{ project_image | relative_url }}"
+            alt=""
+            width="{{ project.image_width }}"
+            height="{{ project.image_height }}"
+            loading="lazy"
+            decoding="async">
+        </button>
       {% endif %}
 
       <div class="post-content-text">
@@ -38,7 +46,7 @@
         {% endif %}
 
         {% if project.technologies %}
-          <div class="project-tags" aria-label="Main technologies">
+          <div class="project-tags" aria-label="Tecnologías principales">
             {% for tech in project.technologies %}
               <span class="project-tag">{{ tech }}</span>
             {% endfor %}

@@ -1,75 +1,68 @@
+{% assign meta_title = page.title | default: site.title %}
+{% assign meta_description = page.excerpt | default: page.description | default: site.description | strip_html | strip_newlines | normalize_whitespace | truncate: 160 %}
+{% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="author" content="{{ site.author.name }}">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <meta name="twitter:card" content="summary">
-  <meta property="twitter:image" content="{% if page.image %}{{ page.image | absolute_url }}{% endif %}">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
-
-  <meta property="og:type" content="article">
-  <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
-
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-194x194.png" sizes="194x194">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="{{ site.baseurl }}/images/favicons/manifest.json">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffc40d">
-  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/favicons/mstile-144x144.png">
+  <title>{% if page.title %}{{ page.title | escape }} · {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ meta_description | escape }}">
+  <meta name="author" content="{{ site.author.name | escape }}">
   <meta name="theme-color" content="#ffffff">
 
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-  <!-- not used for now <link rel="stylesheet" href="{{ site.baseurl }}/css/mobile.css"> -->
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
-
-
-
-
-  {% if page.external_js %}
-    {% for js_file in page.external_js %}
-      <script src="{{ js_file }}" type="text/javascript"></script>
-    {% endfor %}
+  <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ meta_title | escape }}">
+  <meta name="twitter:description" content="{{ meta_description | escape }}">
+  {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image | absolute_url }}">
   {% endif %}
 
-  {% if page.internal_js %}
-    {% for js_file in page.internal_js %}
-    <script src="/js/{{ js_file }}" type="text/javascript"></script>
-    {% endfor %}
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ meta_title | escape }}">
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  {% if page.image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}">
   {% endif %}
 
-  {% if page.internal_css %}
-    {% for css_file in page.internal_css %}
-      <link rel="stylesheet" href="/css/{{ css_file }}">
-    {% endfor %}
-  {% endif %}
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ '/images/favicons/apple-touch-icon-57x57.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ '/images/favicons/apple-touch-icon-60x60.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ '/images/favicons/apple-touch-icon-72x72.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ '/images/favicons/apple-touch-icon-76x76.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ '/images/favicons/apple-touch-icon-114x114.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ '/images/favicons/apple-touch-icon-120x120.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ '/images/favicons/apple-touch-icon-144x144.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ '/images/favicons/apple-touch-icon-152x152.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/favicons/apple-touch-icon-180x180.png' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/images/favicons/favicon-32x32.png' | relative_url }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ '/images/favicons/favicon-194x194.png' | relative_url }}" sizes="194x194">
+  <link rel="icon" type="image/png" href="{{ '/images/favicons/favicon-96x96.png' | relative_url }}" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ '/images/favicons/android-chrome-192x192.png' | relative_url }}" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ '/images/favicons/favicon-16x16.png' | relative_url }}" sizes="16x16">
+  <link rel="manifest" href="{{ '/images/favicons/manifest.json' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/images/favicons/favicon.ico' | relative_url }}">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="{{ '/images/favicons/mstile-144x144.png' | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap">
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
+
+  {% for js_file in page.external_js %}
+    <script defer src="{{ js_file }}"></script>
+  {% endfor %}
+
+  {% for js_file in page.internal_js %}
+    <script defer src="{{ '/js/' | append: js_file | relative_url }}"></script>
+  {% endfor %}
+
+  {% for css_file in page.internal_css %}
+    <link rel="stylesheet" href="{{ '/css/' | append: css_file | relative_url }}">
+  {% endfor %}
 
   <script defer src="https://cloud.umami.is/script.js" data-website-id="fd0d267e-c337-4b80-a3a0-1a6b452b1ed0"></script>
 </head>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang | default: 'es' }}">
   {% include head.html %}
 
-  <body class="{{ page.body_class }}">
+  <body class="{{ page.body_class | escape }}">
     {% include sidebar.html %}
 
     <div class="content-wrapper">

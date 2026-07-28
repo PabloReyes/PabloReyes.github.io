@@ -21,7 +21,7 @@ de goma… Si alguna vez nos hemos caído (que han sido muchas), se nos ponía u
 estábamos listos para romper el suelo a cabezazos otra vez. Ah, tampoco nos atragantamos nunca con ningún juguete
 pequeño.
 
-![ninos_jaula.png](../images/uploads/posts/cada-dia-mas-tontos/ninos_jaula.png)
+![ninos_jaula.png](../images/uploads/posts/cada-dia-mas-tontos/ninos_jaula.png){:loading="lazy" decoding="async"}
 
 ¿Hasta que punto es positiva tanta protección? Yo aprendí a no tocar la plancha tocándola, a no tirarme por una rampa en
 bici sin frenos gracias a una pequeña cicatriz que hoy todavía me acompaña, a no caminar descalzo rompiéndome una uña
