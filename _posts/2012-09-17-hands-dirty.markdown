@@ -39,7 +39,7 @@ user_interests, user_actkey, user_newpasswd) VALUES('4', '1', '[USERNAME]',
 '1', '1', '0', '', '0', '[USER_MAIL_ADDRESS]@hotmail.com', '', '', '', '', '', '',
 '', '', '', '', '', NULL);
 {% endhighlight %}
-![](/images/uploads/posts/hands-dirty/kid_surprised.jpeg){:class="img-right"}
+![Niño sorprendido](/images/uploads/posts/hands-dirty/kid_surprised.jpeg){:loading="lazy" decoding="async" class="img-right"}
 
 20.000 usuarios con sus direcciones de correos y sus contraseñas en MD5. No recuerdo si en 2005 aún alguien confiaba en MD5, pero os aseguro que no era para nada la mejor forma de guardar contraseñas. A parte del famoso [John The Ripper](https://www.openwall.com/john/), existían páginas como [GDataOnline](https://web.archive.org/web/20060718024011/http://gdataonline.com/) (ya difunta) que contenían millones de hashs MD5 y sus correspondientes orígenes ([Rainbow Tables](https://en.wikipedia.org/wiki/Rainbow_table)). Básicamente, tu buscabas un hash y te devolvía (si lo conocía) el texto original. Además, la página tenía *una especie de API rudimentaria* que devolvía XML. 
 
@@ -115,4 +115,4 @@ Había conseguido el 30% de las contraseñas en texto plano... 6.000 pares de (e
 
 Al cabo de unos días de no poder dormir tranquilo, borré los dumps y el fichero final, pero guardé el script (*obra de arte*) hasta hoy. Durante años mantuve el secreto oculto y nunca lo comenté a nadie: a fin de cuentas, muchos de mis amigos estaban registrados en esa web y muy probablmente había descubierto sus contraseñas. 
 
-Ahora ya lo sabeis. 
+Ahora ya lo sabeis.

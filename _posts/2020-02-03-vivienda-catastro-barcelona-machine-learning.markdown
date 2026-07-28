@@ -30,7 +30,7 @@ Juntando información de distintas secciones y ficheros, limpiando datos y hacie
 
 El registro de inmuebles nos da información sobre el destino de cada uno en la columna `clave_uso`. Observando este dato podemos obtener algunas conclusiones:
 
-![Tipos de inmuebles](/images/uploads/posts/catastro_barcelona/tipos_inmuebles.png){:class="img-left"}
+![Tipos de inmuebles](/images/uploads/posts/catastro_barcelona/tipos_inmuebles.png){:loading="lazy" decoding="async" class="img-left"}
 
 Viviendas y almacenes/estacionamientos cubren el 90% de los inmuebles. Los edificios religiosos son claramente los mas grandes de la ciudad con casi 900m² de media frente a los 83m²  de la vivienda media barcelonesa. Entre 1960 y 1975 se construyó mucho... de todo en Barcelona.
 
@@ -39,7 +39,7 @@ Para este caso, me centraré sólo en las viviendas.
 ## Fechas de construcción
 
 El Catastro contiene información de fincas de Barcelona desde hace más de mil años (literalmente), pero revisando un poco la calidad de los datos más antiguos encontramos cosas un tanto sospechosas.
-![](/images/uploads/posts/catastro_barcelona/vivienda_rosello_1000.png){:class="img-left"}
+![Edificio de viviendas en la calle Rosselló](/images/uploads/posts/catastro_barcelona/vivienda_rosello_1000.png){:loading="lazy" decoding="async" class="img-left"}
 
 Existen más de 6.000 viviendas activas con registros previos al año 100 (de hecho, son todos del año 0), mientras que entre el 100 y el 1800 no hay más de 600. Raro raro ese año 0.
 
@@ -50,7 +50,7 @@ Me quedaré sólo con las viviendas construidas a partir de 1900.
 ## Evolución de la vivienda en Barcelona
 
 ¿Eran las casas de antes mas grandes que las de ahora? ¿De qué época son la mayoría de las viviendas de la ciudad condal? ¿Cómo afectó el boom inmboliario reciente a la oferta de vivienda en Barcelona? Los datos del catastro pueden ayudarnos a responder algunas de estas preguntas.
-![](/images/uploads/posts/catastro_barcelona/cantidad_tamaño.png)
+![Evolución de la cantidad y el tamaño de las viviendas en Barcelona](/images/uploads/posts/catastro_barcelona/cantidad-tamano.png){:loading="lazy" decoding="async"}
 
 De estas gráfica podemos sacar algunas conclusiones interesantes. En los años 20s y 30s se da la primera época de crecimiento importante del siglo XX. Es en estos años, aprovechando la [Exposición Internacional de Barcelona](https://es.wikipedia.org/wiki/Exposici%C3%B3n_Internacional_de_Barcelona_(1929)) en 1929 se urbaniza parte de la montaña de Montjuïc dejándo perlas como el Palacio Nacional, la Fuente Mágica o el Pueblo Español.
 
@@ -63,7 +63,7 @@ En los años 60 vemos el resultado del desarrollismo impulsado por el alcalde [J
 Si alguno esperaba encontrar una barra que llegara hasta el espacio entre el año 2000 y 2008, siento decepcionar. El boom inmobiliario tuvo un efecto limitado en Barcelona en lo que a número de nuevas viviendas se refiere.
 
 En cuanto al tamaño medio de las viviendas en el tiempo (línea azul) me llevé una sorpresa. Siempre había pensado eso de que las viviendas antiguas eran más grandes, pero los datos dicen lo contrario. No soy capaz de explicar el subidón de los años 40: ¿se construyeron pocas casas, pero muy grandes? No lo se, pero la tendencia parece ser que cada vez las casas son más grandes, [¿quién lo iba a decir?](https://www.elmundo.es/economia/2017/02/10/589cc14bca4741f1318b4671.html).
-![](/images/uploads/posts/catastro_barcelona/viviendas_por_tamano.png)
+![Distribución de viviendas por tamaño](/images/uploads/posts/catastro_barcelona/viviendas_por_tamano.png){:loading="lazy" decoding="async"}
 
 Aún así, el tamaño medio se situa en 83², siendo 75m² el tamaño mas frecuente de las viviendas en Barcelona.
 
@@ -74,23 +74,23 @@ Pero bueno, no todos los barrios de Barcelona son iguales. Uno de los atributos 
 ### Sistemas de Coordenadas
 
 Cada finca incluye unas coordenadas que a simple vista ya resultan raras, al no ser las típicas coordenadas de longitud/latitud a las que estamos acostumbrados. Estas coordenadas tienen esta forma (42766481, 458170071) y están en el sistema geoespacial UTM de la zona 31N ([EPSG:25831](https://epsg.io/25831)), por lo que tenemos que transformarlas a WGS 84 ([EPSG:4326](https://epsg.io/4326)) que es el que usamos normalmente.
-![](/images/uploads/posts/catastro_barcelona/coordenadas.png)
+![Coordenadas de viviendas de Barcelona](/images/uploads/posts/catastro_barcelona/coordenadas.png){:loading="lazy" decoding="async"}
 
 
 ### Identificando distritos
 
 Si seleccionamos un conjunto de 1000 viviendas al azar y les aplicamos un color a cada distrito, podemos plasmarlas en un mapa para conseguir una primera idea del área que cubren estos distritos.
-![](/images/uploads/posts/catastro_barcelona/viviendas_scatter.png){:class="img-right"}
+![Dispersión geográfica de viviendas](/images/uploads/posts/catastro_barcelona/viviendas_scatter.png){:loading="lazy" decoding="async" class="img-right"}
 
 Aunque a simple vista ya se identifican más o menos qué zona incluye cada uno, sería mucho mejor si pudiéramos cercarlos con una muralla virtual que nos mostraran mucho más fielmente los límites de cada uno. Esto lo conseguiremos identificando los puntos más limítrofes de cada color, es decir, los que están más a las afueras de cada grupo y uniendo dichos puntos hasta formar un polígono. Para ello, hacemos uso de un [Convex Hull](https://en.wikipedia.org/wiki/Convex_hull).
-![](/images/uploads/posts/catastro_barcelona/convex_hull.png){:class="img-center"}
+![Envolvente convexa de las viviendas](/images/uploads/posts/catastro_barcelona/convex_hull.png){:loading="lazy" decoding="async" class="img-center"}
 
 ¡Ahora mucho mejor! Cada distrito está perfectamente limitado y separado de los demás. Ahí ya vemos Ciutat Vella, Eixample, Montjuïc, etc.
 
 ### Evolución por distrito
 
 ¿De qué forma ha evolucionado la construcción de nueva vivienda en cada distrito? Los datos anteriores nos dan una idea general, pero analizando uno por uno encontramos cosas interesantes.
-![](/images/uploads/posts/catastro_barcelona/distritos_evolucion.png)
+![Evolución de la vivienda por distritos](/images/uploads/posts/catastro_barcelona/distritos_evolucion.png){:loading="lazy" decoding="async"}
 
 
 En los años 20-40 se aprecia un crecimiento importante sobre los distritos de Ciutat Vella, Sants-Montjuic, Gràcia y Eixample que parece acabar a final de los años 30s debido, imagino, a la guerra civil. La zona de Sarrià-Sant Gervasi es la única que en plena posguerra mantiene un crecimiento estable y sin baches.
@@ -98,20 +98,20 @@ En los años 20-40 se aprecia un crecimiento importante sobre los distritos de C
 Aunque en los años 60-80 que hablábamos antes hubo crecimiento la ciudad en general, el distrito de Ciutat Vella no se vió prácticamente afectado, lo cual tiene sentido siendo el casco antiguo de la ciuad, donde poco se ha edificado en los últimos 100 años.
 
 ## Las calles
-![](/images/uploads/posts/catastro_barcelona/calles.png){:class="img-left"}
+![Antigüedad media de las viviendas por calle](/images/uploads/posts/catastro_barcelona/calles.png){:loading="lazy" decoding="async" class="img-left"}
 
 Cualquiera que conozca Barcelona puede intuir cuales son las calles/avenidas más pobladas básicamente por la longitud de algunas de ellas. Lo que no esperaba es que Gran Via de las Corts Catalanas tuviera casi el doble de viviendas que la segunda de la lista, Meridiana.
 
 
 De las grandes, *Muntaner* se lleva la palma en cuanto a tamaño medio con 127m² seguida de Diagonal con 118m². Pero por muy largas y pobladas que sean estas calles, no son las que tienen los mayores pisos. Para eso tenemos que un poco más arriba
-![](/images/uploads/posts/catastro_barcelona/calles_m2.png){:class="img-right"}
+![Superficie media de las viviendas por calle](/images/uploads/posts/catastro_barcelona/calles_m2.png){:loading="lazy" decoding="async" class="img-right"}
 
 Ferran Agullo, Pau Casals, Bori i Fontestà, Calatrava... las calles con las casas más grandes de Barcelona llevan nombre de los mejores artistas y profesionales de nuestra tierra, aunque la primera posición la obstenta la Reina Victoria de Reino Unido, con un tamaño medio de 247m² y, según idealista, un precio de compra-venta de sobre 1.6M€.
 
 ## Bonus: Mapa de calor por tamaño medio de vivienda
 
 ¿Entonces, donde están las casas más grande? Pues agrupando las viviendas por fincas y con un el tamaño medio normalizado podemos montar el siguiente mapa de calor donde los tonos más rojizos representan el tamaño medio más grande (azul<cyan<lima<naranja<rojo).
-![](/images/uploads/posts/catastro_barcelona/heatmap.png){:class="img-center"}
+![Mapa de calor de la vivienda en Barcelona](/images/uploads/posts/catastro_barcelona/heatmap.png){:loading="lazy" decoding="async" class="img-center"}
 
 Como era de esperar la Ciutat Vella tiene los pisos más pequeños de Barcelona (y más antiguos) y se observan viviendas por lo general más grandes una vez se pasa [barrera invisible de la Diagonal](https://www.youtube.com/watch?v=Q8CJXvKc4aA) (marcada en rojo), con excepción del barrio de Gràcia por arriba y La Nova Esquerra de l'Eixample por debajo. El distrito de Sant Gervasi se lleva la palma.
 
@@ -124,4 +124,3 @@ Hasta aquí llego hoy. Con los datos del catastro pueden sacarse muchos más det
 Como de costumbre, la información aquí descrita está sujeta a errores y no debería usarse para otra cosa que no sea disfrutar de un rato de lectura y aprender algunas cosas de Barcelona.
 
 Para este post usé `python`+`pandas`+[pandaral·lel](https://github.com/nalepae/pandarallel) para el análisis y manejo de los datos, `matplotlib` para la generación de gráficos, `pyproj` para las transformaciones entre sistema de coordenadas y `ipyleaflet` para los mapas. El código puede encontrarse en [mi github](https://github.com/PabloReyes/catastro-barcelona-stats/blob/master/analisis_catastro.ipynb).
-
