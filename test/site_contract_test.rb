@@ -119,7 +119,8 @@ class SiteContractTest < Minitest::Test
     head = ROOT.join("_includes/head.html").read
     footer = ROOT.join("_includes/footer.html").read
     project_list = ROOT.join("_includes/project-list.html").read
-    projects_page = ROOT.join("about/index.md").read
+    projects_page_path = ROOT.join("projects/index.md")
+    projects_page = projects_page_path.file? ? projects_page_path.read : ""
     main_js = ROOT.join("js/main.js").read
 
     assert_match(/<html lang=/, default_layout)
@@ -127,9 +128,9 @@ class SiteContractTest < Minitest::Test
     refute_match(/jquery/i, footer)
     assert_match(/role="dialog"/, footer)
     assert_match(/<button[^>]+project-image-button/, project_list)
-    assert_match(/<button[^>]+lang-link/, projects_page)
+    assert_match(/<a[^>]+lang-link/, projects_page)
     refute_match(/\$\s*\(/, main_js)
-    assert_match(/documentElement\.lang\s*=/, ROOT.join("js/projects-lang.js").read)
+    refute ROOT.join("js/projects-lang.js").exist?
   end
 
   def test_dead_legacy_copies_are_absent
@@ -210,7 +211,8 @@ class SiteContractTest < Minitest::Test
     sidebar = ROOT.join("_includes/sidebar.html").read
     post_list = ROOT.join("_includes/post-list-cards.html").read
     project_list = ROOT.join("_includes/project-list.html").read
-    projects_page = ROOT.join("about/index.md").read
+    projects_page_path = ROOT.join("projects/index.md")
+    projects_page = projects_page_path.file? ? projects_page_path.read : ""
 
     {
       "--color-bg" => "#fafaf8",
@@ -243,6 +245,7 @@ class SiteContractTest < Minitest::Test
     refute_includes project_list, "project-view-link"
     refute_includes project_list, "project-purpose"
     assert_includes projects_page, 'class="projects-heading"'
+    refute_match(/\.lang-(?:es|en)\b/, styles)
   end
 
   def test_responsive_thumbnail_assets_exist

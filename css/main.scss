@@ -574,6 +574,7 @@ pre code {
   background: transparent;
   color: var(--color-muted);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .lang-link:hover {
@@ -587,23 +588,6 @@ pre code {
 
 .separator {
   color: var(--color-border);
-}
-
-.lang-text {
-  display: inline;
-}
-
-.lang-en,
-html[data-lang="es"] .lang-en,
-body[data-lang="es"] .lang-en,
-html[data-lang="en"] .lang-es,
-body[data-lang="en"] .lang-es {
-  display: none;
-}
-
-html[data-lang="en"] .lang-en,
-body[data-lang="en"] .lang-en {
-  display: inline;
 }
 
 .projects-page .main-post-list article.post-entry {
