@@ -2,6 +2,7 @@
 
 require "minitest/autorun"
 require "date"
+require "json"
 require "pathname"
 require "uri"
 require "yaml"
@@ -63,6 +64,7 @@ class SiteContractTest < Minitest::Test
     workflow = ROOT.join(".github/workflows/pages.yml").read
     assert_includes workflow, 'ruby-version: "4.0.6"'
     assert_includes workflow, "pull_request:"
+    assert_includes workflow, "apt-get install --yes webp"
   end
 
   def test_publishing_configuration_uses_the_canonical_site
@@ -73,6 +75,46 @@ class SiteContractTest < Minitest::Test
     refute config.key?("google_analytics")
     refute_includes config.fetch("plugins"), "jekyll-compress-images"
     assert_includes config.fetch("plugins"), "jekyll-sitemap"
+  end
+
+  def test_seo_scope_preserves_existing_titles_and_description
+    config = YAML.safe_load(ROOT.join("_config.yml").read)
+    projects_page = ROOT.join("projects/index.md")
+
+    assert_equal "Pablo Reyes", config.fetch("title")
+    assert_equal "Desarrollo de software, tecnología, producto y análisis de datos",
+                 config.fetch("description")
+    assert projects_page.file?, "Missing canonical Spanish projects page"
+    assert_equal "Proyectos", front_matter(projects_page).fetch("title")
+  end
+
+  def test_categories_are_retired
+    refute ROOT.join("categories.md").exist?, "Legacy categories page still exists"
+    refute ROOT.join("_layouts/categories.html").exist?, "Legacy categories layout still exists"
+  end
+
+  def test_projects_have_static_language_routes
+    spanish_path = ROOT.join("projects/index.md")
+    english_path = ROOT.join("en/projects/index.md")
+
+    assert spanish_path.file?, "Missing Spanish projects page"
+    assert english_path.file?, "Missing English projects page"
+
+    spanish = front_matter(spanish_path)
+    english = front_matter(english_path)
+
+    assert_equal "/projects/", spanish.fetch("permalink")
+    assert_equal "es", spanish.fetch("lang")
+    assert_equal "/en/projects/", english.fetch("permalink")
+    assert_equal "en", english.fetch("lang")
+    refute ROOT.join("js/projects-lang.js").exist?, "Legacy language-toggle JavaScript still exists"
+  end
+
+  def test_article_layout_identifies_the_author
+    layout = ROOT.join("_layouts/post.html").read
+
+    assert_includes layout, 'class="post-meta__author"'
+    assert_includes layout, "{{ site.author.name }}"
   end
 
   def test_opencode_automation_remains_absent
@@ -86,7 +128,8 @@ class SiteContractTest < Minitest::Test
     head = ROOT.join("_includes/head.html").read
     footer = ROOT.join("_includes/footer.html").read
     project_list = ROOT.join("_includes/project-list.html").read
-    projects_page = ROOT.join("about/index.md").read
+    projects_page_path = ROOT.join("projects/index.md")
+    projects_page = projects_page_path.file? ? projects_page_path.read : ""
     main_js = ROOT.join("js/main.js").read
 
     assert_match(/<html lang=/, default_layout)
@@ -94,9 +137,9 @@ class SiteContractTest < Minitest::Test
     refute_match(/jquery/i, footer)
     assert_match(/role="dialog"/, footer)
     assert_match(/<button[^>]+project-image-button/, project_list)
-    assert_match(/<button[^>]+lang-link/, projects_page)
+    assert_match(/<a[^>]+lang-link/, projects_page)
     refute_match(/\$\s*\(/, main_js)
-    assert_match(/documentElement\.lang\s*=/, ROOT.join("js/projects-lang.js").read)
+    refute ROOT.join("js/projects-lang.js").exist?
   end
 
   def test_dead_legacy_copies_are_absent
@@ -172,12 +215,107 @@ class SiteContractTest < Minitest::Test
     assert_empty missing_strategy, "Images without loading strategy:\n#{missing_strategy.join("\n")}"
   end
 
+  def test_generated_pages_expose_structured_data
+    skip "Run a production build before generated-site checks" unless SITE.join("index.html").file?
+
+    home = json_ld_documents(SITE.join("index.html"))
+    refute_empty home, "Home page has no JSON-LD"
+    home_graph = home.first.fetch("@graph")
+    assert_includes home_graph.map { |item| item.fetch("@type") }, "WebSite"
+    assert_includes home_graph.map { |item| item.fetch("@type") }, "Person"
+
+    article = json_ld_documents(SITE.join("observatorio-atalaya/index.html")).first
+    refute_nil article, "Article has no JSON-LD"
+    assert_equal "BlogPosting", article.fetch("@type")
+    assert_equal "Pablo Reyes", article.dig("author", "name")
+
+    projects = json_ld_documents(SITE.join("projects/index.html")).first
+    refute_nil projects, "Projects page has no JSON-LD"
+    assert_equal "CollectionPage", projects.fetch("@type")
+    assert_equal EXPECTED_PROJECT_IDS.size, projects.dig("mainEntity", "itemListElement").size
+  end
+
+  def test_generated_article_images_are_responsive
+    article_path = SITE.join("observatorio-atalaya/index.html")
+    skip "Run a production build before generated-site checks" unless article_path.file?
+
+    article = article_path.read
+    pictures = article.scan(%r{<picture class="responsive-article-image">.*?</picture>}mi)
+
+    assert_equal 23, pictures.size
+
+    pictures.each do |picture|
+      assert_match(/<source[^>]+type=["']image\/webp["']/i, picture)
+      assert_match(/\bsrcset=["'][^"']+\.webp \d+w/i, picture)
+      assert_match(/<img[^>]+\bwidth=["']\d+["']/i, picture)
+      assert_match(/<img[^>]+\bheight=["']\d+["']/i, picture)
+      assert_match(/<img[^>]+\bsrc=["']\/images\/uploads\//i, picture)
+    end
+
+    featured = pictures.find { |picture| picture.include?("post-image-featured") }
+    refute_nil featured
+    assert_match(/\bfetchpriority=["']high["']/i, featured)
+
+    inline = pictures.reject { |picture| picture.equal?(featured) }
+    assert inline.all? { |picture| picture.match?(/\bloading=["']lazy["']/i) }
+
+    generated_sources = pictures.flat_map do |picture|
+      picture.scan(%r{(/images/generated/articles/[^"'\s,]+\.webp)}).flatten
+    end
+    refute_empty generated_sources
+
+    missing = generated_sources.uniq.reject do |source|
+      SITE.join(source.delete_prefix("/")).file?
+    end
+    assert_empty missing, "Missing generated article images:\n#{missing.join("\n")}"
+  end
+
+  def test_generated_seo_routes_and_languages
+    skip "Run a production build before generated-site checks" unless SITE.join("index.html").file?
+
+    home = SITE.join("index.html").read
+    spanish = SITE.join("projects/index.html").read
+    english = SITE.join("en/projects/index.html").read
+    legacy_about = SITE.join("about/index.html").read
+    sitemap = SITE.join("sitemap.xml").read
+
+    refute SITE.join("categories").exist?
+    refute_includes sitemap, "/categories/"
+    refute SITE.glob("**/*.html").any? { |path| path.read.include?('href="/categories/') }
+
+    assert_match(%r{<title>Pablo Reyes</title>}, home)
+    assert_match(%r{<meta name="description" content="Desarrollo de software, tecnología, producto y análisis de datos">},
+                 home)
+    assert_match(%r{<title>Proyectos · Pablo Reyes</title>}, spanish)
+    assert_match(%r{<meta name="description" content="Desarrollo de software, tecnología, producto y análisis de datos">},
+                 spanish)
+
+    assert_match(/<html[^>]+lang="es"/, spanish)
+    assert_match(/<html[^>]+lang="en"/, english)
+    assert_match(%r{<a href="/en/projects/" class="active" aria-current="page">\s*Projects\s*</a>},
+                 english)
+    assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/projects/">}, spanish)
+    assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/en/projects/">}, english)
+
+    [spanish, english].each do |page|
+      assert_match(%r{hreflang="es" href="https://blog\.pabloreyes\.es/projects/"}, page)
+      assert_match(%r{hreflang="en" href="https://blog\.pabloreyes\.es/en/projects/"}, page)
+      assert_match(%r{hreflang="x-default" href="https://blog\.pabloreyes\.es/projects/"}, page)
+      EXPECTED_PROJECT_IDS.each { |id| assert_includes page, %(id="#{id}") }
+    end
+
+    assert_match(/<meta name="robots" content="noindex">/, legacy_about)
+    assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/projects/">}, legacy_about)
+    assert_match(%r{<meta http-equiv="refresh" content="0; url=/projects/">}, legacy_about)
+  end
+
   def test_editorial_visual_system_contract
     styles = ROOT.join("css/main.scss").read
     sidebar = ROOT.join("_includes/sidebar.html").read
     post_list = ROOT.join("_includes/post-list-cards.html").read
     project_list = ROOT.join("_includes/project-list.html").read
-    projects_page = ROOT.join("about/index.md").read
+    projects_page_path = ROOT.join("projects/index.md")
+    projects_page = projects_page_path.file? ? projects_page_path.read : ""
 
     {
       "--color-bg" => "#fafaf8",
@@ -210,6 +348,7 @@ class SiteContractTest < Minitest::Test
     refute_includes project_list, "project-view-link"
     refute_includes project_list, "project-purpose"
     assert_includes projects_page, 'class="projects-heading"'
+    refute_match(/\.lang-(?:es|en)\b/, styles)
   end
 
   def test_responsive_thumbnail_assets_exist
@@ -233,6 +372,18 @@ class SiteContractTest < Minitest::Test
   end
 
   private
+
+  def front_matter(path)
+    source = path.read
+    yaml = source[/\A---\s*\n(.*?)\n---\s*\n/m, 1]
+    refute_nil yaml, "Missing YAML front matter in #{path.relative_path_from(ROOT)}"
+    YAML.safe_load(yaml)
+  end
+
+  def json_ld_documents(path)
+    path.read.scan(%r{<script[^>]+type=["']application/ld\+json["'][^>]*>(.*?)</script>}mi)
+        .map { |match| JSON.parse(match.first) }
+  end
 
   def thumbnail_variants(root, source)
     webp = source.sub_ext(".webp")

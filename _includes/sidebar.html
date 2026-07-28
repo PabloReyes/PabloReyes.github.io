@@ -17,18 +17,28 @@
           Software, tecnología, producto y las cosas que construyo.
         </p>
 
-	        <div class="navigation-wrapper">
-	          <nav class="cover-navigation">
-	            <ul class="navigation">
-	              <li class="navigation__item">
-	                <a href="{{ '/' | relative_url }}"{% unless page.url contains '/about/' %} class="active" aria-current="page"{% endunless %}>Artículos</a>
-	              </li>
-	              <li class="navigation__item">
-	                <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about/' %} class="active" aria-current="page"{% endif %}>Proyectos</a>
-	              </li>
-	            </ul>
-	          </nav>
-	        </div>
+        {% assign navigation_lang = page.lang | default: site.lang %}
+        {% if navigation_lang == "en" %}
+          {% assign projects_path = "/en/projects/" %}
+        {% else %}
+          {% assign projects_path = "/projects/" %}
+        {% endif %}
+        <div class="navigation-wrapper">
+          <nav class="cover-navigation">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a href="{{ '/' | relative_url }}"{% unless page.translation_key == 'projects' %} class="active" aria-current="page"{% endunless %}>
+                  {% if navigation_lang == "en" %}Articles{% else %}Artículos{% endif %}
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="{{ projects_path | relative_url }}"{% if page.translation_key == 'projects' %} class="active" aria-current="page"{% endif %}>
+                  {% if navigation_lang == "en" %}Projects{% else %}Proyectos{% endif %}
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
       </div>
 

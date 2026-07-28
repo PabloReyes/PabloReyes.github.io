@@ -1,4 +1,17 @@
+{% assign project_lang = include.lang | default: page.lang | default: site.lang %}
 {% for project in site.data.projects %}
+  {% if project_lang == "en" %}
+    {% assign project_summary = project.summary_en | default: project.summary %}
+    {% assign project_purpose = project.purpose_en | default: project.purpose %}
+    {% assign project_image_label = "Open larger image of " | append: project.title %}
+    {% assign project_technologies_label = "Main technologies" %}
+  {% else %}
+    {% assign project_summary = project.summary %}
+    {% assign project_purpose = project.purpose %}
+    {% assign project_image_label = "Ampliar imagen de " | append: project.title %}
+    {% assign project_technologies_label = "Tecnologías principales" %}
+  {% endif %}
+
   <article class="post-entry" id="{{ project.id }}">
     <div class="post-entry__inner">
 
@@ -11,7 +24,7 @@
           class="project-image-button"
           data-modal-src="{{ project_image | relative_url }}"
           data-modal-alt="{{ project.title | escape }}"
-          aria-label="Ampliar imagen de {{ project.title | escape }}">
+          aria-label="{{ project_image_label | escape }}">
           <picture class="project-card__media">
             <source
               srcset="{{ project_thumbnail | relative_url }} 480w, {{ project_thumbnail_2x | relative_url }} 960w"
@@ -42,18 +55,12 @@
         </div>
 
         <div class="project-description">
-          <span class="lang-text lang-es">
-            {{ project.summary }}
-            {% if project.purpose %}<span class="project-description__purpose">{{ project.purpose }}</span>{% endif %}
-          </span>
-          <span class="lang-text lang-en">
-            {{ project.summary_en | default: project.summary }}
-            {% if project.purpose %}<span class="project-description__purpose">{{ project.purpose_en | default: project.purpose }}</span>{% endif %}
-          </span>
+          {{ project_summary }}
+          {% if project_purpose %}<span class="project-description__purpose">{{ project_purpose }}</span>{% endif %}
         </div>
 
         {% if project.technologies %}
-          <div class="project-tags" aria-label="Tecnologías principales">
+          <div class="project-tags" aria-label="{{ project_technologies_label }}">
             {% for tech in project.technologies limit: 5 %}
               <span class="project-tag">{{ tech }}</span>
             {% endfor %}

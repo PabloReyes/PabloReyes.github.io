@@ -5,6 +5,8 @@ layout: default
   <header class="post-header">
     <div class="post-meta">
       <time datetime="{{ page.date | date: '%Y-%m-%d' }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time>
+      <span class="post-meta__separator" aria-hidden="true">·</span>
+      <span class="post-meta__author">{{ site.author.name }}</span>
 
       {% assign rawtags = "" %}
       {% assign ttags = page.tags | join:'|' | append:'|' %}
