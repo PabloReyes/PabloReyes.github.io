@@ -64,6 +64,7 @@ class SiteContractTest < Minitest::Test
     workflow = ROOT.join(".github/workflows/pages.yml").read
     assert_includes workflow, 'ruby-version: "4.0.6"'
     assert_includes workflow, "pull_request:"
+    assert_includes workflow, "apt-get install --yes webp"
   end
 
   def test_publishing_configuration_uses_the_canonical_site
@@ -267,6 +268,43 @@ class SiteContractTest < Minitest::Test
       SITE.join(source.delete_prefix("/")).file?
     end
     assert_empty missing, "Missing generated article images:\n#{missing.join("\n")}"
+  end
+
+  def test_generated_seo_routes_and_languages
+    skip "Run a production build before generated-site checks" unless SITE.join("index.html").file?
+
+    home = SITE.join("index.html").read
+    spanish = SITE.join("projects/index.html").read
+    english = SITE.join("en/projects/index.html").read
+    legacy_about = SITE.join("about/index.html").read
+    sitemap = SITE.join("sitemap.xml").read
+
+    refute SITE.join("categories").exist?
+    refute_includes sitemap, "/categories/"
+    refute SITE.glob("**/*.html").any? { |path| path.read.include?('href="/categories/') }
+
+    assert_match(%r{<title>Pablo Reyes</title>}, home)
+    assert_match(%r{<meta name="description" content="Desarrollo de software, tecnología, producto y análisis de datos">},
+                 home)
+    assert_match(%r{<title>Proyectos · Pablo Reyes</title>}, spanish)
+    assert_match(%r{<meta name="description" content="Desarrollo de software, tecnología, producto y análisis de datos">},
+                 spanish)
+
+    assert_match(/<html[^>]+lang="es"/, spanish)
+    assert_match(/<html[^>]+lang="en"/, english)
+    assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/projects/">}, spanish)
+    assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/en/projects/">}, english)
+
+    [spanish, english].each do |page|
+      assert_match(%r{hreflang="es" href="https://blog\.pabloreyes\.es/projects/"}, page)
+      assert_match(%r{hreflang="en" href="https://blog\.pabloreyes\.es/en/projects/"}, page)
+      assert_match(%r{hreflang="x-default" href="https://blog\.pabloreyes\.es/projects/"}, page)
+      EXPECTED_PROJECT_IDS.each { |id| assert_includes page, %(id="#{id}") }
+    end
+
+    assert_match(/<meta name="robots" content="noindex">/, legacy_about)
+    assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/projects/">}, legacy_about)
+    assert_match(%r{<meta http-equiv="refresh" content="0; url=/projects/">}, legacy_about)
   end
 
   def test_editorial_visual_system_contract
