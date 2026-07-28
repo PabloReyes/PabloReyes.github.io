@@ -1,0 +1,88 @@
+{% if page.url == "/" %}
+  {% assign website_id = site.url | append: "/#website" %}
+  {% assign person_id = site.url | append: "/#person" %}
+  {% assign home_url = site.url | append: "/" %}
+  {% assign github_url = "https://github.com/" | append: site.author.github_username %}
+  {% assign linkedin_url = "https://www.linkedin.com/in/" | append: site.author.linkedin_username %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": {{ website_id | jsonify }},
+          "url": {{ home_url | jsonify }},
+          "name": {{ site.title | jsonify }},
+          "description": {{ site.description | jsonify }},
+          "inLanguage": {{ site.lang | jsonify }},
+          "author": {
+            "@id": {{ person_id | jsonify }}
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": {{ person_id | jsonify }},
+          "name": {{ site.author.name | jsonify }},
+          "url": {{ home_url | jsonify }},
+          "sameAs": [
+            {{ github_url | jsonify }},
+            {{ linkedin_url | jsonify }}
+          ]
+        }
+      ]
+    }
+  </script>
+{% elsif page.layout == "post" %}
+  {% assign page_lang = page.lang | default: site.lang %}
+  {% assign published_at = page.date | date_to_xmlschema %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": {{ include.canonical_url | jsonify }}
+      },
+      "url": {{ include.canonical_url | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "description": {{ include.meta_description | jsonify }},
+      "datePublished": {{ published_at | jsonify }},
+      "inLanguage": {{ page_lang | jsonify }},
+      "author": {
+        "@type": "Person",
+        "name": {{ site.author.name | jsonify }},
+        "url": {{ site.url | append: "/" | jsonify }}
+      }{% if page.image %},
+      "image": {{ page.image | absolute_url | jsonify }}{% endif %}
+    }
+  </script>
+{% elsif page.translation_key == "projects" %}
+  {% assign page_lang = page.lang | default: site.lang %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": {{ include.canonical_url | jsonify }},
+      "name": {{ page.title | jsonify }},
+      "description": {{ include.meta_description | jsonify }},
+      "inLanguage": {{ page_lang | jsonify }},
+      "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": {{ site.data.projects | size }},
+        "itemListElement": [
+          {% for project in site.data.projects %}
+            {
+              "@type": "ListItem",
+              "position": {{ forloop.index }},
+              "item": {
+                "@type": "CreativeWork",
+                "name": {{ project.title | jsonify }}{% if project.url %},
+                "url": {{ project.url | jsonify }}{% endif %}
+              }
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    }
+  </script>
+{% endif %}

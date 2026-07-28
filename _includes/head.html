@@ -59,6 +59,7 @@
     <link rel="alternate" hreflang="en" href="{{ '/en/projects/' | absolute_url }}">
     <link rel="alternate" hreflang="x-default" href="{{ '/projects/' | absolute_url }}">
   {% endif %}
+  {% include structured-data.html canonical_url=canonical_url meta_description=meta_description %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
 
   {% for js_file in page.external_js %}

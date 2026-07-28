@@ -2,6 +2,7 @@
 
 require "minitest/autorun"
 require "date"
+require "json"
 require "pathname"
 require "uri"
 require "yaml"
@@ -108,6 +109,13 @@ class SiteContractTest < Minitest::Test
     refute ROOT.join("js/projects-lang.js").exist?, "Legacy language-toggle JavaScript still exists"
   end
 
+  def test_article_layout_identifies_the_author
+    layout = ROOT.join("_layouts/post.html").read
+
+    assert_includes layout, 'class="post-meta__author"'
+    assert_includes layout, "{{ site.author.name }}"
+  end
+
   def test_opencode_automation_remains_absent
     workflow_paths = ROOT.glob(".github/workflows/**/*").select(&:file?)
     matches = workflow_paths.select { |path| path.read.match?(/opencode|gemini_api_key/i) }
@@ -206,6 +214,26 @@ class SiteContractTest < Minitest::Test
     assert_empty missing_strategy, "Images without loading strategy:\n#{missing_strategy.join("\n")}"
   end
 
+  def test_generated_pages_expose_structured_data
+    skip "Run a production build before generated-site checks" unless SITE.join("index.html").file?
+
+    home = json_ld_documents(SITE.join("index.html"))
+    refute_empty home, "Home page has no JSON-LD"
+    home_graph = home.first.fetch("@graph")
+    assert_includes home_graph.map { |item| item.fetch("@type") }, "WebSite"
+    assert_includes home_graph.map { |item| item.fetch("@type") }, "Person"
+
+    article = json_ld_documents(SITE.join("observatorio-atalaya/index.html")).first
+    refute_nil article, "Article has no JSON-LD"
+    assert_equal "BlogPosting", article.fetch("@type")
+    assert_equal "Pablo Reyes", article.dig("author", "name")
+
+    projects = json_ld_documents(SITE.join("projects/index.html")).first
+    refute_nil projects, "Projects page has no JSON-LD"
+    assert_equal "CollectionPage", projects.fetch("@type")
+    assert_equal EXPECTED_PROJECT_IDS.size, projects.dig("mainEntity", "itemListElement").size
+  end
+
   def test_editorial_visual_system_contract
     styles = ROOT.join("css/main.scss").read
     sidebar = ROOT.join("_includes/sidebar.html").read
@@ -275,6 +303,11 @@ class SiteContractTest < Minitest::Test
     yaml = source[/\A---\s*\n(.*?)\n---\s*\n/m, 1]
     refute_nil yaml, "Missing YAML front matter in #{path.relative_path_from(ROOT)}"
     YAML.safe_load(yaml)
+  end
+
+  def json_ld_documents(path)
+    path.read.scan(%r{<script[^>]+type=["']application/ld\+json["'][^>]*>(.*?)</script>}mi)
+        .map { |match| JSON.parse(match.first) }
   end
 
   def thumbnail_variants(root, source)

@@ -393,6 +393,14 @@ header.panel-cover .navigation__item a.active:hover {
   margin: 0 0 var(--space-xs);
 }
 
+.post-meta__separator {
+  margin: 0 0.35rem;
+}
+
+.post-meta__author {
+  white-space: nowrap;
+}
+
 .post-header .post-title {
   margin-bottom: var(--space-md);
   font-size: clamp(2.125rem, 1.9rem + 1vw, 2.875rem);
