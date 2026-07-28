@@ -8,7 +8,7 @@
   <title>{% if page.title %}{{ page.title | escape }} · {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ meta_description | escape }}">
   <meta name="author" content="{{ site.author.name | escape }}">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#fafaf8">
 
   <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
   <meta name="twitter:title" content="{{ meta_title | escape }}">
@@ -45,9 +45,6 @@
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="msapplication-TileImage" content="{{ '/images/favicons/mstile-144x144.png' | relative_url }}">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto+Slab:wght@300;400&display=swap">
   <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
   <link rel="canonical" href="{{ canonical_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">

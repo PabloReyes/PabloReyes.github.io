@@ -3,15 +3,8 @@
         {% if include.filter_featured == nil or include.filter_featured == post.featured %}
 
             
-                <article class="post-entry"{% if post.css_id %} id="{{ post.css_id }}"{% endif %}>
+                <article class="post-entry{% if post.image %} post-entry--with-media{% endif %}"{% if post.css_id %} id="{{ post.css_id }}"{% endif %}>
                     <a href="{{ post.url | relative_url }}">
-                        {% if post.image %}
-                          <img
-                            src="{{ post.image | relative_url }}"
-                            alt=""
-                            {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
-                            decoding="async">
-                        {% endif %}
                         <div class="post-content-text">
                             <div class="post-title">
                                 <span>{{ post.title }}</span>
@@ -23,9 +16,24 @@
                             </div>
 
                             <div class="post-excerpt">
-                                {{ post.excerpt | strip_html | truncatewords: 200 }}
+                                {{ post.excerpt | strip_html | truncatewords: 34 }}
                             </div>
                         </div>
+                        {% if post.image %}
+                          {% assign post_thumbnail = post.image | replace: '/images/uploads/', '/images/thumbnails/' | replace: '.jpeg', '.webp' | replace: '.jpg', '.webp' | replace: '.png', '.webp' %}
+                          {% assign post_thumbnail_2x = post_thumbnail | replace: '.webp', '@2x.webp' %}
+                          <picture class="post-entry__media">
+                            <source
+                              srcset="{{ post_thumbnail | relative_url }} 320w, {{ post_thumbnail_2x | relative_url }} 640w"
+                              sizes="(min-width: 700px) 176px, 112px"
+                              type="image/webp">
+                            <img
+                              src="{{ post.image | relative_url }}"
+                              alt=""
+                              {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+                              decoding="async">
+                          </picture>
+                        {% endif %}
                     </a>
                 </article>
         {% endif %}
