@@ -3,6 +3,7 @@ layout: null
 ---
 
 (() => {
+  /* Image modal */
   const modal = document.querySelector("#imageModal");
   if (!(modal instanceof HTMLDialogElement)) return;
 
@@ -45,5 +46,34 @@ layout: null
     modalImage.alt = "";
     activeTrigger?.focus();
     activeTrigger = null;
+  });
+})();
+
+/* Theme toggle */
+(() => {
+  const toggle = document.getElementById("themeToggle");
+  if (!toggle) return;
+
+  const html = document.documentElement;
+  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+  const stored = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const applyTheme = (dark) => {
+    if (dark) {
+      html.setAttribute("data-theme", "dark");
+      if (metaThemeColor) metaThemeColor.setAttribute("content", "#18181b");
+    } else {
+      html.removeAttribute("data-theme");
+      if (metaThemeColor) metaThemeColor.setAttribute("content", "#fafaf8");
+    }
+  };
+
+  applyTheme(stored === "dark" || (!stored && prefersDark));
+
+  toggle.addEventListener("click", () => {
+    const current = html.getAttribute("data-theme");
+    applyTheme(current !== "dark");
+    localStorage.setItem("theme", current === "dark" ? "light" : "dark");
   });
 })();
