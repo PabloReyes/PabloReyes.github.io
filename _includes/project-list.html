@@ -28,7 +28,7 @@
           <picture class="project-card__media">
             <source
               srcset="{{ project_thumbnail | relative_url }} 480w, {{ project_thumbnail_2x | relative_url }} 960w"
-              sizes="(min-width: 1000px) 280px, (min-width: 700px) 240px, calc(100vw - 40px)"
+              sizes="(min-width: 1000px) 352px, (min-width: 700px) 280px, calc(100vw - 40px)"
               type="image/webp">
             <img
               src="{{ project_image | relative_url }}"
@@ -42,13 +42,13 @@
       {% endif %}
 
       <div class="post-content-text">
-        <div class="post-title">
+        <h2 class="post-title">
           {% if project.url %}
             <a class="project-title-link" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
           {% else %}
             <span>{{ project.title }}</span>
           {% endif %}
-        </div>
+        </h2>
 
         <div class="post-meta">
           <time datetime="{{ project.year }}-01-01">{{ project.year }}</time>

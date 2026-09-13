@@ -1,11 +1,12 @@
 <footer class="footer">
   <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
+  <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
 </footer>
 
 {% if page.body_class == 'projects-page' %}
   <dialog id="imageModal" class="image-modal" role="dialog" aria-labelledby="imageModalTitle">
-    <h2 id="imageModalTitle" class="visually-hidden">Vista ampliada del proyecto</h2>
-    <button type="button" class="image-modal__close" aria-label="Cerrar imagen">&times;</button>
+    <h2 id="imageModalTitle" class="visually-hidden">{% if page.lang == 'en' %}Project image preview{% else %}Vista ampliada del proyecto{% endif %}</h2>
+    <button type="button" class="image-modal__close" aria-label="{% if page.lang == 'en' %}Close image{% else %}Cerrar imagen{% endif %}">&times;</button>
     <img class="image-modal__img" alt="">
   </dialog>
 {% endif %}

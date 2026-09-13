@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
     (function() {
-      var theme = localStorage.getItem('theme');
+      var theme;
+      try { theme = localStorage.getItem('theme'); } catch (error) {}
+      if (theme !== 'dark' && theme !== 'light') theme = null;
       var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       document.documentElement.setAttribute('data-theme',
         theme === 'dark' || (!theme && prefersDark) ? 'dark' : 'light');
@@ -60,6 +62,7 @@
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="msapplication-TileImage" content="{{ '/images/favicons/mstile-144x144.png' | relative_url }}">
 
+  <link rel="preload" href="{{ '/fonts/inter-latin-variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
   <link rel="canonical" href="{{ canonical_url }}">
   {% if page.translation_key == "projects" %}

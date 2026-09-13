@@ -3,12 +3,13 @@
   {% include head.html %}
 
   <body class="{{ page.body_class | escape }}">
+    <a class="skip-link" href="#main-content">{% if page.lang == 'en' %}Skip to content{% else %}Saltar al contenido{% endif %}</a>
     {% include sidebar.html %}
 
     <div class="content-wrapper">
-      <div class="content-wrapper__inner">
+      <main class="content-wrapper__inner" id="main-content" tabindex="-1">
         {{ content }}
-      </div>
+      </main>
 
       {% include footer.html %}
     </div>

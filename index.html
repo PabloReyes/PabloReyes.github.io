@@ -1,8 +1,12 @@
 ---
 layout: default
+body_class: archive-page
 ---
 
-<h1>Artículos</h1>
+<div class="archive-heading">
+  <h1>Artículos</h1>
+  <p>{{ site.posts.last.date | date: '%Y' }} — {{ site.posts.first.date | date: '%Y' }}</p>
+</div>
 <div class="main-post-list">
     {% include post-list-cards.html %}
     {% if paginator.previous_page or paginator.next_page %}

@@ -1,0 +1,2 @@
+{%- assign minutes = include.content | strip_html | number_of_words | divided_by: 220.0 | ceil | at_least: 1 -%}
+{{- minutes }} {% if include.lang == 'en' %}min read{% else %}min de lectura{% endif -%}

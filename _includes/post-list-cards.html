@@ -1,18 +1,22 @@
-{% for post in site.posts %}
+{% assign archive_year = '' %}
+{% assign archive_posts = paginator.posts | default: site.posts %}
+{% for post in archive_posts %}
     {% if include.filter_category == nil or include.filter_category == post.category %}
         {% if include.filter_featured == nil or include.filter_featured == post.featured %}
 
-            
+                {% assign post_year = post.date | date: '%Y' %}
+                {% if post_year != archive_year %}
+                  <h2 class="archive-year">{{ post_year }}</h2>
+                  {% assign archive_year = post_year %}
+                {% endif %}
                 <article class="post-entry{% if post.image %} post-entry--with-media{% endif %}"{% if post.css_id %} id="{{ post.css_id }}"{% endif %}>
                     <a href="{{ post.url | relative_url }}">
                         <div class="post-content-text">
-                            <div class="post-title">
-                                <span>{{ post.title }}</span>
-                            </div>
+                            <h3 class="post-title">{{ post.title }}</h3>
 
                             <div class="post-meta">
-                                <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
-                                <!-- <span class="post-category">{{post.category}}</span> -->
+                                <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include date.html date=post.date lang=post.lang %}</time>
+                                <span aria-hidden="true"> · </span>{% include reading-time.html content=post.content lang=post.lang %}
                             </div>
 
                             <div class="post-excerpt">
@@ -25,7 +29,7 @@
                           <picture class="post-entry__media">
                             <source
                               srcset="{{ post_thumbnail | relative_url }} 320w, {{ post_thumbnail_2x | relative_url }} 640w"
-                              sizes="(min-width: 700px) 176px, 112px"
+                              sizes="(min-width: 700px) 208px, (min-width: 521px) 160px, calc(100vw - 40px)"
                               type="image/webp">
                             <img
                               src="{{ post.image | relative_url }}"

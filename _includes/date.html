@@ -1,0 +1,8 @@
+{%- assign date_lang = include.lang | default: site.lang -%}
+{%- if date_lang == 'en' -%}
+  {{- include.date | date: '%-d %b %Y' -}}
+{%- else -%}
+  {%- assign months = 'ene,feb,mar,abr,may,jun,jul,ago,sep,oct,nov,dic' | split: ',' -%}
+  {%- assign month_index = include.date | date: '%m' | minus: 1 -%}
+  {{- include.date | date: '%-d' }} {{ months[month_index] }} {{ include.date | date: '%Y' -}}
+{%- endif -%}

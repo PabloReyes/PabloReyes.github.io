@@ -338,7 +338,7 @@ class SiteContractTest < Minitest::Test
     refute_match(/linear-gradient|backdrop-filter/, styles)
     refute_match(/\.lang-selector\s*\{[^}]*position:\s*sticky/m, styles)
 
-    assert_includes sidebar, "Software, tecnología, producto y las cosas que construyo."
+    assert_includes sidebar, "Reflexiones y tecnología. No tengo prisa."
     assert_includes post_list, '<picture class="post-entry__media">'
     assert_includes post_list, 'type="image/webp"'
     assert_includes post_list, "srcset="
