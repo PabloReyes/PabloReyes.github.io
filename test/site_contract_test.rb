@@ -70,7 +70,7 @@ class SiteContractTest < Minitest::Test
   def test_publishing_configuration_uses_the_canonical_site
     config = YAML.safe_load(ROOT.join("_config.yml").read)
 
-    assert_equal "https://blog.pabloreyes.es", config.fetch("url")
+    assert_equal "https://pabloreyes.es", config.fetch("url")
     assert_equal "es", config.fetch("lang")
     refute config.key?("google_analytics")
     refute_includes config.fetch("plugins"), "jekyll-compress-images"
@@ -188,7 +188,7 @@ class SiteContractTest < Minitest::Test
       assert_match(/<html[^>]+\blang="(?:es|en)"/i, html, "#{relative} has no valid lang")
       assert_equal 1, html.scan(/<meta[^>]+name=["']viewport["']/i).size,
                    "#{relative} must have exactly one viewport"
-      assert_match(%r{<link[^>]+rel=["']canonical["'][^>]+href=["']https://blog\.pabloreyes\.es/}i,
+      assert_match(%r{<link[^>]+rel=["']canonical["'][^>]+href=["']https://pabloreyes\.es/}i,
                    html, "#{relative} has an invalid canonical")
       refute_match(/\bid=(["'])\1/i, html, "#{relative} contains an empty id")
       refute_match(%r{(?:href|src)=["']/finanzas(?:/|["'])}i, html,
@@ -294,18 +294,18 @@ class SiteContractTest < Minitest::Test
     assert_match(/<html[^>]+lang="en"/, english)
     assert_match(%r{<a href="/en/projects/" class="active" aria-current="page">\s*Projects\s*</a>},
                  english)
-    assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/projects/">}, spanish)
-    assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/en/projects/">}, english)
+    assert_match(%r{<link rel="canonical" href="https://pabloreyes\.es/projects/">}, spanish)
+    assert_match(%r{<link rel="canonical" href="https://pabloreyes\.es/en/projects/">}, english)
 
     [spanish, english].each do |page|
-      assert_match(%r{hreflang="es" href="https://blog\.pabloreyes\.es/projects/"}, page)
-      assert_match(%r{hreflang="en" href="https://blog\.pabloreyes\.es/en/projects/"}, page)
-      assert_match(%r{hreflang="x-default" href="https://blog\.pabloreyes\.es/projects/"}, page)
+      assert_match(%r{hreflang="es" href="https://pabloreyes\.es/projects/"}, page)
+      assert_match(%r{hreflang="en" href="https://pabloreyes\.es/en/projects/"}, page)
+      assert_match(%r{hreflang="x-default" href="https://pabloreyes\.es/projects/"}, page)
       EXPECTED_PROJECT_IDS.each { |id| assert_includes page, %(id="#{id}") }
     end
 
     assert_match(/<meta name="robots" content="noindex">/, legacy_about)
-    assert_match(%r{<link rel="canonical" href="https://blog\.pabloreyes\.es/projects/">}, legacy_about)
+    assert_match(%r{<link rel="canonical" href="https://pabloreyes\.es/projects/">}, legacy_about)
     assert_match(%r{<meta http-equiv="refresh" content="0; url=/projects/">}, legacy_about)
   end
 

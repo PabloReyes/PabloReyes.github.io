@@ -51,7 +51,7 @@
     - Matplotlib
     - Pyproj
     - Ipyleaflet
-  url: https://blog.pabloreyes.es/vivienda-catastro-barcelona-machine-learning/
+  url: https://pabloreyes.es/vivienda-catastro-barcelona-machine-learning/
 
 - id: carbitrage
   title: Carbitrage
@@ -109,7 +109,7 @@
     - NLTK (VADER)
     - Google Cloud
     - Firebase
-  url: https://blog.pabloreyes.es/trading-sentimental/
+  url: https://pabloreyes.es/trading-sentimental/
 
 - id: afterfacts
   title: AfterFacts
@@ -143,7 +143,7 @@
     - Scikit-learn
     - Matplotlib
     - Selenium
-  url: https://blog.pabloreyes.es/laliga-jugadores-machine-learning/
+  url: https://pabloreyes.es/laliga-jugadores-machine-learning/
 
 - id: entretodos
   title: EntreTodos

@@ -1,6 +1,6 @@
 # Pablo Reyes — Personal Blog
 
-This repository contains the source code for my personal blog/website (Jekyll), published at [blog.pabloreyes.es](https://blog.pabloreyes.es).
+This repository contains the source code for my personal blog/website (Jekyll), published at [pabloreyes.es](https://pabloreyes.es).
 
 I mainly write about software development, technology, product, and data analysis, plus notes and resources I want to keep around.
 
@@ -13,7 +13,13 @@ I mainly write about software development, technology, product, and data analysi
 
 ### Install dependencies
 
-If you use `asdf`:
+On Arch/Omarchy, use the native installer:
+
+```bash
+./install_arch.sh
+```
+
+On macOS with `asdf`:
 
 ```bash
 ./install.sh
@@ -21,11 +27,29 @@ If you use `asdf`:
 
 ### Run
 
+On Arch/Omarchy:
+
+```bash
+mise exec -- bundle exec jekyll serve --livereload
+```
+
+On macOS with `asdf`:
+
 ```bash
 asdf exec bundle exec jekyll serve --livereload
 ```
 
 ### Production build (compile check)
+
+On Arch/Omarchy:
+
+```bash
+mise exec -- bundle exec ruby test/site_contract_test.rb
+mise exec -- bundle exec jekyll build
+mise exec -- bundle exec ruby test/site_contract_test.rb
+```
+
+On macOS with `asdf`:
 
 ```bash
 asdf exec bundle exec ruby test/site_contract_test.rb

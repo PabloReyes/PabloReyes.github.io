@@ -8,7 +8,7 @@
 # Site settings
 title: 'Pablo Reyes'
 description: 'Desarrollo de software, tecnología, producto y análisis de datos'
-url: 'https://blog.pabloreyes.es'
+url: 'https://pabloreyes.es'
 baseurl: ''
 lang: 'es'
 timezone: 'Europe/Madrid'
