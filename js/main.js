@@ -64,7 +64,7 @@ layout: null
       html.setAttribute("data-theme", "dark");
       if (metaThemeColor) metaThemeColor.setAttribute("content", "#18181b");
     } else {
-      html.removeAttribute("data-theme");
+      html.setAttribute("data-theme", "light");
       if (metaThemeColor) metaThemeColor.setAttribute("content", "#fafaf8");
     }
   };
