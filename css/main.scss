@@ -471,6 +471,10 @@ header.panel-cover .navigation__item a.active:hover {
   object-fit: cover;
 }
 
+.post-entry__media img.post-thumbnail--top {
+  object-position: center top;
+}
+
 .post-title,
 .post-title span,
 .project-title-link {
@@ -632,6 +636,13 @@ blockquote {
   padding: 0 0 0 var(--space-md);
   border-left: 3px solid var(--color-accent);
   color: var(--color-muted);
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.875em;
 }
 
 code {

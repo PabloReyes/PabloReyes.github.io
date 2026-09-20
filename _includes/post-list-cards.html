@@ -34,6 +34,7 @@
                             <img
                               src="{{ post.image | relative_url }}"
                               alt=""
+                              {% if post.thumbnail_position == 'top' %}class="post-thumbnail--top"{% endif %}
                               {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
                               decoding="async">
                           </picture>
