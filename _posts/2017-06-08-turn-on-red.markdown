@@ -3,9 +3,8 @@ layout: post
 title: Turn on red
 published: true
 date: 2017-06-08
-markdown: markdown
 category: Personal
-image: /images/uploads/semaforos.jpg
+image: /images/uploads/posts/turn-on-red/traffic-light-right-turn.png
 css_id: post-turn-red
 excerpt: Fui buscando un test-drive de un TESLA Model S, y acabé recibiendo una clase de historia americana.
 ---
@@ -14,7 +13,7 @@ Hace sólo un par de semanas que un empleado de TESLA me enseñó el término *�
 
 Ya había confianza entre Brett y yo: había descubierto que no tenía la mínima intención de comprar el coche a pesar de ser mi segunda prueba, y había retirado su oferta de dejarme el coche 1 semana para probarlo.
 
-![Semáforos](/images/uploads/semaforos.jpg){:loading="lazy" decoding="async"}
+![Semáforos](/images/uploads/posts/turn-on-red/semaforos.jpg){:loading="lazy" decoding="async"}
 Hace sólo un par de semanas que un empleado de TESLA me enseñó el término *“Turn on red”*. Fue durante una prueba de un Model S donde no pude evitar preguntarle porqué tantos coches se saltaban los semáforos en rojo. Ya había confianza entre Brett y yo: había descubierto que no tenía la mínima intención de comprar el coche a pesar de ser mi segunda prueba, y había retirado su oferta de dejarme el coche 1 semana para probarlo.
 
 Llevo dos meses viviendo y conduciendo en los Estados Unidos y cada día pienso que me voy a dar un porrazo, o más bien, que me lo van a dar. Nadie me había dicho que en este país puedes girar en las intersecciones cuando tienes tu semáforo en rojo. En un principio, todo lo que pensaba era *“mira oye, en España somos más civilizados"*. Incluso en más de una ocasión he sentido la presión del coche de atrás cuando me pitaba estando el semáforo en rojo. Y yo ahí, quietecito.
@@ -42,10 +41,10 @@ El caso del semáforo muestra una cosa curiosa. Si ahora Estados Unidos prohibie
 
 Hace un par de semanas estuve en Hamilton, Ontario (Canadá), donde el padre de una amiga me comentaba que el sistema métrico confundía a los americanos que entraban en el país vecino desde Buffalo, que iban como locos a 75mph (120km/h) pensando que aún tenían margen hasta los 100mph. Porque allí, en Ontario, la velocidad maxima son 100km/h. Y mira tú por donde, es un límite impuesto por [la misma crisis energética que comentaba antes](http://www.mto.gov.on.ca/english/about/mto-100/#1970s).
 
-![Road rigns change](/images/uploads/canada-change-road-sign.jpg){:loading="lazy" decoding="async"}
+![Road rigns change](/images/uploads/posts/turn-on-red/canada-change-road-sign.jpg){:loading="lazy" decoding="async"}
 *La fotografía de arriba, propiedad del [Ministerio de Transporte de Ontario](http://www.mto.gov.on.ca/english/index.shtml), muestra a trabajadores en 1976 cambiando las señales de velocidad en la autopista 401.*
 
-![Limite 110 en España](/images/uploads/velocidad-espana-abc.png){:loading="lazy" decoding="async" class="img-left"}
+![Limite 110 en España](/images/uploads/posts/turn-on-red/velocidad-espana-abc.png){:loading="lazy" decoding="async" class="img-left"}
 Cuando en España limitamos el límite a 110km/h durante un verano para ahorrar energía, la gente protestó, se echó a la calle, y los periódicos decían que el gobierno nos "frenaba".
 
 Montamos un follón por una norma que duró un un verano, y todavía íbamos más rápidos que los canadienses. Estos norteños llevan pisando huevos 40 años.

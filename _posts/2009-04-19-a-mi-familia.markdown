@@ -3,10 +3,8 @@ layout: post
 title: A mi familia
 published: true
 date: 2009-04-19
-markdown: markdown
 category: Personal
-cta: Venga, cuéntame
-image: /images/uploads/cover-carta-familia.jpg
+image: /images/uploads/posts/a-mi-familia/envelope-heart.png
 excerpt: "Una carta a mi familia, a la que debo todo lo que soy."
 ---
 

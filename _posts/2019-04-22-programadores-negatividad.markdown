@@ -4,12 +4,9 @@ title: "Canción de Código y Furia: Programadores y Negatividad"
 published: true
 date: 2019-04-22
 css_id: programadores-negatividad
-markdown: markdown
 category: Personal
-featured: true
-image: /images/uploads/posts/programadores-negatividad/angry-face.jpg
+image: /images/uploads/posts/programadores-negatividad/robot-angry.png
 excerpt: Crítica al programador negativo, con aires de superioridad y que no conoce el verdadero propósito de su trabajo.
-cta: Yo no hago esas cosas
 ---
 
 Estoy mirando un trozo de código. Es, sin duda, uno de los peores códigos que he visto en mi vida. Para actualizar un único registro en una base de datos, recupera todos los registros de la tabla y envía un UPDATE para cada uno de ellos, no sólo para el registro que necesita ser actualizado. 

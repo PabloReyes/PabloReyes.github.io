@@ -3,7 +3,6 @@ layout: post
 title: The firefighter developer
 published: false
 date: 2016-05-28
-markdown: markdown
 ---
 AngularJS Ninja, SpringMVC Magician, Lambdas Expert, and other meaningless job titles showing your lack of abilities. 
 <!--more-->

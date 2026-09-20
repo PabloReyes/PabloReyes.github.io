@@ -3,9 +3,7 @@ layout: post
 title: Cada día más tontos
 published: true
 date: 2010-05-20
-markdown: markdown
 category: Personal
-cta: Venga, cuéntame
 image: /images/uploads/posts/cada-dia-mas-tontos/ninos_jaula.png
 excerpt: "El sobreproteccionismo y el excesivo mimo a los niños nos está convirtiendo en una sociedad cada vez más débil y dependiente."
 ---
@@ -21,7 +19,7 @@ de goma… Si alguna vez nos hemos caído (que han sido muchas), se nos ponía u
 estábamos listos para romper el suelo a cabezazos otra vez. Ah, tampoco nos atragantamos nunca con ningún juguete
 pequeño.
 
-![ninos_jaula.png](../images/uploads/posts/cada-dia-mas-tontos/ninos_jaula.png){:loading="lazy" decoding="async"}
+![ninos_jaula.png](/images/uploads/posts/cada-dia-mas-tontos/ninos_jaula.png){:loading="lazy" decoding="async"}
 
 ¿Hasta que punto es positiva tanta protección? Yo aprendí a no tocar la plancha tocándola, a no tirarme por una rampa en
 bici sin frenos gracias a una pequeña cicatriz que hoy todavía me acompaña, a no caminar descalzo rompiéndome una uña

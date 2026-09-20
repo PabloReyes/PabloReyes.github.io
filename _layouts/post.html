@@ -10,33 +10,6 @@ layout: default
       <span class="post-meta__author">{{ site.author.name }}</span>
       <span class="post-meta__separator" aria-hidden="true">·</span>
       <span>{% include reading-time.html content=content lang=page.lang %}</span>
-
-      {% assign rawtags = "" %}
-      {% assign ttags = page.tags | join:'|' | append:'|' %}
-      {% assign rawtags = rawtags | append:ttags %}
-      {% assign rawtags = rawtags | split:'|' | sort %}
-
-      {% assign tags = "" %}
-      {% for tag in rawtags %}
-        {% if tag != "" %}
-          {% if tags == "" %}
-            {% assign tags = tag | split:'|' %}
-          {% endif %}
-          {% unless tags contains tag %}
-            {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
-
-      {% if tags != "" and tags.size > 0 %}
-      <ul class="tags">
-        {% for tag in tags %}
-          <li><a href="/tags/{{ tag | slugify }}" class="tag"> {{ tag }} </a></li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-
-
     </div>
 
     {% if page.image %}

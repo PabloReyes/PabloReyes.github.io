@@ -3,7 +3,6 @@ layout: post
 title: Being a good guy, but borrowing personal info
 published: false
 date: 2012-10-05
-markdown: markdown
 ---
 
 As I told you the other day, some years ago [I did some bad things related to personal info]({% post_url 2012-09-17-hands-dirty %}), passwords and mails. Well, I didn’t do anything wrong with that info, just obtaining it. The feeling after getting all that private, secure, illegal data gave me so much adrenaline I couldn’t stop laughing. I never told anyone about what I did, since I was really scared of what I had done and all the sensible information I had.

@@ -3,10 +3,8 @@ layout: post
 title: Nueva etapa, Stuttgart
 published: true
 date: 2010-09-19
-markdown: markdown
 category: Personal
-cta: Venga, cuéntame
-image: /images/uploads/posts/cover_stuttgart.png
+image: /images/uploads/posts/nueva-etapa-stuttgart/cover_stuttgart.png
 excerpt: El comienzo de una nueva etapa en Stuttgart, Alemania, como estudiante ERASMUS.
 ---
 

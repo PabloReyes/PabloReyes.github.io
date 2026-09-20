@@ -4,8 +4,7 @@ title: "La era del desenfado"
 published: true
 date: 2008-02-03
 category: Personal
-cta: Venga, cuéntame
-image: /images/uploads/cover-desenfado.jpg
+image: /images/uploads/posts/era-del-desenfado/colorful-suit.png
 excerpt: "Empresas y políticos adoptan un estilo más relajado y cercano para parecer más modernos y accesibles."
 ---
 

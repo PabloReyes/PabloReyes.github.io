@@ -7,3 +7,6 @@ node_modules/
 
 .sass-cache/
 .jekyll-cache/responsive-article-images/
+
+# Local agent instructions (not part of the published repo)
+AGENTS.md

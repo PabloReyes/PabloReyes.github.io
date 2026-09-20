@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Ensuciándome las manos en 2004
-categories: [programming]
 published: True
-featured: true
 date: 2012-09-17
 category: Personal
-markdown: markdown
 image: /images/uploads/posts/hands-dirty/security_cameras.jpg
 image_credit: Photo by <a href="https://unsplash.com/@scottwebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Scott Webb</a>
 excerpt: En 2004, entre clases de instituto y partidas de Age of Empires, me topé con una base de datos de 20.000 usuarios con contraseñas MD5.

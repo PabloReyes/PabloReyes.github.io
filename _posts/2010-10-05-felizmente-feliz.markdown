@@ -3,10 +3,8 @@ layout: post
 title: Felizmente feliz
 published: false
 date: 2010-09-19
-markdown: markdown
 category: Personal
-cta: Venga, cuéntame
-image: /images/uploads/no-image.jpg
+image: /images/uploads/posts/felizmente-feliz/no-image.jpg
 excerpt: "Un mes en Stuttgart, y ya me siento como en casa."
 ---
 

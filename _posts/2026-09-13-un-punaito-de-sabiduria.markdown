@@ -2,10 +2,8 @@
 layout: post
 title: "Un puñaíto de sabiduría."
 date: 2026-09-13
-markdown: markdown
 category: Personal
-featured: false
-image: /images/uploads/posts/sabiduria/tao_albondigas.png
+image: /images/uploads/posts/un-punaito-de-sabiduria/tao_albondigas.png
 thumbnail_position: top
 
 ---

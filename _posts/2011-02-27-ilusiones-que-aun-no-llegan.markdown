@@ -3,10 +3,8 @@ layout: post
 title: Ilusiones que aún no llegan
 published: true
 date: 2011-02-27
-markdown: markdown
 category: Personal
-cta: Venga, cuéntame
-image: /images/uploads/cover_ilusiones.jpeg
+image: /images/uploads/posts/ilusiones-que-aun-no-llegan/cover_ilusiones.jpeg
 excerpt: Futuro, ilusiones y planes desde Stuttgart.
 ---
 

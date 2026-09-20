@@ -2,11 +2,9 @@
 layout: post
 title: "El precio de la democratización"
 published: false
-date: 2022-03-01
+date: 2025-08-08
 css_id: vienna
-markdown: markdown
 category: Personal
-featured: false
 excerpt: "Construcción en casa de un observatorio astronómico en casa durante varios meses, con sus continuas modificaciones y mejoras."
 ---
 

@@ -3,10 +3,8 @@ layout: post
 title: Me llega “Copia este libro”
 published: true
 date: 2005-12-05
-markdown: markdown
 category: Personal
-cta: Venga, cuéntame
-image: /images/uploads/cover-copia-libro2.png
+image: /images/uploads/posts/copia-este-libro/cover-copia-libro2.png
 excerpt: "Impresiones sobre el libro de David Bravo, 'Copia este libro'."
 ---
 

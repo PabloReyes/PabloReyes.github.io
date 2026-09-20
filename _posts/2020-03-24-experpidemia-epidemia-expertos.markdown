@@ -4,18 +4,15 @@ title: "Experpidemia: La epidemia de los expertos"
 published: true
 date: 2020-03-26
 css_id: experpidemia
-markdown: markdown
 category: Datos
-featured: true
-image: /images/uploads/posts/expertos/laptop-feature-coronavirus.png
-image_credit: Foto de <a href="https://unsplash.com/@thenewmalcolm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Obi Onyeador</a>
+image: /images/uploads/posts/experpidemia-epidemia-expertos/experpidemia.png
 excerpt: "Por cada experto que dice A, hay otro que dice B. Y es normal: para muchas cosas no tenemos ni idea"
 ---
 
 Con esto del COVID-19 no paro de ver expertos sanitarios (y peor, no sanitarios) que hacen todo tipo de predicciones sobre la evolución del virus. En Kaggle ya hay más de [1.000](https://www.kaggle.com/search?q=covid+in%3Anotebooks) notebooks analizando datos de todo tipo de fuentes, que no son pocas: hay más de 44.000 artículos y papers científicos los cuales [obviamente han sido analizados en Kaggle](https://www.kaggle.com/maksimeren/covid-19-literature-clustering). 
 
 En este gráfico, cada puntito es un artículo/paper científico sobre coronavirus:
-![Artículos publicados por fecha y especialidad](/images/uploads/posts/expertos/scatter_articulos.png){:loading="lazy" decoding="async" class="img-center"}
+![Artículos publicados por fecha y especialidad](/images/uploads/posts/experpidemia-epidemia-expertos/scatter_articulos.png){:loading="lazy" decoding="async" class="img-center"}
 
 Justo ayer terminaba en Kaggle [una competición](https://www.kaggle.com/c/covid19-global-forecasting-week-1/notebooks) para desarrollar un modelo predictivo de la evolución del bicho que ha contado con 544 equipos. Todo un evento express que ha contado con centenares de mentes creando modelos de Machine Learning, Inteligencia Artificial, Blockchain, Condensadores de flujo y Computanción Cuántica. No, [en serio](https://www.kaggle.com/general/137559#781443).
 
@@ -35,7 +32,7 @@ Y como este, hay miles.
 Decía antes que acaba de terminar esta competición mundial para encontrar el mejor modelo predictivo para la evolución del COVID-19. Hasta ahora, el modelo más valorado ha sido el [COVID Global Forecast: SIR model + ML regressions](https://www.kaggle.com/saga21/covid-global-forecast-sir-model-ml-regressions), de [Patrick Sánchez](https://www.kaggle.com/saga21), que por cierto es de Barcelona. Patrick ha hecho un excelente trabajo analizando los datos disponibles y aplicando tanto el [modelo teórico SIR](https://www.kaggle.com/saga21/covid-global-forecast-sir-model-ml-regressions) como un modelo de Regresión Lineal. Recomiendo leer todo el notebook porque merece la pena. 
 
 Con su modelo predictivo final, el resultado de la predicción para España durante el mes de Marzo ha sido el siguiente:
-![Regresión sobre la evolución de casos en España](/images/uploads/posts/expertos/regresion-2-spain.png){:loading="lazy" decoding="async"}
+![Regresión sobre la evolución de casos en España](/images/uploads/posts/experpidemia-epidemia-expertos/regresion-2-spain.png){:loading="lazy" decoding="async"}
 
 Desde luego, ¡un resultado bastante aceptable! El modelo ha sabido predecir con bastante acierto la evolución del virus durante el mes de Marzo. 
 
@@ -43,7 +40,7 @@ Pero... ¿No sabíamos ya, mas o menos, la velocidad de propagación del virus? 
 
 He abierto un Excel, he volcado los datos de contagios reales y he hecho mi propio "modelo" usando matemáticas de primaria (sumar y multiplicar). Quizás hasta he hecho más trabajo de la cuenta, puesto que podía haber usado una servilleta y un boli. Mi resultado es este:
 
-![Comparación con una regresión elaborada manualmente](/images/uploads/posts/expertos/regresion-personal-diy.png){:loading="lazy" decoding="async"}
+![Comparación con una regresión elaborada manualmente](/images/uploads/posts/experpidemia-epidemia-expertos/regresion-personal-diy.png){:loading="lazy" decoding="async"}
 
 Exacto. El virus crece de forma exponencial, más o menos. Sorpresa.
 
@@ -53,7 +50,7 @@ No digo este "*más o menos*" dando a entender que con un poco de trabajo podrí
 
 Si alguien piensa que "*bueno, pero estos modelos son para reprensentar qué pasaría si no se tomaran medidas*", simplementa está reconociendo que no valen de nada. Obviamente que el virus se propagaría rápidamente sino se hiciera nada. Y muy probablemente una curva exponencial refleje más o menos bien su evolución: ¿y de qué vale eso?
 
-![Robot limpiando residuos](/images/uploads/posts/expertos/robot-basura.jpg){:loading="lazy" decoding="async" class="img-right"}
+![Robot limpiando residuos](/images/uploads/posts/experpidemia-epidemia-expertos/robot-basura.jpg){:loading="lazy" decoding="async" class="img-right"}
 Todas las horas de trabajo en el desarrollo de este modelo van a la basura en cuanto que la gente se queda en casa. O cuando cierren unas aerolineas. O cuando se cierre una frontera. O cuando el virus mute. O cuando venga un temporal que cambie el clima durante días. Por supuesto a alguno se le ocurirrá contemplar el impacto de cada una de esas alteraciones para así hacer el modelo *mejor*, y muy seguramente acabe con un modelo de miles de líneas sin documentar y que fallaría igualmente por un bug en la librería que usó y que no se actualiza desde hace 13 años. 
 
 [Un estudio de esta misma semana (con científicos del MIT, ojo)](https://cadenaser.com/ser/2020/03/25/ciencia/1585160937_053388.html) dice que muy probablemente vaya a venir una segunda oleada de infecciones por COVID-19, potencialmente cambiando el curso de la famosa curva y hundiendo en la basura los modelos anteriores. Pero ahora otro estudio de la Universidad de Oxford dice que el [50% de los británicos (casi 40 millones) ya está infectado](https://nymag.com/intelligencer/2020/03/oxford-study-coronavirus-may-have-infected-half-of-u-k.html), haciendo inválidos los datos de todos los modelos desarrollados hasta ahora. 
@@ -81,7 +78,7 @@ Lo mejor realmente que podemos hacer, y para lo que no necesitamos decenas de mi
 
 **Lávate mucho las manos con jabón, no te toques la cara, y no te acerques a mucha gente.**
 
-![Diagrama de transmisión de la COVID-19](/images/uploads/posts/expertos/Covid-19-Transmission-graphic-01.gif){:loading="lazy" decoding="async"}
+![Diagrama de transmisión de la COVID-19](/images/uploads/posts/experpidemia-epidemia-expertos/Covid-19-Transmission-graphic-01.gif){:loading="lazy" decoding="async"}
 
 El efecto que este gráfico puede tener en la erradicación o control de virus siendo tan visual y fácil de entender es posiblemente mayor que el efecto que tenga el trabajo de Patrick y de los otros cientos de data scientists de Kaggle, por mucho que hacer modelos predictivos sea un trabajo tremendamente más complejo. 
 

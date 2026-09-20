@@ -8,53 +8,42 @@ I mainly write about software development, technology, product, and data analysi
 
 ### Requirements
 
-- Ruby `4.0.6` (see `.ruby-version` / `.tool-versions`)
-- Bundler
+- Docker (recommended). Ruby `4.0.6` is pinned in `.ruby-version` / `.tool-versions` / `Gemfile` and is not packaged for Ubuntu or macOS, so the site is built inside a local Docker image.
+- Alternatively, a native Ruby `4.0.6` with Bundler if you already have one. A native build also needs the `webp` encoders (`apt install webp` or `brew install webp`).
 
 ### Install dependencies
-
-On Arch/Omarchy, use the native installer:
-
-```bash
-./install_arch.sh
-```
-
-On macOS with `asdf`:
 
 ```bash
 ./install.sh
 ```
 
+This builds the local `pabloreyes-jekyll:4.0.6` image (base `ruby:4.0.6` plus the `webp` encoders used by `_plugins/responsive_article_images.rb`) and installs gems into the `jekyll-bundle` Docker volume. If Docker is not available, it falls back to a native Ruby `4.0.6` when present.
+
 ### Run
 
-On Arch/Omarchy:
-
 ```bash
-mise exec -- bundle exec jekyll serve --livereload
+docker run --rm -it -p 4000:4000 \
+  -v "$PWD:/app" -v jekyll-bundle:/usr/local/bundle -w /app \
+  pabloreyes-jekyll:4.0.6 bundle exec jekyll serve --host 0.0.0.0 --livereload
 ```
 
-On macOS with `asdf`:
+Open <http://localhost:4000>. With a native Ruby, just run:
 
 ```bash
-asdf exec bundle exec jekyll serve --livereload
+bundle exec jekyll serve --livereload
 ```
 
 ### Production build (compile check)
 
-On Arch/Omarchy:
-
 ```bash
-mise exec -- bundle exec ruby test/site_contract_test.rb
-mise exec -- bundle exec jekyll build
-mise exec -- bundle exec ruby test/site_contract_test.rb
-```
+docker run --rm -v "$PWD:/app" -v jekyll-bundle:/usr/local/bundle -w /app \
+  pabloreyes-jekyll:4.0.6 bundle exec ruby test/site_contract_test.rb
 
-On macOS with `asdf`:
+docker run --rm -e JEKYLL_ENV=production -v "$PWD:/app" -v jekyll-bundle:/usr/local/bundle -w /app \
+  pabloreyes-jekyll:4.0.6 bundle exec jekyll build
 
-```bash
-asdf exec bundle exec ruby test/site_contract_test.rb
-asdf exec bundle exec jekyll build
-asdf exec bundle exec ruby test/site_contract_test.rb
+docker run --rm -v "$PWD:/app" -v jekyll-bundle:/usr/local/bundle -w /app \
+  pabloreyes-jekyll:4.0.6 bundle exec ruby test/site_contract_test.rb
 ```
 
 ### GitHub Pages deployment

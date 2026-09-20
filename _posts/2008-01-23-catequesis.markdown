@@ -4,8 +4,7 @@ title: "Ni dos horas ni veinte, el que quiera religión que haga la Catequesis"
 published: true
 date: 2008-01-23
 category: Personal
-cta: Venga, cuéntame
-image: /images/uploads/cover-catequesis.jpg
+image: /images/uploads/posts/catequesis/cover-catequesis.jpg
 excerpt: "Reflexión sobre la enseñanza de la religión en las escuelas y la catequesis."
 ---
 

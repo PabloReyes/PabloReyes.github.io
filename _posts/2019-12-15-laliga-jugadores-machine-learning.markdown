@@ -4,11 +4,8 @@ title: Analizando jugadores de La Liga con Machine Learning
 published: true
 date: 2019-12-15
 css_id: laliga-ml
-markdown: markdown
 category: Personal
-featured: true
-image: /images/uploads/posts/laliga-ml/campo_futbol.png
-image_credit: Photo by <a href="https://unsplash.com/@viennachanges?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vienna Reyes</a>
+image: /images/uploads/posts/laliga-jugadores-machine-learning/ball-clusters.png
 excerpt: Análisis de los jugadores de La Liga de fútbol española usando Machine Learning. Y sin tener ni idea de fútbol. 
 ---
 Hace unos días me topé con una base de datos con información estadística de todos los equipos, ligas y jugadores de fútbol europeos. No soy amante del futbol, pero sí de los datos y de su análisis, y como este fin de semana he tenido tiempo y tenía ganas de meterle mano a algunas herramientas que tenía medio oxidadas, he decidido hacer algo con ellos.
@@ -53,7 +50,7 @@ En total, contamos con unos 30 atributos cuantificables por cada jugador. ¿Algo
 ## Un primer vistazo
 
 Antes de entrar en detalle, lo primero que vamos a hacer es generar una matríz de correlación: esta matriz nos permite ver de una forma muy visual qué valores tienen impacto en otros. De aquí esperamos ver cosas como que los jugadores altos ganan más balones en el aire que los bajos o que los jugadores que hacen más faltas reciben más tarjetas. Estas suposiciones no tienen porqué ser ciertas, pero nos pueden ayudar a detectar si hemos hecho algo mal.
-![Matriz de correlación de estadísticas de jugadores](/images/uploads/posts/laliga-ml/matriz_correlacion.png){:loading="lazy" decoding="async"}
+![Matriz de correlación de estadísticas de jugadores](/images/uploads/posts/laliga-jugadores-machine-learning/matriz_correlacion.png){:loading="lazy" decoding="async"}
 
 En esta matriz, el tamaño de cada cuadrado representa una correlación entre 0% y 100%. Los colores azules implican una correlación positiva: 
 
@@ -71,7 +68,7 @@ Sin hacer ningún análisis exhaustivo, parece que las correlaciones tienen sent
 
 Cuando trabajamos con grandes volúmenes de datos es importante entender que no todos los datos nos valen, y los que valen muchas veces no están preparados para ser usados. En casos como este en el que tenemos datos muy dispares en su naturaleza (alturas en cm, porcentajes de pases buenos, número de goles, etc.) es importante normalizar y escalar estos datos para que no acabemos comparando peras con manzanas. 
 
-![Datos de jugadores después del escalado](/images/uploads/posts/laliga-ml/escalado.png){:loading="lazy" decoding="async"}
+![Datos de jugadores después del escalado](/images/uploads/posts/laliga-jugadores-machine-learning/escalado.png){:loading="lazy" decoding="async"}
 
 Como vemos, antes del escalado teníamos tres atributos totalmente dispares que nos complicaban su comparación: los jugadores marcan entre 0 y 20 goles, pero su porcentaje de acierto en pases es de entre 0% y 100%, mientras que sus alturas van desde 160cm hasta 200cm. Al escalarlos, todos los valores se mueven ahora entre -5 y 5. Han perdido su “naturaleza”, pero no la necesitamos para nuestro análisis. 
 
@@ -91,12 +88,12 @@ Sin entrar en detalles técnicos y con la intención de hipersimplificar, imagin
  >
  > <cite>Wikipedia</cite>
 
-![Primer y segundo componente principal](/images/uploads/posts/laliga-ml/cp1_cp2.png){:loading="lazy" decoding="async" class="img-left"}
+![Primer y segundo componente principal](/images/uploads/posts/laliga-jugadores-machine-learning/cp1_cp2.png){:loading="lazy" decoding="async" class="img-left"}
 
 Tras el cálculo de ACP, ya podemos mostrarlos en un gráfico donde cada punto representa un jugador, y su posición en el gráfico viene dada por sus Componentes Principales. Observamos en la esquina inferior izquierda un grupito de jugadores parecidos: ¿serán los delanteros? ¿los porteros? ¿los altos? ¿los que regatean más? No lo sabemos, lo que sabemos es que ese grupo de jugadores se parecen mucho. ¿Y qué pasa con ese que está sólo en la esquina inferior derecha?
 
 Vamos a aplicar un color distinto a cada posición (porteros negro, defensas rojo, centros amarillo, delanteros verde) y vamos a añadir los nombres al lado de cada punto. 
-![Jugadores proyectados sobre los dos primeros componentes](/images/uploads/posts/laliga-ml/cp1_cp2_players.png){:loading="lazy" decoding="async" class="img-center"}
+![Jugadores proyectados sobre los dos primeros componentes](/images/uploads/posts/laliga-jugadores-machine-learning/cp1_cp2_players.png){:loading="lazy" decoding="async" class="img-center"}
 
 ¡Pam! Los jugadores con capacidades parecidas juegan más o menos en las mismas posiciones. Los porteros por un lado, los defensas por otro empezando a mezclarse con los centrocampistas que a su vez se acercan a los delanteros. Y en la esquina, solo, Lionel. 
 
@@ -107,12 +104,12 @@ Me llama la atención José Luis Morales, un jugador del Levante que se escapa d
 Visualmente e incluso obviando los colores ya es posible encontrar “grupos” de jugadores. Los de abajo a la izquierda, los solitarios que destacan por la derecha y dos o tres grandes grupos que se mueven por el centro. Pero vamos a ir un paso más allá y encontrar qué piensa un algoritmo de agrupación sobre nuestros jugadores. 
 
 Para ello usaremos un algoritmo muy conocido para los que se dedican a jugar con datos llamado "[K-Means](https://es.wikipedia.org/wiki/K-medias)". Este algoritmo nos permite agrupar en un número predefinido de “clusters” (grupos) un conjunto de elementos. En nuestro caso, lo que buscamos es que nos agrupe a los jugadores por los Componentes Principales que hemos encontrado antes. Recordemos que la posición en la que juega cada jugador no se usa aquí para nada, y que sólo la hemos usado para colorear los puntos. 
-![Método del codo para seleccionar el número de clústeres](/images/uploads/posts/laliga-ml/metodo_codo.png){:loading="lazy" decoding="async" class="img-right"}
+![Método del codo para seleccionar el número de clústeres](/images/uploads/posts/laliga-jugadores-machine-learning/metodo_codo.png){:loading="lazy" decoding="async" class="img-right"}
 
 Lo primero que debemos decidir es cuantos grupos queremos crear. Podríamos mirar a ojo el gráfico de las Componentes Principales, pero puestos a tirar de ojímetro mejor lo hacemos con un método semi-científico. Vamos a usar el "[Método del Codo](https://en.wikipedia.org/wiki/Elbow_method_%28clustering%29)" para definir de una forma un poco más formal el número de grupos más óptimo para nuestros jugadores: hay un punto en el que añadir más grupos no añade mucha información de interés. Este método dice que más o menos en la punta del codo, cada nuevo cluster que añadimos es poco diferente del anterior. Hacemos los cálculos con nuestros datos, plantamos en un gráfico… ¡y mi ojímetro me dice que la punta está en el 5!
 
 Aplicando el algoritmo de K-Means con 5 clusters obtenemos la distribución siguiente:
-![Clústeres de jugadores de La Liga](/images/uploads/posts/laliga-ml/clusters.png){:loading="lazy" decoding="async" class="img-center"}
+![Clústeres de jugadores de La Liga](/images/uploads/posts/laliga-jugadores-machine-learning/clusters.png){:loading="lazy" decoding="async" class="img-center"}
 
 Y así queda la cosa. 5 grupos de jugadores que a partir de ahora me vendrán genial en las comidas con amigos, donde podré hablar de cómo Casemiro es un máquina, de cómo Messi y Benzema son unos fueras de serie o de cómo Jose Luis Morales es capaz de jugar donde quiera. 
 

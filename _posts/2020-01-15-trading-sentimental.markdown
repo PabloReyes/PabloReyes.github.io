@@ -4,11 +4,8 @@ title: "Estrategias de trading y análisis sentimental"
 published: true
 date: 2020-01-15
 css_id: trading-sentimental
-markdown: markdown
 category: Personal
-featured: true
-image: /images/uploads/posts/trading-sentimental/featured_laptop.jpg
-image_credit: Photo by <a href="https://unsplash.com/@austindistel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Austin Distel</a>
+image: /images/uploads/posts/trading-sentimental/oil-barrel-chart.png
 excerpt: Desarrollo de una estrategia de trading basada en el análisis sentimental de los mercados del petróleo.
 ---
 

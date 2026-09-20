@@ -4,8 +4,7 @@ title: "Aproximándonos a pi: el método de la diana"
 published: true
 date: 2008-10-21
 category: Personal
-cta: Venga, cuéntame
-image: /images/uploads/posts/pi-diana/pi-diana-resultados.png
+image: /images/uploads/posts/metodo-diana-pi/pi-diana-resultados.png
 excerpt: "Una aproximación al número pi a través del método de la diana."
 external_js:
   - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML
@@ -48,7 +47,7 @@ Problema de Basilea](https://es.wikipedia.org/wiki/Problema_de_Basilea) o el [Pr
 
 ## El método de la diana
 Imaginemos un círculo inscrito en un cuadrado de lado $$2u$$ como el siguiente:
-![Círculo inscrito en un cuadrado](/images/uploads/posts/pi-diana/cuadrado_2u.png){:loading="lazy" decoding="async"}
+![Círculo inscrito en un cuadrado](/images/uploads/posts/metodo-diana-pi/cuadrado_2u.png){:loading="lazy" decoding="async"}
 Con lo listo que somos, seguro que nos damos cuenta que el radio del círculo inscrito es de $$1u$$. También sabemos que el área de cuadrado es $$A_{cuad} = 4u^2$$ y que
 $$A_{circ} = r^2 = \pi$$.
 
@@ -86,7 +85,7 @@ def pi_diana(disparos):
 ```
 
 El resultado es el siguiente:
-![pi-diana-resultados.png](../images/uploads/posts/pi-diana/pi-diana-resultados.png){:loading="lazy" decoding="async"}
+![pi-diana-resultados.png](/images/uploads/posts/metodo-diana-pi/pi-diana-resultados.png){:loading="lazy" decoding="async"}
 
 Como se puede observar, el resultado no es muy bueno, pues se necesitan muchas iteraciones para conseguir unas mínimas
 cifras significativas, pero sí que es curioso el comprobar cómo puede calcularse un número tan mágico como $$\pi$$ de una
