@@ -4,7 +4,7 @@ title: "Vivo"
 published: true
 date: 2008-02-03
 category: Personal
-image: /images/uploads/posts/vivo/cover-carta-vivo.jpg
+image: /images/uploads/posts/vivo/candle.png
 excerpt: "Una reflexión personal sobre la vida y las personas que la hacen especial."
 ---
 Cómo pasa el tiempo. Y cuantas cosas pasan. La gente viene y va, a veces de repente y a veces de forma más o menos

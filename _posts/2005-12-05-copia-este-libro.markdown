@@ -4,7 +4,7 @@ title: Me llega “Copia este libro”
 published: true
 date: 2005-12-05
 category: Personal
-image: /images/uploads/posts/copia-este-libro/cover-copia-libro2.png
+image: /images/uploads/posts/copia-este-libro/book-copies.png
 excerpt: "Impresiones sobre el libro de David Bravo, 'Copia este libro'."
 ---
 

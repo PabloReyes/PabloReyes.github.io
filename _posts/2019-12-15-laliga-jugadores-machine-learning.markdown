@@ -5,7 +5,7 @@ published: true
 date: 2019-12-15
 css_id: laliga-ml
 category: Personal
-image: /images/uploads/posts/laliga-jugadores-machine-learning/ball-clusters.png
+image: /images/uploads/posts/laliga-jugadores-machine-learning/player-clusters.png
 excerpt: Análisis de los jugadores de La Liga de fútbol española usando Machine Learning. Y sin tener ni idea de fútbol. 
 ---
 Hace unos días me topé con una base de datos con información estadística de todos los equipos, ligas y jugadores de fútbol europeos. No soy amante del futbol, pero sí de los datos y de su análisis, y como este fin de semana he tenido tiempo y tenía ganas de meterle mano a algunas herramientas que tenía medio oxidadas, he decidido hacer algo con ellos.

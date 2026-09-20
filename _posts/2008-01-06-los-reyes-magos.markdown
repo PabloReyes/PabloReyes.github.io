@@ -4,7 +4,7 @@ title: Los Reyes Magos
 published: true
 date: 2006-01-05
 category: Personal
-image: /images/uploads/posts/los-reyes-magos/cover-shopping.jpg
+image: /images/uploads/posts/los-reyes-magos/gift-boxes.png
 excerpt: "Reflexión sobre la transformación de la historia de los Reyes Magos y su impacto en la sociedad moderna."
 ---
 

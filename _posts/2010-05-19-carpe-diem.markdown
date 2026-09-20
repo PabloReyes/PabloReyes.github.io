@@ -4,7 +4,7 @@ title: Carpe diem quam minimum credula postero
 published: true
 date: 2010-05-19
 category: Personal
-image: /images/uploads/posts/carpe-diem/cover-carpe-diem.jpg
+image: /images/uploads/posts/carpe-diem/coffee-cup.png
 excerpt: Sobre la importancia de aprovechar el tiempo y vivir la vida como uno quiere.
 ---
 

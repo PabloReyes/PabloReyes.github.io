@@ -5,7 +5,7 @@ published: true
 date: 2020-02-03
 css_id: catastro-barcelona
 category: Datos
-image: /images/uploads/posts/vivienda-catastro-barcelona-machine-learning/post_catastro_barcelona.png
+image: /images/uploads/posts/vivienda-catastro-barcelona-machine-learning/classical-homes.png
 excerpt: Un paseo por Barcelona desde 1900 hasta hoy de la mano del Catastro, donde podemos observar la evolución de la vivienda, su composición, sus distritos y sus calles.
 ---
 

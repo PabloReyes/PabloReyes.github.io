@@ -4,7 +4,7 @@ title: ¿Qué diablos es Blockchain?
 published: true
 date: 2017-09-11
 category: Personal
-image: /images/uploads/posts/que-diablos-es-blockchain/blockchain_background.png
+image: /images/uploads/posts/que-diablos-es-blockchain/blockchain-chain.png
 excerpt: "Explicación para todos los públicos de tecnologías Blockchain y Bitcoin. Requisitos previos: saber respirar."
 ---
 A no ser que estés escondiéndote en una cueva, estoy seguro de que has escuchado hablar de Bitcoins y Blockchains. Al fin y al cabo, son los temas de moda para los medios últimamente - las palabrejas estrellas del año -. Incluso la gente que nunca ha minado una criptomoneda ni sabe cómo funcionan habla de ellas.

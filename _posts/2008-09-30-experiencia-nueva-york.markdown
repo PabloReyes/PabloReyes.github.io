@@ -4,7 +4,7 @@ title: "Experiencia Nueva York"
 published: true
 date: 2008-09-30
 category: Personal
-image: /images/uploads/posts/experiencia-nueva-york/pablo-pushups.png
+image: /images/uploads/posts/experiencia-nueva-york/times-square-friends.png
 excerpt: "Un repaso a mi primer viaje a Nueva York con amigos"
 ---
 

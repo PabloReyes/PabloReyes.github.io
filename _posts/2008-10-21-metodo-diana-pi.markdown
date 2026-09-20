@@ -4,7 +4,7 @@ title: "Aproximándonos a pi: el método de la diana"
 published: true
 date: 2008-10-21
 category: Personal
-image: /images/uploads/posts/metodo-diana-pi/pi-diana-resultados.png
+image: /images/uploads/posts/metodo-diana-pi/pi-diana-scatter.png
 excerpt: "Una aproximación al número pi a través del método de la diana."
 external_js:
   - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML

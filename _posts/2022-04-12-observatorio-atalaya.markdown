@@ -5,7 +5,7 @@ published: true
 date: 2022-03-01
 css_id: observatory
 category: Personal
-image: /images/uploads/posts/observatorio-atalaya/caseta-4.png
+image: /images/uploads/posts/observatorio-atalaya/atalaya-observatory.png
 excerpt: "Construcción en casa de un observatorio astronómico en casa durante varios meses, con sus continuas modificaciones y mejoras."
 ---
 

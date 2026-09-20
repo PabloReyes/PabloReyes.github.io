@@ -4,7 +4,7 @@ title: Seguridad en blogs, o cómo conseguí entrar en paneles de administració
 published: true
 date: 2006-05-12
 category: Personal
-image: /images/uploads/posts/seguridad-blogs-wordpress/cover-john-ripper.png
+image: /images/uploads/posts/seguridad-blogs-wordpress/john-the-ripper.png
 excerpt: "Una exploración sobre la seguridad en blogs y cómo conseguí acceso a varios paneles de administración."
 ---
 

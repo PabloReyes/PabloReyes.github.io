@@ -4,7 +4,7 @@ title: Nueva etapa, Stuttgart
 published: true
 date: 2010-09-19
 category: Personal
-image: /images/uploads/posts/nueva-etapa-stuttgart/cover_stuttgart.png
+image: /images/uploads/posts/nueva-etapa-stuttgart/suitcase-compass.png
 excerpt: El comienzo de una nueva etapa en Stuttgart, Alemania, como estudiante ERASMUS.
 ---
 

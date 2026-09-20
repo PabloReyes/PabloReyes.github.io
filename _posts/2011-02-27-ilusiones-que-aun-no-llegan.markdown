@@ -4,7 +4,7 @@ title: Ilusiones que aún no llegan
 published: true
 date: 2011-02-27
 category: Personal
-image: /images/uploads/posts/ilusiones-que-aun-no-llegan/cover_ilusiones.jpeg
+image: /images/uploads/posts/ilusiones-que-aun-no-llegan/paper-boat.png
 excerpt: Futuro, ilusiones y planes desde Stuttgart.
 ---
 

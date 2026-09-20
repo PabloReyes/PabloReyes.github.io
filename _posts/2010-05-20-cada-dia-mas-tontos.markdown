@@ -4,7 +4,7 @@ title: Cada día más tontos
 published: true
 date: 2010-05-20
 category: Personal
-image: /images/uploads/posts/cada-dia-mas-tontos/ninos_jaula.png
+image: /images/uploads/posts/cada-dia-mas-tontos/kid-bubble.png
 excerpt: "El sobreproteccionismo y el excesivo mimo a los niños nos está convirtiendo en una sociedad cada vez más débil y dependiente."
 ---
 Cada días estamos más delicados. Más agilipollados diría yo.
