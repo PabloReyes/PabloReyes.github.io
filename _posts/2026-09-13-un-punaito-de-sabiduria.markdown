@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Un puñaíto de sabiduría."
+title: "Un puñaíto de sabiduría"
 date: 2026-09-13
 category: Personal
 image: /images/uploads/posts/un-punaito-de-sabiduria/tao_albondigas.png
