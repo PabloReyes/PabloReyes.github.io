@@ -65,10 +65,10 @@ layout: null
     toggle.setAttribute("aria-pressed", String(dark));
     if (dark) {
       html.setAttribute("data-theme", "dark");
-      if (metaThemeColor) metaThemeColor.setAttribute("content", "#18181b");
+      if (metaThemeColor) metaThemeColor.setAttribute("content", "#181e1e");
     } else {
       html.setAttribute("data-theme", "light");
-      if (metaThemeColor) metaThemeColor.setAttribute("content", "#fafaf8");
+      if (metaThemeColor) metaThemeColor.setAttribute("content", "#f7f7ef");
     }
   };
 

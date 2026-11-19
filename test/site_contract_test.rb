@@ -274,6 +274,12 @@ class SiteContractTest < Minitest::Test
     skip "Run a production build before generated-site checks" unless SITE.join("index.html").file?
 
     home = SITE.join("index.html").read
+    archive = SITE.join("articulos/index.html").read
+    assert_includes home, 'href="/articulos/"'
+    assert_includes home, 'href="/projects/#xrai-vision"'
+    assert_includes home, 'href="/projects/#openinsider"'
+    assert_match(%r{<h1>Artículos</h1>}, archive)
+    assert_includes archive, 'href="/observatorio-atalaya/"'
     spanish = SITE.join("projects/index.html").read
     english = SITE.join("en/projects/index.html").read
     legacy_about = SITE.join("about/index.html").read
@@ -318,12 +324,12 @@ class SiteContractTest < Minitest::Test
     projects_page = projects_page_path.file? ? projects_page_path.read : ""
 
     {
-      "--color-bg" => "#fafaf8",
+      "--color-bg" => "#f7f7ef",
       "--color-surface" => "#ffffff",
-      "--color-ink" => "#202124",
-      "--color-muted" => "#667085",
-      "--color-border" => "#e5e7eb",
-      "--color-accent" => "#b44937",
+      "--color-ink" => "#20251e",
+      "--color-muted" => "#596053",
+      "--color-border" => "#cdd0c4",
+      "--color-accent" => "#2949b0",
       "--measure-reading" => "44rem",
       "--measure-media" => "64rem"
     }.each do |token, value|
@@ -338,7 +344,8 @@ class SiteContractTest < Minitest::Test
     refute_match(/linear-gradient|backdrop-filter/, styles)
     refute_match(/\.lang-selector\s*\{[^}]*position:\s*sticky/m, styles)
 
-    assert_includes sidebar, "Reflexiones y tecnología. No tengo prisa."
+    assert_includes sidebar, "'/articulos/' | relative_url"
+    assert_includes sidebar, "projects_path | relative_url"
     assert_includes post_list, '<picture class="post-entry__media">'
     assert_includes post_list, 'type="image/webp"'
     assert_includes post_list, "srcset="

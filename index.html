@@ -1,15 +1,56 @@
 ---
 layout: default
-body_class: archive-page
+body_class: home-page
 ---
 
-<div class="archive-heading">
-  <h1>Artículos</h1>
-  <p>{{ site.posts.last.date | date: '%Y' }} — {{ site.posts.first.date | date: '%Y' }}</p>
-</div>
-<div class="main-post-list">
-    {% include post-list-cards.html %}
-    {% if paginator.previous_page or paginator.next_page %}
-        {% include pagination.html %}
-    {% endif %}
-</div>
+<section class="introduction" aria-labelledby="intro-title">
+  <div class="intro-copy">
+    <h1 id="intro-title">Pablo <span>Reyes<span class="ink-stop">.</span></span></h1>
+    <p>Desarrollo software y trabajo con datos. Aquí comparto lo que construyo y escribo sobre lo que voy aprendiendo.</p>
+    <div class="intro-actions">
+      <a class="primary-action" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+      <a class="contact-link" href="mailto:{{ site.author.email }}">Escríbeme <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <figure class="terrain-study">
+    <div class="plot-field">
+      <img src="{{ '/images/estudio/relieve.webp' | relative_url }}" alt="Relieve azul dibujado con líneas de código" width="1200" height="840" fetchpriority="high">
+    </div>
+    <figcaption><span>Fig. 01</span> Relieve algorítmico</figcaption>
+  </figure>
+</section>
+
+<section class="work-selection" id="proyectos" aria-labelledby="project-title">
+  <div class="section-heading">
+    <h2 id="project-title">Proyectos destacados</h2>
+    <a class="section-link" href="{{ '/projects/' | relative_url }}">Todos los proyectos <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="feature-grid">
+    {% for project in site.data.projects %}
+      {% if project.feature %}
+        <a class="feature" href="{{ '/projects/' | relative_url }}#{{ project.id }}">
+          <div class="feature-art">
+            <img src="{{ project.feature.art | relative_url }}" width="1100" height="500" alt="" loading="lazy" decoding="async">
+          </div>
+          <div class="feature-meta">{{ project.feature.field }} <span aria-hidden="true">/</span> {{ project.year }}</div>
+          <h3>{{ project.title }} <span class="feature-arrow" aria-hidden="true">↗</span></h3>
+          <p>{{ project.feature.description }}</p>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="recent-writing" id="blog" aria-labelledby="writing-title">
+  <div class="section-heading">
+    <h2 id="writing-title">Últimos artículos</h2>
+    <a class="section-link" href="{{ '/articulos/' | relative_url }}">Ver el archivo <span aria-hidden="true">→</span></a>
+  </div>
+  {% for post in site.posts limit: 4 %}
+    <a class="writing-row" href="{{ post.url | relative_url }}">
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include date.html date=post.date %}</time>
+      <h3>{{ post.title }}</h3>
+      <span aria-hidden="true">↗</span>
+    </a>
+  {% endfor %}
+</section>
