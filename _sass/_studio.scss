@@ -63,10 +63,6 @@
   pointer-events: none;
   background: radial-gradient(ellipse at 22% 48%, color-mix(in srgb, var(--color-accent) 8%, transparent), transparent 62%);
 }
-@media (prefers-reduced-motion: no-preference) {
-  .introduction::before { animation: window-light 18s ease-in-out infinite alternate; }
-  @keyframes window-light { to { transform: translateX(2%); opacity: .45; } }
-}
 .author-photo {
   flex: none;
   width: clamp(7.5rem, 13vw, 10rem);
