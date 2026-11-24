@@ -26,8 +26,8 @@
   image: openinsider.png
   image_width: 2200
   image_height: 1570
-  summary: "Plataforma de seguimiento del insider trading en Europa. Recopila y normaliza las operaciones que directivos y personas vinculadas a ellos declaran ante supervisores como la CNMV en España y la AMF en Francia."
-  summary_en: "OpenInsider tracks disclosed insider trading in Europe. It collects and standardizes transactions that executives and people connected to them report to regulators such as Spain’s CNMV and France’s AMF."
+  summary: "Plataforma de seguimiento del insider trading en Europa. Recopila y normaliza las operaciones que declaran los directivos y las personas vinculadas a ellos. Entre sus fuentes figuran la CNMV en España, la AMF en Francia, la FSMA en Bélgica y Finansinspektionen en Suecia."
+  summary_en: "OpenInsider tracks disclosed insider trading in Europe. It collects and standardizes transactions reported by executives and people connected to them. Its sources include Spain’s CNMV, France’s AMF, Belgium’s FSMA and Sweden’s Finansinspektionen."
   purpose: "Permite ver quién compra o vende acciones de cada empresa, detectar patrones en su historial y consultar la declaración original de cada operación."
   purpose_en: "Readers can see who buys or sells shares in each company, spot patterns over time, and trace each transaction back to its original filing."
   technologies:
