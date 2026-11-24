@@ -1,0 +1,61 @@
+// The stars share the fixed background. Only the two short meteor trails move.
+body { isolation: isolate; }
+
+.night-sky {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+
+  // A cool rim keeps the white cores visible against the light paper.
+  --core: light-dark(#fff, #eaf0f6);
+  --rim: light-dark(#a6b2bd, #bac4d0);
+  --faint: light-dark(#c7cfd4, #75818e);
+  --red-star: light-dark(#d2a7ac, #ce9293);
+  background-image:
+    radial-gradient(circle at 18% 31%, var(--core) .65px, var(--rim) 1px, transparent 1.8px),
+    radial-gradient(circle at 79% 62%, var(--core) .5px, var(--rim) .85px, transparent 1.5px),
+    radial-gradient(circle at 56% 87%, var(--rim) .5px, transparent 1.25px),
+    radial-gradient(circle at 38% 41%, var(--faint) .55px, transparent 1.25px),
+    radial-gradient(circle at 91% 14%, var(--faint) .4px, transparent 1px),
+    radial-gradient(circle at 24% 78%, var(--red-star) .7px, transparent 1.6px);
+  background-size: 193px 229px, 251px 157px, 163px 173px, 137px 191px, 211px 131px, 307px 283px;
+  opacity: .57;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .night-sky::before,
+  .night-sky::after {
+    content: "";
+    position: absolute;
+    width: clamp(2.5rem, 5vw, 4.5rem);
+    height: 2px;
+    border-radius: 50%;
+    background: linear-gradient(to right, transparent, var(--rim) 86%, var(--core));
+    opacity: 0;
+    animation: meteor-pass 72s linear infinite;
+  }
+  .night-sky::before {
+    left: 76%;
+    top: 13%;
+    --angle: 155deg;
+    animation-delay: 5s;
+  }
+  .night-sky::after {
+    left: 9%;
+    top: 57%;
+    --angle: 24deg;
+    animation-delay: 42s;
+  }
+}
+
+@keyframes meteor-pass {
+  0% { opacity: 0; transform: rotate(var(--angle)) translateX(0); }
+  .4% { opacity: .85; }
+  1.7%, 100% { opacity: 0; transform: rotate(var(--angle)) translateX(clamp(6rem, 15vw, 13rem)); }
+}
+
+@media print, (forced-colors: active) {
+  .night-sky { display: none; }
+}
