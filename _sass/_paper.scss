@@ -1,36 +1,37 @@
-// Flecks of warm ink at the edges of the page. The centre stays clear for reading.
+// Flecks of warm ink behind the page content.
 body { isolation: isolate; }
 
 .paper-motes {
-  --margin-width: clamp(2.75rem, calc((100% - var(--measure-list)) / 2 + 1rem), 24vw);
   position: fixed;
   inset: 0;
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
   color: var(--color-accent);
-  mask-image: linear-gradient(to right, black, transparent var(--margin-width),
-    transparent calc(100% - var(--margin-width)), black);
 }
 
 .paper-motes::before,
 .paper-motes::after {
   content: "";
   position: absolute;
-  top: -2rem;
-  bottom: -2rem;
-  width: calc(var(--margin-width) + 4rem);
+  inset: -2rem;
+  opacity: .25;
+}
+
+.paper-motes::before {
   background-image:
     radial-gradient(ellipse 2.7px 1.4px at 12% 21%, currentColor 52%, transparent 100%),
     radial-gradient(circle 1.6px at 15% 25%, currentColor 56%, transparent 100%),
-    radial-gradient(ellipse 1.5px 2.4px at 64% 46%, currentColor 52%, transparent 100%),
+    radial-gradient(ellipse 1.5px 2.4px at 64% 46%, currentColor 52%, transparent 100%);
+  background-size: 137px 157px, 137px 157px, 173px 189px;
+}
+.paper-motes::after {
+  background-image:
     radial-gradient(circle 2.1px at 83% 85%, currentColor 56%, transparent 100%),
     radial-gradient(circle 1.3px at 38% 73%, currentColor 55%, transparent 100%);
-  background-size: 137px 157px, 137px 157px, 173px 189px, 151px 167px, 109px 119px;
-  opacity: .44;
+  background-size: 151px 167px, 109px 119px;
+  background-position: 43px 61px;
 }
-.paper-motes::before { left: -2rem; }
-.paper-motes::after { right: -2rem; background-position: 43px 61px; }
 
 @media screen and (prefers-reduced-motion: no-preference) {
   .paper-motes::before,
