@@ -26,20 +26,27 @@ body { isolation: isolate; }
 
 .sky-telescope {
   display: none;
-  position: absolute;
+  position: fixed;
+  z-index: -1;
+  opacity: .86;
+  pointer-events: none;
   bottom: max(.5rem, env(safe-area-inset-bottom));
   left: max(.5rem, env(safe-area-inset-left));
-  width: clamp(4.5rem, calc((100vw - var(--measure-list)) / 2 - 1rem), 10.5rem);
+  width: clamp(5rem, calc((100vw - var(--measure-list)) / 2 - 1rem), 11.5rem);
   aspect-ratio: 17 / 18;
   background: url("../images/atalaya-telescope.webp") center / contain no-repeat;
 }
+
+.sky-telescope canvas { display: none; width: 100%; height: 100%; }
+.sky-telescope.is-rendered { background-image: none; }
+.sky-telescope.is-rendered canvas { display: block; }
 
 [data-theme="dark"] .sky-telescope { display: block; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .sky-telescope { display: block; }
 }
 @media (max-width: 78rem) {
-  .sky-telescope { opacity: .58; }
+  .sky-telescope { opacity: .45; }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -75,5 +82,5 @@ body { isolation: isolate; }
 }
 
 @media print, (forced-colors: active) {
-  .night-sky { display: none; }
+  .night-sky, :root .sky-telescope { display: none; }
 }

@@ -4,9 +4,8 @@
 
   <body class="{{ page.body_class | escape }}">
     <a class="skip-link" href="#main-content">{% if page.lang == 'en' %}Skip to content{% else %}Saltar al contenido{% endif %}</a>
-    <div class="night-sky" aria-hidden="true">
-      <span class="sky-telescope"></span>
-    </div>
+    <div class="night-sky" aria-hidden="true"></div>
+    <span class="sky-telescope" aria-hidden="true"></span>
     {% include sidebar.html %}
 
     <div class="content-wrapper">
