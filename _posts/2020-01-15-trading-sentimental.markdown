@@ -6,7 +6,7 @@ date: 2020-01-15
 css_id: trading-sentimental
 category: Personal
 image: /images/uploads/posts/trading-sentimental/oil-barrel-chart.png
-excerpt: "En un proyecto con una gestora y una empresa petrolera combinamos noticias, mensajes en redes y precios del crudo. Cuento cómo pasamos de leer el tono de un tuit a probar una estrategia con datos históricos."
+excerpt: Desarrollo de una estrategia de trading basada en el análisis sentimental de los mercados del petróleo.
 ---
 
 Quien me conoce sabe que hay dos temas que me entusiasman especialmente: la tecnología y los mercados financieros. Cuando puedo juntar ambas y hacer algo útil es tremendamente emocionante. Hace unos meses tuve la suerte de poder trabajar con una gestora de patrimonios y una empresa del sector petrolero en un proyecto de consultoría donde desarrollamos un modelo predictivo sobre precios del crudo basado en unos indicadores técnicos y un análisis sentimental de redes sociales y noticias. Explicaré por encima de qué iba el asunto, pero vamos a aclarar un par de conceptos.
