@@ -5,11 +5,11 @@
 <header class="masthead">
   <div class="masthead-inner">
     <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{% if english %}Pablo Reyes, home{% else %}Pablo Reyes, inicio{% endif %}">
-      <span class="brand-symbol" aria-hidden="true"></span>{{ site.author.name }}
+      {{ site.author.name }}
     </a>
     <nav class="main-nav" aria-label="{% if english %}Main navigation{% else %}Navegación principal{% endif %}">
-      <a href="{{ projects_path | relative_url }}"{% if page.translation_key == 'projects' %} class="active" aria-current="page"{% endif %}>{% if english %}Projects{% else %}Proyectos{% endif %}</a>
       <a href="{{ '/articulos/' | relative_url }}"{% if page.body_class == 'archive-page' %} class="active" aria-current="page"{% elsif page.layout == 'post' %} class="active"{% endif %}>{% if english %}Articles{% else %}Artículos{% endif %}</a>
+      <a href="{{ projects_path | relative_url }}"{% if page.translation_key == 'projects' %} class="active" aria-current="page"{% endif %}>{% if english %}Projects{% else %}Proyectos{% endif %}</a>
     </nav>
     <button type="button" class="theme-toggle" id="themeToggle" aria-label="{% if english %}Dark mode{% else %}Modo oscuro{% endif %}" aria-pressed="false" hidden>
       <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>

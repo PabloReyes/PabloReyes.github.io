@@ -6,7 +6,7 @@ date: 2020-02-03
 css_id: catastro-barcelona
 category: Datos
 image: /images/uploads/posts/vivienda-catastro-barcelona-machine-learning/classical-homes.png
-excerpt: Un paseo por Barcelona desde 1900 hasta hoy de la mano del Catastro, donde podemos observar la evolución de la vivienda, su composición, sus distritos y sus calles.
+excerpt: "Buscando el año de construcción de una casa de la plaza Bonanova acabé descargando el Catastro de Barcelona. Con esos datos recorrí la ciudad calle a calle para ver dónde están los pisos más antiguos y cómo ha cambiado su tamaño."
 ---
 
 Cuando llegué a vivir a Barcelona hace ya 5 años me enamoré de sus barrios, sus calles y su arquitectura. Todavía hoy, camino al trabajo cada día, sigo mirando edificios de Muntaner o Diagonal y me imagino viviendo en uno de ellos. Me imagino que son enormes y de techos altos, construidos en una época donde el metro cuadrado no se exprimía tanto.

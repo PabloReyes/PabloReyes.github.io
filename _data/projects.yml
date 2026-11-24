@@ -1,8 +1,5 @@
 - id: xrai-vision
-  feature:
-    art: /images/estudio/xrai.webp
-    field: Inteligencia artificial
-    description: Una radiografía de tu cartera a partir de un informe de Morningstar.
+  feature: Le doy un informe de Morningstar en PDF y me enseña, entre otras cosas, qué inversiones se repiten en varios fondos.
   title: X-RAI Vision
   year: 2026
   image: screenshot_portfolio.png
@@ -23,10 +20,7 @@
   url: https://xrai.pabloreyes.es
 
 - id: openinsider
-  feature:
-    art: /images/estudio/openinsider.webp
-    field: Ingeniería de datos
-    description: Las operaciones que los directivos comunican a la CNMV, reunidas en una base de datos.
+  feature: Reuní las operaciones que los directivos comunican a la CNMV para poder seguir las compras y ventas de cada empresa.
   title: OpenInsider
   year: 2022
   image: openinsider.png

@@ -275,6 +275,9 @@ class SiteContractTest < Minitest::Test
 
     home = SITE.join("index.html").read
     archive = SITE.join("articulos/index.html").read
+    entries = home.scan(%r{<article class="post-entry\b.*?</article>}m)
+    assert_equal 8, entries.size
+    entries.each { |entry| assert_match(%r{<p class="post-excerpt">[^<]+</p>}, entry) }
     assert_includes home, 'href="/articulos/"'
     assert_includes home, 'href="/projects/#xrai-vision"'
     assert_includes home, 'href="/projects/#openinsider"'
@@ -324,12 +327,12 @@ class SiteContractTest < Minitest::Test
     projects_page = projects_page_path.file? ? projects_page_path.read : ""
 
     {
-      "--color-bg" => "#f7f7ef",
+      "--color-bg" => "#faf7f2",
       "--color-surface" => "#ffffff",
-      "--color-ink" => "#20251e",
-      "--color-muted" => "#596053",
-      "--color-border" => "#cdd0c4",
-      "--color-accent" => "#2949b0",
+      "--color-ink" => "#2b2824",
+      "--color-muted" => "#635c54",
+      "--color-border" => "#d9d2c8",
+      "--color-accent" => "#98472e",
       "--measure-reading" => "44rem",
       "--measure-media" => "64rem"
     }.each do |token, value|

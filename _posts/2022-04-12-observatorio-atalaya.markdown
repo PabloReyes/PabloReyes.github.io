@@ -6,7 +6,8 @@ date: 2022-03-01
 css_id: observatory
 category: Personal
 image: /images/uploads/posts/observatorio-atalaya/atalaya-observatory.png
-excerpt: "Construcción en casa de un observatorio astronómico en casa durante varios meses, con sus continuas modificaciones y mejoras."
+list_image: /images/uploads/posts/observatorio-atalaya/obs_final_1.png
+excerpt: "Tardaba cuarenta minutos en preparar el telescopio cada vez que quería hacer una foto. Así construí en la azotea una caseta de techo corredizo, desde los primeros planos hasta las primeras noches con todo el equipo dentro."
 ---
 
 Hace casi un año me hice con un telescopio y sus respectivos accesorios para astrofotografía: trípode, montura, colimador, cámara planetaria, lentes, etc. Cada vez que tenía que hacer el setup para hacer alguna foto tardaba al menos 40 minutos entre subir el equipo, montar y alinear, y otros tantos para desarmar y guardar. Puesto que las observaciones las hago siempre desde casa, me propuse construir un observatorio en la azotea donde pudiera dejar todo listo y hacer observaciones y fotografías en cuestión de minutos.

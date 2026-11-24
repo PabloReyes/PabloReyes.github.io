@@ -5,7 +5,7 @@ date: 2026-09-13
 category: Personal
 image: /images/uploads/posts/un-punaito-de-sabiduria/tao_albondigas.png
 thumbnail_position: top
-
+excerpt: "Yo sigo los pasos de la Thermomix al pie de la letra. Mi madre mira la salsa y sabe qué le falta. Cocinando albóndigas me dio por pensar qué se aprende por el camino cuando uno programa con ayuda de la IA."
 ---
 
 A veces, pocas, me da un brote de querer cocinar algo especial. Como tecnófilo que soy aunque romantice con ser ludita, saco mi Thermomix, abro mi Cookido (¿cómo puedo seguir pagando una suscripción por esto?), y me pongo a buscar. Eso me gusta a mí... pasitos claros, guiados, con gramos y medidas exactas que me garanticen un pollo al curry tal y como lo diseñó un becario alemán. Una receta determinista. Si en un chispazo me pongo creativo y cambio algo, luego estoy nervioso y cuando lo pruebo siempre pienso que algo ha salido mal. Pero casi siempre, al final...¡sale bueno! ¡casi siempre sale bueno! No me siento especialmente orgulloso, no he aprendido gran cosa para el próximo plato, pero me arregla una comida. 

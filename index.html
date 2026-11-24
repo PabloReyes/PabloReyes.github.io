@@ -3,54 +3,38 @@ layout: default
 body_class: home-page
 ---
 
-<section class="introduction" aria-labelledby="intro-title">
+<header class="introduction">
+  <img class="author-photo" src="{{ '/images/profile.jpg' | relative_url }}" width="402" height="441" alt="Pablo Reyes" fetchpriority="high">
   <div class="intro-copy">
-    <h1 id="intro-title">Pablo <span>Reyes<span class="ink-stop">.</span></span></h1>
-    <p>Desarrollo software y trabajo con datos. Aquí comparto lo que construyo y escribo sobre lo que voy aprendiendo.</p>
-    <div class="intro-actions">
-      <a class="primary-action" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
-      <a class="contact-link" href="mailto:{{ site.author.email }}">Escríbeme <span aria-hidden="true">↗</span></a>
-    </div>
+    <h1>Hola, soy Pablo.</h1>
+    <p>Soy programador y escribo aquí desde 2005. A veces cuento lo que voy probando con el ordenador. Otras, cómo monté un observatorio en la azotea o por qué mi madre hace mejores albóndigas que yo.</p>
+    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
   </div>
-  <figure class="terrain-study">
-    <div class="plot-field">
-      <img src="{{ '/images/estudio/relieve.webp' | relative_url }}" alt="Relieve azul dibujado con líneas de código" width="1200" height="840" fetchpriority="high">
-    </div>
-    <figcaption><span>Fig. 01</span> Relieve algorítmico</figcaption>
-  </figure>
-</section>
+</header>
 
-<section class="work-selection" id="proyectos" aria-labelledby="project-title">
-  <div class="section-heading">
-    <h2 id="project-title">Proyectos destacados</h2>
-    <a class="section-link" href="{{ '/projects/' | relative_url }}">Todos los proyectos <span aria-hidden="true">→</span></a>
-  </div>
-  <div class="feature-grid">
+<div class="home-columns">
+  <section class="journal" id="blog" aria-labelledby="writing-title">
+    <h2 id="writing-title">Últimos artículos</h2>
+    {% assign recent_posts = site.posts | slice: 0, 8 %}
+    {% include post-list-cards.html posts=recent_posts compact=true %}
+    <a class="more-link" href="{{ '/articulos/' | relative_url }}">Todos los artículos <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="project-notes" id="proyectos" aria-labelledby="projects-title">
+    <h2 id="projects-title">Mis proyectos</h2>
     {% for project in site.data.projects %}
       {% if project.feature %}
-        <a class="feature" href="{{ '/projects/' | relative_url }}#{{ project.id }}">
-          <div class="feature-art">
-            <img src="{{ project.feature.art | relative_url }}" width="1100" height="500" alt="" loading="lazy" decoding="async">
-          </div>
-          <div class="feature-meta">{{ project.feature.field }} <span aria-hidden="true">/</span> {{ project.year }}</div>
-          <h3>{{ project.title }} <span class="feature-arrow" aria-hidden="true">↗</span></h3>
-          <p>{{ project.feature.description }}</p>
-        </a>
+        {% assign thumbnail = project.image | split: '.' | first %}
+        {% assign thumbnail_path = '/about/thumbnails/' | append: thumbnail %}
+        <article class="project-note">
+          <a href="{{ '/projects/' | relative_url }}#{{ project.id }}">
+            <img src="{{ thumbnail_path | append: '.webp' | relative_url }}" srcset="{{ thumbnail_path | append: '.webp' | relative_url }} 480w, {{ thumbnail_path | append: '@2x.webp' | relative_url }} 960w" sizes="(min-width: 760px) 290px, (min-width: 520px) 44vw, 90vw" width="{{ project.image_width }}" height="{{ project.image_height }}" loading="lazy" decoding="async" alt="">
+            <h3>{{ project.title }}</h3>
+          </a>
+          <p>{{ project.feature }}</p>
+        </article>
       {% endif %}
     {% endfor %}
-  </div>
-</section>
-
-<section class="recent-writing" id="blog" aria-labelledby="writing-title">
-  <div class="section-heading">
-    <h2 id="writing-title">Últimos artículos</h2>
-    <a class="section-link" href="{{ '/articulos/' | relative_url }}">Ver el archivo <span aria-hidden="true">→</span></a>
-  </div>
-  {% for post in site.posts limit: 4 %}
-    <a class="writing-row" href="{{ post.url | relative_url }}">
-      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include date.html date=post.date %}</time>
-      <h3>{{ post.title }}</h3>
-      <span aria-hidden="true">↗</span>
-    </a>
-  {% endfor %}
-</section>
+    <a class="more-link" href="{{ '/projects/' | relative_url }}">Todos los proyectos <span aria-hidden="true">→</span></a>
+  </section>
+</div>

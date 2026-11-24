@@ -68,7 +68,7 @@ layout: null
       if (metaThemeColor) metaThemeColor.setAttribute("content", "#181e1e");
     } else {
       html.setAttribute("data-theme", "light");
-      if (metaThemeColor) metaThemeColor.setAttribute("content", "#f7f7ef");
+      if (metaThemeColor) metaThemeColor.setAttribute("content", "#faf7f2");
     }
   };
 
