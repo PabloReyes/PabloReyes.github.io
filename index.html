@@ -21,19 +21,18 @@ body_class: home-page
   </section>
 
   <section class="project-notes" id="proyectos" aria-labelledby="projects-title">
-    <h2 id="projects-title">Mis proyectos</h2>
-    {% for project in site.data.projects %}
-      {% if project.feature %}
-        {% assign thumbnail = project.image | split: '.' | first %}
-        {% assign thumbnail_path = '/about/thumbnails/' | append: thumbnail %}
-        <article class="project-note">
-          <a href="{{ '/projects/' | relative_url }}#{{ project.id }}">
-            <img src="{{ thumbnail_path | append: '.webp' | relative_url }}" srcset="{{ thumbnail_path | append: '.webp' | relative_url }} 480w, {{ thumbnail_path | append: '@2x.webp' | relative_url }} 960w" sizes="(min-width: 760px) 290px, (min-width: 520px) 44vw, 90vw" width="{{ project.image_width }}" height="{{ project.image_height }}" loading="lazy" decoding="async" alt="">
-            <h3>{{ project.title }}</h3>
-          </a>
-          <p>{{ project.feature }}</p>
-        </article>
-      {% endif %}
+    <h2 id="projects-title">Proyectos destacados</h2>
+    {% assign featured_projects = site.data.projects | where_exp: "project", "project.featured_order != nil" | sort: "featured_order" %}
+    {% for project in featured_projects %}
+      {% assign thumbnail = project.image | split: '.' | first %}
+      {% assign thumbnail_path = '/about/thumbnails/' | append: thumbnail %}
+      <article class="project-note">
+        <a href="{{ '/projects/' | relative_url }}#{{ project.id }}">
+          <img src="{{ thumbnail_path | append: '.webp' | relative_url }}" srcset="{{ thumbnail_path | append: '.webp' | relative_url }} 480w, {{ thumbnail_path | append: '@2x.webp' | relative_url }} 960w" sizes="(min-width: 760px) 290px, (min-width: 520px) 44vw, 90vw" width="{{ project.image_width }}" height="{{ project.image_height }}" loading="lazy" decoding="async" alt="">
+          <h3>{{ project.title }}</h3>
+        </a>
+        <p>{{ project.featured_summary | default: project.summary }}</p>
+      </article>
     {% endfor %}
     <a class="more-link" href="{{ '/projects/' | relative_url }}">Todos los proyectos <span aria-hidden="true">→</span></a>
   </section>

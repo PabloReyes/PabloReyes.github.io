@@ -283,8 +283,7 @@ class SiteContractTest < Minitest::Test
     assert_equal expected_featured.sort.map(&:last), entries.map { |entry| entry[%r{<h3 class="post-title">(.*?)</h3>}m, 1] }
     entries.each { |entry| assert_match(%r{<p class="post-excerpt">[^<]+</p>}, entry) }
     assert_includes home, 'href="/articulos/"'
-    assert_includes home, 'href="/projects/#xrai-vision"'
-    assert_includes home, 'href="/projects/#openinsider"'
+    assert_equal %w[openinsider backio], home.scan(%r{href="/projects/#([^"]+)"}).flatten
     assert_match(%r{<h1>Artículos</h1>}, archive)
     assert_includes archive, 'href="/observatorio-atalaya/"'
     spanish = SITE.join("projects/index.html").read

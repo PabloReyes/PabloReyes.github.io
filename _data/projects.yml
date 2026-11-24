@@ -1,5 +1,4 @@
 - id: xrai-vision
-  feature: Le doy un informe de Morningstar en PDF y me enseña, entre otras cosas, qué inversiones se repiten en varios fondos.
   title: X-RAI Vision
   year: 2026
   image: screenshot_portfolio.png
@@ -20,7 +19,8 @@
   url: https://xrai.pabloreyes.es
 
 - id: openinsider
-  feature: Reuní las operaciones que los directivos comunican a la CNMV para poder seguir las compras y ventas de cada empresa.
+  featured_order: 1
+  featured_summary: Reuní las operaciones que los directivos comunican a la CNMV para poder seguir las compras y ventas de cada empresa.
   title: OpenInsider
   year: 2022
   image: openinsider.png
@@ -77,6 +77,7 @@
     - Flask
 
 - id: backio
+  featured_order: 2
   title: Backio
   year: 2020
   image: backio_1.png
