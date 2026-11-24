@@ -24,8 +24,8 @@
   title: OpenInsider
   year: 2022
   image: openinsider.png
-  image_width: 2734
-  image_height: 2800
+  image_width: 2200
+  image_height: 1570
   summary: "Proceso automatizado que descarga y parsea notificaciones de insider trading de la CNMV, almacenándolas en una base de datos lista para análisis y visualización."
   summary_en: "Automated pipeline that retrieves and parses insider trading disclosures from the Spanish CNMV, storing them in a database ready for analysis and visualization."
   purpose: "Laboratorio para profundizar en scraping robusto, automatización diaria y persistencia SQL."
