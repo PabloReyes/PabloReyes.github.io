@@ -1,6 +1,5 @@
 {% assign archive_year = '' %}
-{% assign archive_posts = include.posts | default: paginator.posts | default: site.posts %}
-{% for post in archive_posts %}
+{% for post in include.posts %}
   {% if include.filter_category == nil or include.filter_category == post.category %}
     {% assign list_image = post.list_image | default: post.image %}
     {% assign post_year = post.date | date: '%Y' %}

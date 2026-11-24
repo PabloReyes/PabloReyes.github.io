@@ -1,5 +1,6 @@
 ---
 layout: post
+featured_order: 2
 title: "Vivienda en Barcelona: un análisis desde el Catastro"
 published: true
 date: 2020-02-03

@@ -276,7 +276,11 @@ class SiteContractTest < Minitest::Test
     home = SITE.join("index.html").read
     archive = SITE.join("articulos/index.html").read
     entries = home.scan(%r{<article class="post-entry\b.*?</article>}m)
-    assert_equal 8, entries.size
+    expected_featured = ROOT.glob("_posts/*").filter_map do |path|
+      fields = front_matter(path)
+      [fields.fetch("featured_order"), fields.fetch("title")] if fields["featured_order"] && fields["published"] != false
+    end
+    assert_equal expected_featured.sort.map(&:last), entries.map { |entry| entry[%r{<h3 class="post-title">(.*?)</h3>}m, 1] }
     entries.each { |entry| assert_match(%r{<p class="post-excerpt">[^<]+</p>}, entry) }
     assert_includes home, 'href="/articulos/"'
     assert_includes home, 'href="/projects/#xrai-vision"'
@@ -387,7 +391,7 @@ class SiteContractTest < Minitest::Test
     source = path.read
     yaml = source[/\A---\s*\n(.*?)\n---\s*\n/m, 1]
     refute_nil yaml, "Missing YAML front matter in #{path.relative_path_from(ROOT)}"
-    YAML.safe_load(yaml)
+    YAML.safe_load(yaml, permitted_classes: [Date, Time])
   end
 
   def json_ld_documents(path)
