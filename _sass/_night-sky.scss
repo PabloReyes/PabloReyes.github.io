@@ -24,6 +24,24 @@ body { isolation: isolate; }
   opacity: .57;
 }
 
+.sky-telescope {
+  display: none;
+  position: absolute;
+  bottom: max(.5rem, env(safe-area-inset-bottom));
+  left: max(.5rem, env(safe-area-inset-left));
+  width: clamp(4.5rem, calc((100vw - var(--measure-list)) / 2 - 1rem), 10.5rem);
+  aspect-ratio: 17 / 18;
+  background: url("../images/atalaya-telescope.webp") center / contain no-repeat;
+}
+
+[data-theme="dark"] .sky-telescope { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .sky-telescope { display: block; }
+}
+@media (max-width: 78rem) {
+  .sky-telescope { opacity: .58; }
+}
+
 @media screen and (prefers-reduced-motion: no-preference) {
   .night-sky::before,
   .night-sky::after {
