@@ -34,26 +34,26 @@ body { isolation: isolate; }
     border-radius: 50%;
     background: linear-gradient(to right, transparent, var(--rim) 86%, var(--core));
     opacity: 0;
-    animation: meteor-pass 72s linear infinite;
+    animation: meteor-pass 18s linear infinite;
   }
   .night-sky::before {
     left: 76%;
     top: 13%;
     --angle: 155deg;
-    animation-delay: 5s;
+    animation-delay: 4s;
   }
   .night-sky::after {
     left: 9%;
     top: 57%;
     --angle: 24deg;
-    animation-delay: 42s;
+    animation-delay: 13s;
   }
 }
 
 @keyframes meteor-pass {
   0% { opacity: 0; transform: rotate(var(--angle)) translateX(0); }
-  .4% { opacity: .85; }
-  1.7%, 100% { opacity: 0; transform: rotate(var(--angle)) translateX(clamp(6rem, 15vw, 13rem)); }
+  2% { opacity: .85; }
+  9%, 100% { opacity: 0; transform: rotate(var(--angle)) translateX(clamp(9rem, 24vw, 21rem)); }
 }
 
 @media print, (forced-colors: active) {

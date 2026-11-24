@@ -6,7 +6,6 @@ date: 2022-03-01
 css_id: observatory
 category: Personal
 image: /images/uploads/posts/observatorio-atalaya/atalaya-observatory.png
-list_image: /images/uploads/posts/observatorio-atalaya/obs_final_1.png
 excerpt: "Tardaba cuarenta minutos en preparar el telescopio cada vez que quería hacer una foto. Así construí en la azotea una caseta de techo corredizo, desde los primeros planos hasta las primeras noches con todo el equipo dentro."
 ---
 

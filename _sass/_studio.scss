@@ -47,21 +47,10 @@
 .home-page .content-wrapper__inner { padding-top: 0; }
 
 .introduction {
-  position: relative;
-  isolation: isolate;
   display: flex;
   gap: clamp(1.5rem, 4vw, 3.5rem);
   align-items: center;
   padding: clamp(2.5rem, 5vw, 4.3rem) 0;
-  border-bottom: 1px solid var(--color-border);
-}
-.introduction::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(ellipse at 22% 48%, color-mix(in srgb, var(--color-accent) 8%, transparent), transparent 62%);
 }
 .author-photo {
   flex: none;
