@@ -6,17 +6,17 @@ al total original de los tres blogs: solo documenta el material localizado.
 
 ## Resultado
 
-- 35 entradas recuperadas como posts de Jekyll.
+- 36 entradas recuperadas como posts de Jekyll: 35 a partir de capturas de Wayback y una a partir de una copia del autor.
 - 1 imagen recuperada y copiada al repositorio
   (7 capturas de imágenes no descargables).
-- 8 grupos ya presentes en el sitio o en sus borradores.
-- 126 URLs de entradas cuya reproducción falló en esta pasada, y 9 enlaces adicionales observados sin cuerpo recuperado.
+- 9 grupos ya presentes en el sitio o en sus borradores.
+- 124 URLs de entradas pendientes cuya reproducción falló en esta pasada, y 9 enlaces adicionales observados sin cuerpo recuperado.
 - Las otras filas marcan extractos, enlaces sin copia, piezas principalmente
   multimedia, atribuciones ajenas o no verificadas y casos de revisión editorial. No se republican letras, poemas ni traducciones completas de terceros sin licencia comprobada.
 
 Se conservan los títulos, texto y fechas observados, siguiendo la fecha más
 antigua comprobada cuando el mismo artículo reaparece en otro dominio. Cada
-entrada nueva enlaza a la captura utilizada. No se importan comentarios,
+entrada nueva indica su procedencia. Para 802.party 2006 se anota la discrepancia entre la fecha de la copia del autor y la fecha en la URL archivada. No se importan comentarios,
 rastreadores, código incrustado, formularios ni reproductores. Para los medios
 sin copia utilizable se conserva el enlace de archivo cuando está disponible.
 Los enlaces de época llevan a la copia histórica para no dirigir tráfico a

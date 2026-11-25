@@ -1,0 +1,26 @@
+---
+layout: post
+title: 802.party 2006
+date: '2006-06-19'
+published: true
+comments: false
+excerpt: La 802.party de Jerez, una LAN party centrada en software libre, programación y diseño.
+archive_source: copia del autor
+archive_original_urls:
+- http://tronfi.com/2006/06/19/802party-2006/
+archive_index_url: https://web.archive.org/web/20060718183127/http://tronfi.com:80/2006/06/19/802party-2006/
+archive_copy_date: '2006-06-16'
+---
+*Texto recuperado de una copia del autor. La copia está fechada el 16 de junio de 2006; la [URL histórica indexada](https://web.archive.org/web/20060718183127/http://tronfi.com:80/2006/06/19/802party-2006/) lleva la fecha del 19 de junio.*
+
+Cada vez queda menos para que tome lugar la 802.party de este año, una Lan Party promovida por Xinug y en la que colabora el ayuntamiento de Jerez. Este año tomará lugar en los días 13, 14, 15 y 16 de Julio en el “Recinto Deportivo Chapín 3″ (Jerez).
+
+A diferencia de muchas concentraciones como esta en las que se va exclusivamente a jugar y a bajar como obsesos, la 802.party está mas enfocada al Software Libre, programación y diseño (tambien habrá juegos, por supuesto). A parte de una serie de conferencias como la del año pasado, en la que vino a dar una charla David Bravo y trató (como no) temas de derechos de autor. Al parecer este año se dará una charla sobre Python, otra de Visión Artificial y otra sobre UML por ahora, y otras muchas que están aún sin confirmar.
+
+Tambien habrá una serie de premios para los jugones mas viciados (aún no se saben los premios). Si eres un crack al Counter-Strike, Age of Empires 3, Pro Evolution Soccer 5 o Unreal Tournament 2004 quizás puedas llevarte algo.
+
+Lo único raro que veo aquí es una cosa… si tan defensores del Software Libre son por qué no ponen al menos 1 juego libre? u.u
+
+Nos vemos en Jerez.
+
+Por cierto, si quieres estar al lado mía y de Karlsberg, pon el grupo “Pythoneros de la bahía” en la inscripción ;)
