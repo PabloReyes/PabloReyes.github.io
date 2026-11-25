@@ -4,6 +4,7 @@ title: Decidiendo mi futuro
 date: '2008-11-26'
 published: true
 comments: false
+image: /images/uploads/posts/decidiendo-mi-futuro/decidiendo-mi-futuro.png
 excerpt: Soy una persona con las ideas claras. Siempre lo he sido, y el que me conozca o haya leído algo de mi blog lo sabrá. Muchas ideas me acompañan
   desde hace muchos años, como
 archive_source: https://web.archive.org/web/20110318185126/http://pabloreyes.es:80/feed/
@@ -12,8 +13,6 @@ archive_original_urls:
 - http://pabloreyes.es/personal/decidiendo-mi-futuro/
 archive_original_date: '2008-11-26'
 ---
-*Entrada recuperada del archivo histórico. [Ver la captura original](https://web.archive.org/web/20110318185126/http://pabloreyes.es:80/feed/).*
-
 Soy una persona con las ideas claras. Siempre lo he sido, y el que me conozca o haya leído algo de mi blog lo sabrá. Muchas ideas me acompañan desde hace muchos años, como la intención (y ahora realidad) de estudiar Ingeniería Técnica Informática de Sistemas + Ingeniería Informática en la Universidad de Granada. Es algo que nunca he dudado, al menos hasta ahora.
 
 Resulta que he descubierto un área de la carrera que me parece muy interesante, y creo que es a la que me gustaría dedicarme en un futuro (ésta no es una idea clara, quizás sólo un capricho). Son las bases de datos.

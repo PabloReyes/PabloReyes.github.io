@@ -4,6 +4,7 @@ title: Gibraltar II
 date: '2007-09-25'
 published: true
 comments: false
+image: /images/uploads/posts/gibraltar-ii/gibraltar-ii.png
 excerpt: 'Ir de visita a Gibraltar es raro. Podemos ver Gibraltar como un blog sin lectores: la gente llega a él por diversos medios, pero no vuelve. Tiene
   visitas, pero no lectores. Gibraltar es igual,'
 archive_source: https://web.archive.org/web/20071013124640/http://tronfi.net/blog
@@ -13,8 +14,6 @@ archive_original_date: '2007-09-25'
 archive_media_changes:
   image_links: 3
 ---
-*Entrada recuperada del archivo histórico. [Ver la captura original](https://web.archive.org/web/20071013124640/http://tronfi.net/blog).*
-
 Ir de visita a Gibraltar es raro. Podemos ver Gibraltar como un blog sin lectores: la gente llega a él por diversos medios, pero no vuelve. Tiene visitas, pero no lectores. Gibraltar es igual, quien va no regresa. Y no es extraño, pues en Gibraltar hay poco que ver, la verdad. Si vas a [París](https://web.archive.org/web/20071013124640/http://tronfi.net/blog/2007/09/20/la-torre-eiffel/) es probable que te quedes con ganas de ir de nuevo, si vas a Roma lo mismo, incluso si vas a un pueblecito de la sierra. Son sitios con encanto, unos por la grandeza arquitectónica, otros por el hecho de ver un ambiente rural o hacer senderismo, otros por la gente, etc. Pero a Gibraltar no le acompaña nada de eso. Ya hablé una vez sobre el [turismo de Gibraltar](https://web.archive.org/web/20071013124640/http://tronfi.net/blog/2007/09/14/gibraltar/).
 
 Hacía mucho tiempo que no iba de paseo (creo que sólo he ido un par de veces) por allí, y hoy le he hecho una visita y me he traído unas cuantas fotos de algunas cosas que he visto interesantes. Hay muchas más, seguro, pero no están tan céntricas como las que he podido fotografiar.
@@ -23,7 +22,7 @@ El centro de Gibraltar es **una** calle, *Main Street*, que está repleta de tie
 
 Antiguamente, sólo había una entrada a Gibraltar, y era por una de esas puertas-puentes como la de los castillos que estaban rodeados por un lago con cocodrilos.
 
-[Puerta Gibraltar](https://web.archive.org/web/20071013124640/http://upload.zooomr.com/photos/tronfi/3365840/)
+{% include archive-image-placeholder.html label="Puerta de Gibraltar" reference="https://web.archive.org/web/20071013124640/http://upload.zooomr.com/photos/tronfi/3365840/" %}
 
 Esas cadenas que vemos a cada borde del hueco de la puerta están unidas a dos manivela que, como podéis imaginar, se giraban para dejar el camino sin puente y con la puerta bien cerrada. La inscripción de la derecha dice lo siguiente:
 
@@ -31,7 +30,7 @@ Esas cadenas que vemos a cada borde del hueco de la puerta están unidas a dos m
 
 También encontramos monumentos que recuerdan las dos Guerras Mundiales.
 
-[Imagen original en el archivo web](https://web.archive.org/web/20071013124640/http://upload.zooomr.com/photos/tronfi/3365864/)
+{% include archive-image-placeholder.html label="Monumento a los caídos" reference="https://web.archive.org/web/20071013124640/http://upload.zooomr.com/photos/tronfi/3365864/" %}
 
 La inscripción de la base dice lo siguiente:
 
@@ -39,7 +38,7 @@ La inscripción de la base dice lo siguiente:
 
 Y por último, el soldadito de plomo.
 
-[Imagen original en el archivo web](https://web.archive.org/web/20071013124640/http://es.zooomr.com/photos/tronfi/3365779/)
+{% include archive-image-placeholder.html label="Monumento al soldado" reference="https://web.archive.org/web/20071013124640/http://es.zooomr.com/photos/tronfi/3365779/" %}
 
 El letrerito dice:
 

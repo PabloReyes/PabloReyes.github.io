@@ -4,6 +4,7 @@ title: Por qué no compro cd’s de música
 date: '2006-04-17'
 published: true
 comments: false
+image: /images/uploads/posts/por-que-no-compro-musica/por-que-no-compro-musica.png
 excerpt: La SGAE nos ataca a diario, eso lo sabemos todos. Según ellos, somos unos ladrones compulsivos de música, y estamos matando a la industria discográfica
   hasta tal punto que sus dueños podrían incluso despedir
 archive_source: https://web.archive.org/web/20060423220624/http://tronfi.com:80/2006/04/17/por-que-no-compro-musica/
@@ -11,8 +12,6 @@ archive_original_urls:
 - http://tronfi.com/2006/04/17/por-que-no-compro-musica/
 archive_original_date: '2006-04-17'
 ---
-*Entrada recuperada del archivo histórico. [Ver la captura original](https://web.archive.org/web/20060423220624/http://tronfi.com:80/2006/04/17/por-que-no-compro-musica/).*
-
 La SGAE nos ataca a diario, eso lo sabemos todos. Según ellos, somos unos ladrones compulsivos de música, y estamos matando a la industria discográfica hasta tal punto que sus dueños podrían incluso despedir a sus chóferes.
 
 David Bravo respondía en un debate sobre piratería del programa ‘Mejor lo hablamos’ (Canal Sur) a Pedro Farré:

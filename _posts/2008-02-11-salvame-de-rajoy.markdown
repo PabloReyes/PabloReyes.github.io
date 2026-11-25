@@ -4,6 +4,7 @@ title: Sálvame de Rajoy
 date: '2008-02-11'
 published: true
 comments: false
+image: /images/uploads/posts/salvame-de-rajoy/salvame-de-rajoy.png
 excerpt: 1. Sálvame de la xenofobia . Rajoy garantiza la expulsión de los inmigrantes que cometan delitos en España. 2. Sálvame de la homofobia . Rajoy
   asegura que eliminará el derecho de adopción de los
 archive_source: https://web.archive.org/web/20080530033313/http://pabloreyes.es:80/
@@ -13,11 +14,9 @@ archive_original_date: '2008-02-11'
 archive_media_changes:
   local_images: 1
 ---
-*Entrada recuperada del archivo histórico. [Ver la captura original](https://web.archive.org/web/20080530033313/http://pabloreyes.es:80/).*
-
 [![Salvame de Rajoy](/images/uploads/posts/archivo-historico/bunbl3harfn6txmgpv2oqw6axp7yjx5v.jpg)](https://web.archive.org/web/20080530033313/http://pabloreyes.es/wp-content/uploads/2008/02/salvame_.jpg "Salvame de Rajoy")
 
-**1.** Sálvame de la [xenofobia](https://web.archive.org/web/20080530033313/http://www.20minutos.es/noticia/344954/0/elecciones/contrato/inmigrantes/).
+**1.** Sálvame de la [xenofobia](https://www.20minutos.es/noticia/344954/0/elecciones/contrato/inmigrantes/).
 
 > *Rajoy garantiza la expulsión de los inmigrantes que cometan delitos en España.*
 
@@ -39,11 +38,11 @@ archive_media_changes:
 
 > *Un dirigente belga asegura que el PP es el único partido de derechas que queda.*
 
-**5.** Sálvame de las [propuestas imposibles](https://web.archive.org/web/20080530033313/http://www.elmundo.es/elmundo/2008/02/07/espana/1202388040.html?a=c82d9f26dfe60133084d973fde3ee6fb&t=1202398953).
+**5.** Sálvame de las [propuestas imposibles](https://www.elmundo.es/elmundo/2008/02/07/espana/1202388040.html?a=c82d9f26dfe60133084d973fde3ee6fb&t=1202398953).
 
 > *Rajoy promete plantar 500 millones de árboles en cuatro años: 14.270 a la hora.*
 
-**6.** Sálvame de la [compra del voto](https://web.archive.org/web/20080530033313/http://www.lavozdegalicia.es/galicia/2008/01/31/0003_6527121.htm).
+**6.** Sálvame de la [compra del voto](https://www.lavozdegalicia.es/noticia/galicia/2008/01/31/acusan-pp-carnota-uso-electoral-excursion/0003_6527121.htm).
 
 > *Llevo a los niños a ver el partido de fútbol Depor-Valladolid, pero durante el trayecto les doy un mitin del PP.*
 
@@ -59,7 +58,7 @@ archive_media_changes:
 
 > *Estoy harto de los dos.* (A Esperanza Aguirre y Gallardón)
 
-**10.** Sálvame de la [desigualdad de sexos](https://web.archive.org/web/20080530033313/http://www.elpais.com/articulo/espana/Rajoy/promete/bajar/1000/euros/impuestos/todas/trabajadoras/elpepuesp/20080113elpepinac_9/Tes).
+**10.** Sálvame de la [desigualdad de sexos](https://elpais.com/diario/2008/01/13/espana/1200178809_850215.html).
 
 > *Rajoy promete bajar 1.000 euros los impuestos a todas las trabajadoras.*
 

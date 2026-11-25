@@ -1,9 +1,0 @@
-<nav class="pagination" aria-label="Páginas del archivo">
-  {% if paginator.previous_page %}
-    <a rel="prev" class="btn" href="{{ paginator.previous_page_path | relative_url }}">← Más recientes</a>
-  {% endif %}
-  <span class="pagination__page-number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a rel="next" class="btn" href="{{ paginator.next_page_path | relative_url }}">Más antiguos →</a>
-  {% endif %}
-</nav>

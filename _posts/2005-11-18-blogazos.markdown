@@ -4,6 +4,7 @@ title: Blogazos
 date: '2005-11-18'
 published: true
 comments: false
+image: /images/uploads/posts/blogazos/blogazos.png
 excerpt: Nunca pongo un post para decir que he añadido un blog a mi blogroll. Pero esto merece la pena. Madre mía, menudos dos blogazos he conocido vía
   Sacapuntas . Son del estilo de Sacapuntas.
 archive_source: https://web.archive.org/web/20051125134956/http://tronfi.com/
@@ -11,8 +12,6 @@ archive_original_urls:
 - http://tronfi.com/2005/11/18/blogazos/
 archive_original_date: '2005-11-18'
 ---
-*Entrada recuperada del archivo histórico. [Ver la captura original](https://web.archive.org/web/20051125134956/http://tronfi.com/).*
-
 Nunca pongo un post para decir que he añadido un blog a mi blogroll. Pero esto merece la pena. Madre mía, menudos dos blogazos he conocido vía [Sacapuntas](https://web.archive.org/web/20051125134956/http://sacapuntas.net/).
 
 Son del estilo de Sacapuntas. Dios mío, que imaginación! Me he estado riendo un rato.

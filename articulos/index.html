@@ -9,9 +9,5 @@ body_class: archive-page
   <p>{{ site.posts.last.date | date: '%Y' }} — {{ site.posts.first.date | date: '%Y' }}</p>
 </div>
 <div class="main-post-list">
-    {% assign archive_posts = paginator.posts | default: site.posts %}
-    {% include post-list-cards.html posts=archive_posts %}
-    {% if paginator.previous_page or paginator.next_page %}
-        {% include pagination.html %}
-    {% endif %}
+  {% include post-list-cards.html posts=site.posts %}
 </div>

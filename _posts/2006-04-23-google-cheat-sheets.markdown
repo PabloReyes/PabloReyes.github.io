@@ -4,6 +4,7 @@ title: Google Cheat Sheets
 date: '2006-04-23'
 published: true
 comments: false
+image: /images/uploads/posts/google-cheat-sheets/google-cheat-sheets.png
 excerpt: 'Vía del.icio.us/popular/ llego a este Google Cheat Sheet , con una recopilación de servicios que ofrece Google, dominios que tiene, información
   de contacto, etc Son dos páginas en las que encontramos: Lista de todos'
 archive_source: https://web.archive.org/web/20060430031352/http://tronfi.com:80/2006/04/23/google-cheat-sheets/
@@ -13,11 +14,13 @@ archive_original_date: '2006-04-23'
 archive_media_changes:
   local_images: 2
 ---
-*Entrada recuperada del archivo histórico. [Ver la captura original](https://web.archive.org/web/20060430031352/http://tronfi.com:80/2006/04/23/google-cheat-sheets/).*
-
 Vía [del.icio.us/popular/](https://web.archive.org/web/20060430031352/http://del.icio.us/popular/) llego a este [Google Cheat Sheet](https://web.archive.org/web/20060430031352/http://www.feedsforme.com/google/), con una recopilación de servicios que ofrece Google, dominios que tiene, información de contacto, etc
 
-[[Imagen original en el archivo web](https://web.archive.org/web/20060509234506/http://www.tronfi.com:80/images/p1.png)](https://web.archive.org/web/20060430031352/http://www.feedsforme.com/google/?cheatsheet&page=1)[[Imagen original en el archivo web](https://web.archive.org/web/20060509234447/http://www.tronfi.com:80/images/p2.png)](https://web.archive.org/web/20060430031352/http://www.feedsforme.com/google/?cheatsheet&page=2)
+[![Página 1 del Google Cheat Sheet](/images/uploads/posts/archivo-historico/google-cheat-sheet-1.png)](https://web.archive.org/web/20060509234506/http://www.tronfi.com:80/images/p1.png)
+
+[![Página 2 del Google Cheat Sheet](/images/uploads/posts/archivo-historico/google-cheat-sheet-2.png)](https://web.archive.org/web/20060509234447/http://www.tronfi.com:80/images/p2.png)
+
+[Página 1 completa](https://web.archive.org/web/20060430031352/http://www.feedsforme.com/google/?cheatsheet&page=1) · [Página 2 completa](https://web.archive.org/web/20060430031352/http://www.feedsforme.com/google/?cheatsheet&page=2)
 
 Son dos páginas en las que encontramos:
 

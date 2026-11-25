@@ -20,6 +20,10 @@ layout: default
     {% endif %}
   </header>
 
+  {% if page.archive_source %}
+    {% include article-archive-note.html %}
+  {% endif %}
+
   <details class="article-toc" hidden>
     <summary>{% if page.lang == 'en' %}On this page{% else %}En este artículo{% endif %}</summary>
     <nav aria-label="{% if page.lang == 'en' %}Table of contents{% else %}Índice del artículo{% endif %}"></nav>

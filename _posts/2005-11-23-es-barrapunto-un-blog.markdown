@@ -4,6 +4,7 @@ title: ¿Es Barrapunto un blog?
 date: '2005-11-23'
 published: true
 comments: false
+image: /images/uploads/posts/es-barrapunto-un-blog/es-barrapunto-un-blog.png
 excerpt: 'A diario me encuentro con frases en las que coinciden las palabras blog y barrapunto . Según la WikiPedia un blog es: un sitio web periódicamente
   actualizado que recopila cronológicamente textos y/o artículos de'
 archive_source: https://web.archive.org/web/20051125134956/http://tronfi.com/
@@ -11,9 +12,7 @@ archive_original_urls:
 - http://tronfi.com/2005/11/23/%c2%bfes-barrapunto-un-blog/
 archive_original_date: '2005-11-23'
 ---
-*Entrada recuperada del archivo histórico. [Ver la captura original](https://web.archive.org/web/20051125134956/http://tronfi.com/).*
-
-A diario me encuentro con frases en las que coinciden las palabras *blog* y *barrapunto*. Según la [WikiPedia](https://web.archive.org/web/20051125134956/http://es.wikipedia.org/wiki/Blog) un blog es:
+A diario me encuentro con frases en las que coinciden las palabras *blog* y *barrapunto*. Según la [WikiPedia](https://es.wikipedia.org/wiki/Blog) un blog es:
 
 > un sitio web periódicamente actualizado que recopila cronológicamente textos y/o artículos de uno o varios autores donde el más reciente aparece primero, con un uso o temática en particular, siempre conservando el autor la libertad de dejar publicado lo que crea pertinente. Los weblogs usualmente están escritos con un estilo personal e informal.
 
@@ -27,7 +26,7 @@ Buscando por ahí me he dado cuenta que no soy el único que piensa de esta form
 
 > Alfredo: ahmm... barrapunto es un blog???. Lo digo por que muchos usuarios tomamos a barrapunto como un lugar de noticias acerca de software libre pero no como un blog personal. Bueno creo que no tengo bien entendido acerca de lo que es un blog :-S
 
-Leído en [un comentario de tintachina](https://web.archive.org/web/20051125134956/http://tintachina.com/archivo/los_weblogs_mas_leidos.php).
+Leído en [un comentario de tintachina](https://tintachina.com/archivo/los_weblogs_mas_leidos).
 
 ¿Será eso? ¿Será que yo tampoco sé qué es un blog? Sí, si sé lo que es un blog. Se lo que es para mí, otra cosa es que coincida con lo que piensan los demás (cosa que poco me importa).
 

@@ -270,6 +270,23 @@ class SiteContractTest < Minitest::Test
     assert_empty missing, "Missing generated article images:\n#{missing.join("\n")}"
   end
 
+  def test_article_archive_lists_all_published_posts_on_one_page
+    skip "Run a production build before generated-site checks" unless SITE.join("index.html").file?
+
+    archive = SITE.join("articulos/index.html").read
+    entries = archive.scan(%r{<article class="post-entry\b.*?</article>}m)
+    expected_urls = SITE.glob("**/*.html").filter_map do |path|
+      next unless path.read.include?('<article class="post-container post-container--single">')
+
+      "/#{path.relative_path_from(SITE).to_s.sub(%r{/index\.html\z}, "/")}"
+    end
+
+    assert_equal expected_urls.sort, entries.map { |entry| entry[/href="([^"]+)"/, 1] }.sort
+    dates = entries.map { |entry| Date.iso8601(entry[/<time datetime="([^"]+)"/, 1]) }
+    assert_equal dates.sort.reverse, dates
+    assert_empty SITE.glob("articulos/page[0-9]*/index.html")
+  end
+
   def test_generated_seo_routes_and_languages
     skip "Run a production build before generated-site checks" unless SITE.join("index.html").file?
 
