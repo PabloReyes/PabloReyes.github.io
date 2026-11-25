@@ -1,16 +1,12 @@
-{% assign archive_year = '' %}
+{% assign title_tag = "h2" %}
+{% if include.compact %}{% assign title_tag = "h3" %}{% endif %}
 {% for post in include.posts %}
   {% if include.filter_category == nil or include.filter_category == post.category %}
     {% assign list_image = post.list_image | default: post.image %}
-    {% assign post_year = post.date | date: '%Y' %}
-    {% if include.compact != true and post_year != archive_year %}
-      <h2 class="archive-year">{{ post_year }}</h2>
-      {% assign archive_year = post_year %}
-    {% endif %}
     <article class="post-entry{% if list_image %} post-entry--with-media{% endif %}"{% if post.css_id %} id="{{ post.css_id }}"{% endif %}>
       <a href="{{ post.url | relative_url }}">
         <div class="post-content-text">
-          <h3 class="post-title">{{ post.title }}</h3>
+          <{{ title_tag }} class="post-title">{{ post.title }}</{{ title_tag }}>
 
           <div class="post-meta">
             <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include date.html date=post.date lang=post.lang %}</time>
@@ -25,7 +21,7 @@
           <picture class="post-entry__media">
             <source
               srcset="{{ post_thumbnail | relative_url }} 320w, {{ post_thumbnail_2x | relative_url }} 640w"
-              sizes="{% if include.compact %}(min-width: 760px) 112px, (min-width: 521px) 96px, 72px{% else %}(min-width: 700px) 208px, (min-width: 521px) 160px, calc(100vw - 40px){% endif %}"
+              sizes="{% if include.compact %}(min-width: 760px) 112px, (min-width: 521px) 96px, 72px{% else %}(min-width: 700px) 88px, 64px{% endif %}"
               type="image/webp">
             <img
               src="{{ list_image | relative_url }}"

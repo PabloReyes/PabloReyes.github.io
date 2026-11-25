@@ -272,7 +272,7 @@ strong {
   align-items: baseline;
   justify-content: space-between;
   gap: var(--space-sm);
-  margin-bottom: var(--space-lg);
+  margin-bottom: 1rem;
 }
 
 .archive-heading h1, .projects-heading h1 {
@@ -287,28 +287,6 @@ strong {
   font-size: 0.8125rem;
   font-variant-numeric: tabular-nums;
 }
-
-.archive-year {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  margin: var(--space-lg) 0 0;
-  color: var(--color-muted);
-  font-size: 0.8125rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  font-variant-numeric: tabular-nums;
-}
-
-.archive-year::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--color-border);
-}
-
-.archive-year:first-child { margin-top: 0; }
-.archive-page .post-entry:has(+ .archive-year) { border-bottom: 0; }
 
 .main-post-list {
   width: min(100%, var(--measure-list));
@@ -334,12 +312,27 @@ strong {
   text-decoration: none;
 }
 
-.main-post-list article.post-entry--with-media > a {
+.archive-page {
+  --archive-thumb: 4rem;
+}
+
+.archive-page .main-post-list article.post-entry { padding-block: .8rem; }
+
+.archive-page article.post-entry--with-media > a {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 10rem;
-  gap: var(--space-sm);
+  grid-template-columns: minmax(0, 1fr) var(--archive-thumb);
+  gap: 1rem;
   align-items: center;
 }
+
+.archive-page .post-entry__media { width: var(--archive-thumb); }
+.archive-page .post-entry .post-title {
+  margin: 0;
+  font-size: clamp(1.15rem, 1rem + .6vw, 1.45rem);
+  line-height: 1.2;
+}
+.archive-page .post-meta { margin: .2rem 0; font-size: .8rem; }
+.archive-page .post-excerpt { font-size: 1rem; line-height: 1.4; -webkit-line-clamp: 2; }
 
 .post-content-text {
   min-width: 0;
@@ -813,10 +806,7 @@ pre code {
     padding-block: 2rem;
   }
 
-  .main-post-list article.post-entry--with-media > a {
-    grid-template-columns: minmax(0, 1fr) 13rem;
-    gap: var(--space-lg);
-  }
+  .archive-page { --archive-thumb: 5.5rem; }
 
   .post-entry__media {
     width: 13rem;
@@ -840,7 +830,6 @@ pre code {
     font-size: 2rem;
   }
 
-  .main-post-list article.post-entry--with-media > a { grid-template-columns: minmax(0, 1fr); }
   .post-entry__media { width: 100%; aspect-ratio: 1 / 1; }
   .post-excerpt { -webkit-line-clamp: 3; }
 }
