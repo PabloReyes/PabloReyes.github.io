@@ -15,7 +15,7 @@ pelo un poco rebelde, dejarse de tantos colores oscuros y pintarlo todo de amari
 tipos de letra) sólidas, rígidas y de formas bien definidas son del pasado. Los eslóganes siempre en lenguaje coloquial.
 
 Lo hemos visto en La Sexta con sus presentadores
-de [informativos](https://web.archive.org/web/20110803064714/http://www.lasextanoticias.com/) jóvenes, alegres y
+de [informativos](https://www.lasexta.com/noticias/) jóvenes, alegres y
 desenfadados o con la nueva forma de dar los partes meteorológicos
 de [Javier Gómez](https://web.archive.org/web/20110803064714/http://es.youtube.com/watch?v=AfputCN9Am4)
 y [Miriam Santamaría](https://web.archive.org/web/20110803064714/http://es.youtube.com/watch?v=tO7WRj7m9LE):
@@ -29,7 +29,7 @@ Te pones tus zapas favoritas, hay que ir mono/a en la vida, y te lanzas a buscar
 móviles, lo suele poner justo en la puerta. Justo. Esas donde puedes comprarte un tupper, o una felpa para jugar al
 tenis. Liberar tu móvil es algo muy normal, no te asustes. Lo libera tu vecino, la suegra de tu vecino, ...
 
-mientras que [Simyo](https://web.archive.org/web/20110803064714/http://www.simyo.es/) saca a un jóven photoshopeado que
+mientras que [Simyo](https://www.simyo.es/) saca a un jóven photoshopeado que
 dice:
 
 Mi móvil como la hamburguesa: sin pepinillo y como me da la gana.
@@ -53,6 +53,6 @@ el que los usuarios se grababan haciendo sus preguntas y los políticos respond�
 
 Incluso los príncipes de Asturias intentan dar aspecto de familia normal dejando entrar a periodistas a su apartamento
 para
-ver [cómo juegan con sus Sofía y Leonor](https://web.archive.org/web/20110803064714/http://www.abc.es/informacion/principes-asturias/galeriacumplefelipe11.asp).
+ver [cómo juegan con sus Sofía y Leonor](https://www.abc.es/informacion/principes-asturias/galeriacumplefelipe11.asp).
 
 ¡Que país mas vanguardista!

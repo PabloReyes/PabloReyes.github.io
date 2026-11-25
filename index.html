@@ -1,15 +1,39 @@
 ---
 layout: default
-body_class: archive-page
+body_class: home-page
 ---
 
-<div class="archive-heading">
-  <h1>Artículos</h1>
-  <p>{{ site.posts.last.date | date: '%Y' }} — {{ site.posts.first.date | date: '%Y' }}</p>
-</div>
-<div class="main-post-list">
-    {% include post-list-cards.html %}
-    {% if paginator.previous_page or paginator.next_page %}
-        {% include pagination.html %}
-    {% endif %}
+<header class="introduction">
+  <img class="author-photo" src="{{ '/images/profile.jpg' | relative_url }}" width="402" height="441" alt="Pablo Reyes" fetchpriority="high">
+  <div class="intro-copy">
+    <h1>Hola, soy Pablo.</h1>
+    <p>Padre de familia, ingeniero de software y apasionado de la tecnología desde que era un crío. Ahora centrado en desarrollo con agentes, orquestración y demás novedades de esta época. Me interesa además la economía, las finanzas, política, el software libre y la astrofotografía. Llevo escribiendo en distintas versiones de este blog desde el año 2004.</p>
+    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+  </div>
+</header>
+
+<div class="home-columns">
+  <section class="journal" id="blog" aria-labelledby="writing-title">
+    <h2 id="writing-title">Artículos destacados</h2>
+    {% assign featured_posts = site.posts | where_exp: "post", "post.featured_order != nil" | sort: "date" | reverse %}
+    {% include post-list-cards.html posts=featured_posts compact=true %}
+    <a class="more-link" href="{{ '/articulos/' | relative_url }}">Todos los artículos <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section class="project-notes" id="proyectos" aria-labelledby="projects-title">
+    <h2 id="projects-title">Proyectos destacados</h2>
+    {% assign featured_projects = site.data.projects | where_exp: "project", "project.featured_order != nil" | sort: "featured_order" %}
+    {% for project in featured_projects %}
+      {% assign thumbnail = project.image | split: '.' | first %}
+      {% assign thumbnail_path = '/about/thumbnails/' | append: thumbnail %}
+      <article class="project-note">
+        <a href="{{ '/projects/' | relative_url }}#{{ project.id }}">
+          <img src="{{ thumbnail_path | append: '.webp' | relative_url }}" srcset="{{ thumbnail_path | append: '.webp' | relative_url }} 480w, {{ thumbnail_path | append: '@2x.webp' | relative_url }} 960w" sizes="(min-width: 760px) 290px, (min-width: 520px) 44vw, 90vw" width="{{ project.image_width }}" height="{{ project.image_height }}" loading="lazy" decoding="async" alt="">
+          <h3>{{ project.title }}</h3>
+        </a>
+        <p>{{ project.featured_summary | default: project.summary }}</p>
+      </article>
+    {% endfor %}
+    <a class="more-link" href="{{ '/projects/' | relative_url }}">Todos los proyectos <span aria-hidden="true">→</span></a>
+  </section>
 </div>

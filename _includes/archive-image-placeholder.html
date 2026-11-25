@@ -1,0 +1,15 @@
+<figure class="archive-image-placeholder">
+  <img
+    src="{{ '/images/imagen-no-disponible.png' | relative_url }}"
+    alt="Imagen no disponible"
+    width="560"
+    height="112"
+    loading="lazy"
+    decoding="async">
+  {% if include.reference %}
+    <figcaption>
+      {% if include.label %}{{ include.label | escape }} · {% endif %}
+      <a href="{{ include.reference | escape }}">Consultar referencia archivada</a>
+    </figcaption>
+  {% endif %}
+</figure>

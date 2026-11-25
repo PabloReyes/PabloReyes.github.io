@@ -1,0 +1,36 @@
+{% assign archive_url = page.archive_index_url | default: page.archive_source %}
+<aside class="article-archive-note" aria-label="{% if page.lang == 'en' %}Article provenance{% else %}Procedencia del artículo{% endif %}">
+  <div>
+    <p class="article-archive-note__title">
+      {% if page.archive_copy_date %}
+        {% if page.lang == 'en' %}Restored from a copy kept by the author{% else %}Texto recuperado de una copia del autor{% endif %}
+      {% elsif page.lang == 'en' %}
+        Restored from archive.org
+      {% else %}
+        Entrada recuperada de archive.org
+      {% endif %}
+    </p>
+    <p class="article-archive-note__detail">
+      {% if page.archive_copy_date %}
+        {% if page.lang == 'en' %}
+          The copy is dated {% include date.html date=page.archive_copy_date lang=page.lang %}. The historical URL is dated {% include date.html date=page.date lang=page.lang %}.
+        {% else %}
+          La copia está fechada el {% include date.html date=page.archive_copy_date lang=page.lang %}. La URL histórica lleva la fecha del {% include date.html date=page.date lang=page.lang %}.
+        {% endif %}
+      {% elsif page.lang == 'en' %}
+        Some images may be unavailable.
+      {% else %}
+        Algunas imágenes pueden no estar disponibles.
+      {% endif %}
+    </p>
+  </div>
+  <a href="{{ archive_url | escape }}">
+    {% if page.archive_index_url %}
+      {% if page.lang == 'en' %}View the indexed URL{% else %}Ver la URL histórica indexada{% endif %}
+    {% elsif page.lang == 'en' %}
+      View the original snapshot
+    {% else %}
+      Ver la captura original
+    {% endif %}
+  </a>
+</aside>

@@ -1,44 +1,19 @@
-<header class="panel-cover panel-cover--collapsed">
-  <div class="panel-main">
-
-    <div class="panel-main__inner panel-inverted">
-      <div class="panel-main__content">
-        <a href="{{ '/' | relative_url }}" aria-label="Inicio de {{ site.title }}">
-          <p class="panel-cover__title panel-title">Pablo Reyes</p>
-        </a>
-        <p class="panel-cover__description">
-          Reflexiones y tecnología. No tengo prisa.
-        </p>
-
-        {% assign navigation_lang = page.lang | default: site.lang %}
-        {% if navigation_lang == "en" %}
-          {% assign projects_path = "/en/projects/" %}
-        {% else %}
-          {% assign projects_path = "/projects/" %}
-        {% endif %}
-        <div class="navigation-wrapper">
-          <nav class="cover-navigation" aria-label="{% if navigation_lang == 'en' %}Main navigation{% else %}Navegación principal{% endif %}">
-            <ul class="navigation">
-              <li class="navigation__item">
-                <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% elsif page.layout == 'post' %} class="active"{% endif %}>
-                  {% if navigation_lang == "en" %}Articles{% else %}Artículos{% endif %}
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a href="{{ projects_path | relative_url }}"{% if page.translation_key == 'projects' %} class="active" aria-current="page"{% endif %}>
-                  {% if navigation_lang == "en" %}Projects{% else %}Proyectos{% endif %}
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <button type="button" class="theme-toggle" id="themeToggle" aria-label="{% if navigation_lang == 'en' %}Dark mode{% else %}Modo oscuro{% endif %}" aria-pressed="false" hidden>
-            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
-            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.5 14.3A9 9 0 0 1 9.7 3.5a9 9 0 1 0 10.8 10.8Z"/></svg>
-          </button>
-        </div>
-
-      </div>
-
-    </div>
+{% assign english = false %}
+{% if page.lang == 'en' %}{% assign english = true %}{% endif %}
+{% assign projects_path = '/projects/' %}
+{% if english %}{% assign projects_path = '/en/projects/' %}{% endif %}
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{% if english %}Pablo Reyes, home{% else %}Pablo Reyes, inicio{% endif %}">
+      {{ site.author.name }}
+    </a>
+    <nav class="main-nav" aria-label="{% if english %}Main navigation{% else %}Navegación principal{% endif %}">
+      <a href="{{ '/articulos/' | relative_url }}"{% if page.body_class == 'archive-page' %} class="active" aria-current="page"{% elsif page.layout == 'post' %} class="active"{% endif %}>{% if english %}Articles{% else %}Artículos{% endif %}</a>
+      <a href="{{ projects_path | relative_url }}"{% if page.translation_key == 'projects' %} class="active" aria-current="page"{% endif %}>{% if english %}Projects{% else %}Proyectos{% endif %}</a>
+    </nav>
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="{% if english %}Dark mode{% else %}Modo oscuro{% endif %}" aria-pressed="false" hidden>
+      <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+      <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.5 14.3A9 9 0 0 1 9.7 3.5a9 9 0 1 0 10.8 10.8Z"/></svg>
+    </button>
   </div>
 </header>

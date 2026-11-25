@@ -1,5 +1,6 @@
 ---
 layout: post
+featured_order: 3
 title: Analizando jugadores de La Liga con Machine Learning
 published: true
 date: 2019-12-15

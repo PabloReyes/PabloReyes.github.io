@@ -1,6 +1,5 @@
 # old settings
 # highlighter: rouge
-# paginate: 1
 # permalink: /blog//:title
 # end of old settings
 
@@ -30,7 +29,6 @@ defaults:
 
 # Build settings
 destination: _site
-paginate: 50
 permalink: /:title/
 markdown: kramdown
 highlighter: rouge
@@ -49,7 +47,6 @@ sass:
 
 plugins:
   - jekyll-target-blank
-  - jekyll-paginate
   - jekyll-sass-converter
   - jekyll-sitemap
 

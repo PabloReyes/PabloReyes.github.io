@@ -1,5 +1,6 @@
 ---
 layout: post
+featured_order: 4
 title: "Estrategias de trading y análisis sentimental"
 published: true
 date: 2020-01-15

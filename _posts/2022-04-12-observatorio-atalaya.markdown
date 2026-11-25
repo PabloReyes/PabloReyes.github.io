@@ -1,5 +1,6 @@
 ---
 layout: post
+featured_order: 1
 title: "Observatorio Atalaya"
 published: true
 date: 2022-03-01

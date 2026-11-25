@@ -20,6 +20,10 @@ layout: default
     {% endif %}
   </header>
 
+  {% if page.archive_source %}
+    {% include article-archive-note.html %}
+  {% endif %}
+
   <details class="article-toc" hidden>
     <summary>{% if page.lang == 'en' %}On this page{% else %}En este artículo{% endif %}</summary>
     <nav aria-label="{% if page.lang == 'en' %}Table of contents{% else %}Índice del artículo{% endif %}"></nav>
@@ -29,7 +33,7 @@ layout: default
     {{ content }}
   </div>
   <footer class="article-footer">
-    <a href="{{ '/' | relative_url }}">{% if page.lang == 'en' %}← All articles{% else %}← Todos los artículos{% endif %}</a>
+    <a href="{{ '/articulos/' | relative_url }}">{% if page.lang == 'en' %}← All articles{% else %}← Todos los artículos{% endif %}</a>
   </footer>
 
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section>

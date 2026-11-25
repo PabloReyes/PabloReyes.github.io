@@ -1,6 +1,10 @@
 <footer class="footer">
   <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
-  <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+  <div class="footer-links">
+    <a href="https://github.com/{{ site.author.github_username }}">GitHub</a>
+    <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}/">LinkedIn</a>
+    <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+  </div>
 </footer>
 
 {% if page.body_class == 'projects-page' %}
