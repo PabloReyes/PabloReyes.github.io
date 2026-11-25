@@ -31,6 +31,7 @@ defaults:
 # Build settings
 destination: _site
 paginate: 50
+paginate_path: /articulos/page:num/
 permalink: /:title/
 markdown: kramdown
 highlighter: rouge

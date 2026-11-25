@@ -1,36 +1,30 @@
-{% assign archive_year = '' %}
-{% assign archive_posts = paginator.posts | default: site.posts %}
-{% for post in archive_posts %}
+{% assign title_tag = "h2" %}
+{% if include.compact %}{% assign title_tag = "h3" %}{% endif %}
+{% for post in include.posts %}
   {% if include.filter_category == nil or include.filter_category == post.category %}
-    {% assign post_year = post.date | date: '%Y' %}
-    {% if post_year != archive_year %}
-      <h2 class="archive-year">{{ post_year }}</h2>
-      {% assign archive_year = post_year %}
-    {% endif %}
-    <article class="post-entry{% if post.image %} post-entry--with-media{% endif %}"{% if post.css_id %} id="{{ post.css_id }}"{% endif %}>
+    {% assign list_image = post.list_image | default: post.image %}
+    <article class="post-entry{% if list_image %} post-entry--with-media{% endif %}"{% if post.css_id %} id="{{ post.css_id }}"{% endif %}>
       <a href="{{ post.url | relative_url }}">
         <div class="post-content-text">
-          <h3 class="post-title">{{ post.title }}</h3>
+          <{{ title_tag }} class="post-title">{{ post.title }}</{{ title_tag }}>
 
           <div class="post-meta">
             <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include date.html date=post.date lang=post.lang %}</time>
             <span aria-hidden="true"> · </span>{% include reading-time.html content=post.content lang=post.lang %}
           </div>
 
-          <div class="post-excerpt">
-            {{ post.excerpt | strip_html | truncatewords: 34 }}
-          </div>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | normalize_whitespace | truncatewords: 45 }}</p>
         </div>
-        {% if post.image %}
-          {% assign post_thumbnail = post.image | replace: '/images/uploads/', '/images/thumbnails/' | replace: '.jpeg', '.webp' | replace: '.jpg', '.webp' | replace: '.png', '.webp' %}
+        {% if list_image %}
+          {% assign post_thumbnail = list_image | replace: '/images/uploads/', '/images/thumbnails/' | replace: '.jpeg', '.webp' | replace: '.jpg', '.webp' | replace: '.png', '.webp' %}
           {% assign post_thumbnail_2x = post_thumbnail | replace: '.webp', '@2x.webp' %}
           <picture class="post-entry__media">
             <source
               srcset="{{ post_thumbnail | relative_url }} 320w, {{ post_thumbnail_2x | relative_url }} 640w"
-              sizes="(min-width: 700px) 208px, (min-width: 521px) 160px, calc(100vw - 40px)"
+              sizes="{% if include.compact %}(min-width: 760px) 112px, (min-width: 521px) 96px, 72px{% else %}(min-width: 700px) 88px, 64px{% endif %}"
               type="image/webp">
             <img
-              src="{{ post.image | relative_url }}"
+              src="{{ list_image | relative_url }}"
               alt=""
               {% if post.thumbnail_position == 'top' %}class="post-thumbnail--top"{% endif %}
               {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
