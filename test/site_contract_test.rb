@@ -278,9 +278,11 @@ class SiteContractTest < Minitest::Test
     entries = home.scan(%r{<article class="post-entry\b.*?</article>}m)
     expected_featured = ROOT.glob("_posts/*").filter_map do |path|
       fields = front_matter(path)
-      [fields.fetch("featured_order"), fields.fetch("title")] if fields["featured_order"] && fields["published"] != false
+      fields.fetch("title") if fields["featured_order"] && fields["published"] != false
     end
-    assert_equal expected_featured.sort.map(&:last), entries.map { |entry| entry[%r{<h3 class="post-title">(.*?)</h3>}m, 1] }
+    assert_equal expected_featured.sort, entries.map { |entry| entry[%r{<h3 class="post-title">(.*?)</h3>}m, 1] }.sort
+    publication_dates = entries.map { |entry| Date.iso8601(entry[%r{<time datetime="([^"]+)">}, 1]) }
+    assert_equal publication_dates.sort.reverse, publication_dates
     entries.each { |entry| assert_match(%r{<p class="post-excerpt">[^<]+</p>}, entry) }
     assert_includes home, 'href="/articulos/"'
     assert_equal %w[openinsider backio], home.scan(%r{href="/projects/#([^"]+)"}).flatten

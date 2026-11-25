@@ -15,7 +15,7 @@ body_class: home-page
 <div class="home-columns">
   <section class="journal" id="blog" aria-labelledby="writing-title">
     <h2 id="writing-title">Artículos destacados</h2>
-    {% assign featured_posts = site.posts | where_exp: "post", "post.featured_order != nil" | sort: "featured_order" %}
+    {% assign featured_posts = site.posts | where_exp: "post", "post.featured_order != nil" | sort: "date" | reverse %}
     {% include post-list-cards.html posts=featured_posts compact=true %}
     <a class="more-link" href="{{ '/articulos/' | relative_url }}">Todos los artículos <span aria-hidden="true">→</span></a>
   </section>
