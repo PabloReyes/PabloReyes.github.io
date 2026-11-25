@@ -29,7 +29,7 @@ layout: default
     {{ content }}
   </div>
   <footer class="article-footer">
-    <a href="{{ '/' | relative_url }}">{% if page.lang == 'en' %}← All articles{% else %}← Todos los artículos{% endif %}</a>
+    <a href="{{ '/articulos/' | relative_url }}">{% if page.lang == 'en' %}← All articles{% else %}← Todos los artículos{% endif %}</a>
   </footer>
 
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section>

@@ -65,10 +65,10 @@ layout: null
     toggle.setAttribute("aria-pressed", String(dark));
     if (dark) {
       html.setAttribute("data-theme", "dark");
-      if (metaThemeColor) metaThemeColor.setAttribute("content", "#18181b");
+      if (metaThemeColor) metaThemeColor.setAttribute("content", "#181e1e");
     } else {
       html.setAttribute("data-theme", "light");
-      if (metaThemeColor) metaThemeColor.setAttribute("content", "#fafaf8");
+      if (metaThemeColor) metaThemeColor.setAttribute("content", "#faf7f2");
     }
   };
 
@@ -123,3 +123,28 @@ layout: null
 document.querySelectorAll(".post-content pre, .post-content table").forEach((block) => {
   block.tabIndex = 0;
 });
+
+/* The dark-mode illustration doubles as the reduced-motion and no-WebGL view. */
+(() => {
+  const telescope = document.querySelector(".sky-telescope");
+  if (!telescope || !window.ResizeObserver) return;
+  const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  let loading;
+  let view;
+  const visible = () => telescope.offsetWidth > 0 && !document.hidden && !motion.matches;
+  const sync = async () => {
+    if (!visible()) {
+      view?.stop();
+      return;
+    }
+    loading ??= import("./telescope.js")
+      .then(module => module.createTelescope(telescope))
+      .catch(() => null);
+    view = await loading;
+    if (visible()) view?.start();
+  };
+  new ResizeObserver(sync).observe(telescope);
+  document.addEventListener("visibilitychange", sync);
+  telescope.addEventListener("webglcontextrestored", () => requestAnimationFrame(sync), true);
+  motion.addEventListener("change", sync);
+})();

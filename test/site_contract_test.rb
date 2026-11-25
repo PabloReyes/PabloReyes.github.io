@@ -274,6 +274,20 @@ class SiteContractTest < Minitest::Test
     skip "Run a production build before generated-site checks" unless SITE.join("index.html").file?
 
     home = SITE.join("index.html").read
+    archive = SITE.join("articulos/index.html").read
+    entries = home.scan(%r{<article class="post-entry\b.*?</article>}m)
+    expected_featured = ROOT.glob("_posts/*").filter_map do |path|
+      fields = front_matter(path)
+      fields.fetch("title") if fields["featured_order"] && fields["published"] != false
+    end
+    assert_equal expected_featured.sort, entries.map { |entry| entry[%r{<h3 class="post-title">(.*?)</h3>}m, 1] }.sort
+    publication_dates = entries.map { |entry| Date.iso8601(entry[%r{<time datetime="([^"]+)">}, 1]) }
+    assert_equal publication_dates.sort.reverse, publication_dates
+    entries.each { |entry| assert_match(%r{<p class="post-excerpt">[^<]+</p>}, entry) }
+    assert_includes home, 'href="/articulos/"'
+    assert_equal %w[openinsider backio], home.scan(%r{href="/projects/#([^"]+)"}).flatten
+    assert_match(%r{<h1>Artículos</h1>}, archive)
+    assert_includes archive, 'href="/observatorio-atalaya/"'
     spanish = SITE.join("projects/index.html").read
     english = SITE.join("en/projects/index.html").read
     legacy_about = SITE.join("about/index.html").read
@@ -318,12 +332,12 @@ class SiteContractTest < Minitest::Test
     projects_page = projects_page_path.file? ? projects_page_path.read : ""
 
     {
-      "--color-bg" => "#fafaf8",
+      "--color-bg" => "#faf7f2",
       "--color-surface" => "#ffffff",
-      "--color-ink" => "#202124",
-      "--color-muted" => "#667085",
-      "--color-border" => "#e5e7eb",
-      "--color-accent" => "#b44937",
+      "--color-ink" => "#2b2824",
+      "--color-muted" => "#635c54",
+      "--color-border" => "#d9d2c8",
+      "--color-accent" => "#98472e",
       "--measure-reading" => "44rem",
       "--measure-media" => "64rem"
     }.each do |token, value|
@@ -338,7 +352,8 @@ class SiteContractTest < Minitest::Test
     refute_match(/linear-gradient|backdrop-filter/, styles)
     refute_match(/\.lang-selector\s*\{[^}]*position:\s*sticky/m, styles)
 
-    assert_includes sidebar, "Reflexiones y tecnología. No tengo prisa."
+    assert_includes sidebar, "'/articulos/' | relative_url"
+    assert_includes sidebar, "projects_path | relative_url"
     assert_includes post_list, '<picture class="post-entry__media">'
     assert_includes post_list, 'type="image/webp"'
     assert_includes post_list, "srcset="
@@ -377,7 +392,7 @@ class SiteContractTest < Minitest::Test
     source = path.read
     yaml = source[/\A---\s*\n(.*?)\n---\s*\n/m, 1]
     refute_nil yaml, "Missing YAML front matter in #{path.relative_path_from(ROOT)}"
-    YAML.safe_load(yaml)
+    YAML.safe_load(yaml, permitted_classes: [Date, Time])
   end
 
   def json_ld_documents(path)
