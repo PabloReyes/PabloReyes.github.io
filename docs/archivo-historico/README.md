@@ -6,12 +6,12 @@ al total original de los tres blogs: solo documenta el material localizado.
 
 ## Resultado
 
-- 33 entradas recuperadas como posts de Jekyll: 32 a partir de capturas de Wayback y una a partir de una copia del autor.
-- 10 imágenes recuperadas y copiadas al repositorio.
+- 37 entradas recuperadas como posts de Jekyll, 36 a partir de capturas de Wayback y una a partir de una copia del autor.
+- 13 imágenes recuperadas y copiadas al repositorio, incluidas las tres gráficas de Windows XP vs. Windows Vista.
 - 9 referencias a imágenes sin copia disponible en el sitio, con una imagen
   de sustitución y un enlace a la referencia archivada.
 - 9 grupos ya presentes en el sitio o en sus borradores.
-- 124 URLs de entradas pendientes cuya reproducción falló en esta pasada, y 9 enlaces adicionales observados sin cuerpo recuperado.
+- 120 URLs de entradas pendientes cuya reproducción falló, y 9 enlaces adicionales observados sin cuerpo recuperado.
 - Las otras filas marcan entradas retiradas, extractos, enlaces sin copia, piezas principalmente
   multimedia, atribuciones ajenas o no verificadas y casos de revisión editorial. No se republican letras, poemas ni traducciones completas de terceros sin licencia comprobada.
 
